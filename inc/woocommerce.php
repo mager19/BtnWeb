@@ -1,270 +1,140 @@
 <?php
 /**
- * WooCommerce Compatibility File
+ * Add WooCommerce support
  *
- * @link https://woocommerce.com/
- *
- * @package batana
+ * @package understrap
  */
 
-/**
- * WooCommerce setup function.
- *
- * @link https://docs.woocommerce.com/document/third-party-custom-theme-compatibility/
- * @link https://github.com/woocommerce/woocommerce/wiki/Enabling-product-gallery-features-(zoom,-swipe,-lightbox)-in-3.0.0
- *
- * @return void
- */
-function btn_woocommerce_setup() {
-	add_theme_support( 'woocommerce' );
-	add_theme_support( 'wc-product-gallery-zoom' );
-	add_theme_support( 'wc-product-gallery-lightbox' );
-	add_theme_support( 'wc-product-gallery-slider' );
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
 }
-add_action( 'after_setup_theme', 'btn_woocommerce_setup' );
 
-/**
- * WooCommerce specific scripts & stylesheets.
- *
- * @return void
- */
-function btn_woocommerce_scripts() {
-	wp_enqueue_style( 'btn-woocommerce-style', get_template_directory_uri() . '/woocommerce.css' );
-
-	$font_path   = WC()->plugin_url() . '/assets/fonts/';
-	$inline_font = '@font-face {
-			font-family: "star";
-			src: url("' . $font_path . 'star.eot");
-			src: url("' . $font_path . 'star.eot?#iefix") format("embedded-opentype"),
-				url("' . $font_path . 'star.woff") format("woff"),
-				url("' . $font_path . 'star.ttf") format("truetype"),
-				url("' . $font_path . 'star.svg#star") format("svg");
-			font-weight: normal;
-			font-style: normal;
-		}';
-
-	wp_add_inline_style( 'btn-woocommerce-style', $inline_font );
-}
-add_action( 'wp_enqueue_scripts', 'btn_woocommerce_scripts' );
-
-/**
- * Disable the default WooCommerce stylesheet.
- *
- * Removing the default WooCommerce stylesheet and enqueing your own will
- * protect you during WooCommerce core updates.
- *
- * @link https://docs.woocommerce.com/document/disable-the-default-stylesheet/
- */
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-
-/**
- * Add 'woocommerce-active' class to the body tag.
- *
- * @param  array $classes CSS classes applied to the body tag.
- * @return array $classes modified to include 'woocommerce-active' class.
- */
-function btn_woocommerce_active_body_class( $classes ) {
-	$classes[] = 'woocommerce-active';
-
-	return $classes;
-}
-add_filter( 'body_class', 'btn_woocommerce_active_body_class' );
-
-/**
- * Products per page.
- *
- * @return integer number of products.
- */
-function btn_woocommerce_products_per_page() {
-	return 12;
-}
-add_filter( 'loop_shop_per_page', 'btn_woocommerce_products_per_page' );
-
-/**
- * Product gallery thumnbail columns.
- *
- * @return integer number of columns.
- */
-function btn_woocommerce_thumbnail_columns() {
-	return 4;
-}
-add_filter( 'woocommerce_product_thumbnails_columns', 'btn_woocommerce_thumbnail_columns' );
-
-/**
- * Default loop columns on product archives.
- *
- * @return integer products per row.
- */
-function btn_woocommerce_loop_columns() {
-	return 3;
-}
-add_filter( 'loop_shop_columns', 'btn_woocommerce_loop_columns' );
-
-/**
- * Related Products Args.
- *
- * @param array $args related products args.
- * @return array $args related products args.
- */
-function btn_woocommerce_related_products_args( $args ) {
-	$defaults = array(
-		'posts_per_page' => 3,
-		'columns'        => 3,
-	);
-
-	$args = wp_parse_args( $defaults, $args );
-
-	return $args;
-}
-add_filter( 'woocommerce_output_related_products_args', 'btn_woocommerce_related_products_args' );
-
-if ( ! function_exists( 'btn_woocommerce_product_columns_wrapper' ) ) {
+add_action( 'after_setup_theme', 'understrap_woocommerce_support' );
+if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
 	/**
-	 * Product columns wrapper.
-	 *
-	 * @return  void
+	 * Declares WooCommerce theme support.
 	 */
-	function btn_woocommerce_product_columns_wrapper() {
-		$columns = btn_woocommerce_loop_columns();
-		echo '<div class="columns-' . absint( $columns ) . '">';
-	}
-}
-add_action( 'woocommerce_before_shop_loop', 'btn_woocommerce_product_columns_wrapper', 40 );
+	function understrap_woocommerce_support() {
+		add_theme_support( 'woocommerce' );
 
-if ( ! function_exists( 'btn_woocommerce_product_columns_wrapper_close' ) ) {
-	/**
-	 * Product columns wrapper close.
-	 *
-	 * @return  void
-	 */
-	function btn_woocommerce_product_columns_wrapper_close() {
-		echo '</div>';
-	}
-}
-add_action( 'woocommerce_after_shop_loop', 'btn_woocommerce_product_columns_wrapper_close', 40 );
+		// Add New Woocommerce 3.0.0 Product Gallery support
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-slider' );
 
-/**
- * Remove default WooCommerce wrapper.
- */
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-
-if ( ! function_exists( 'btn_woocommerce_wrapper_before' ) ) {
-	/**
-	 * Before Content.
-	 *
-	 * Wraps all WooCommerce content in wrappers which match the theme markup.
-	 *
-	 * @return void
-	 */
-	function btn_woocommerce_wrapper_before() {
-		?>
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
-			<?php
-	}
-}
-add_action( 'woocommerce_before_main_content', 'btn_woocommerce_wrapper_before' );
-
-if ( ! function_exists( 'btn_woocommerce_wrapper_after' ) ) {
-	/**
-	 * After Content.
-	 *
-	 * Closes the wrapping divs.
-	 *
-	 * @return void
-	 */
-	function btn_woocommerce_wrapper_after() {
-			?>
-			</main><!-- #main -->
-		</div><!-- #primary -->
-		<?php
-	}
-}
-add_action( 'woocommerce_after_main_content', 'btn_woocommerce_wrapper_after' );
-
-/**
- * Sample implementation of the WooCommerce Mini Cart.
- *
- * You can add the WooCommerce Mini Cart to header.php like so ...
- *
-	<?php
-		if ( function_exists( 'btn_woocommerce_header_cart' ) ) {
-			btn_woocommerce_header_cart();
-		}
-	?>
- */
-
-if ( ! function_exists( 'btn_woocommerce_cart_link_fragment' ) ) {
-	/**
-	 * Cart Fragments.
-	 *
-	 * Ensure cart contents update when products are added to the cart via AJAX.
-	 *
-	 * @param array $fragments Fragments to refresh via AJAX.
-	 * @return array Fragments to refresh via AJAX.
-	 */
-	function btn_woocommerce_cart_link_fragment( $fragments ) {
-		ob_start();
-		btn_woocommerce_cart_link();
-		$fragments['a.cart-contents'] = ob_get_clean();
-
-		return $fragments;
-	}
-}
-add_filter( 'woocommerce_add_to_cart_fragments', 'btn_woocommerce_cart_link_fragment' );
-
-if ( ! function_exists( 'btn_woocommerce_cart_link' ) ) {
-	/**
-	 * Cart Link.
-	 *
-	 * Displayed a link to the cart including the number of items present and the cart total.
-	 *
-	 * @return void
-	 */
-	function btn_woocommerce_cart_link() {
-		?>
-		<a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'btn' ); ?>">
-			<?php
-			$item_count_text = sprintf(
-				/* translators: number of items in the mini cart. */
-				_n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'btn' ),
-				WC()->cart->get_cart_contents_count()
-			);
-			?>
-			<span class="amount"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></span> <span class="count"><?php echo esc_html( $item_count_text ); ?></span>
-		</a>
-		<?php
+		// hook in and customizer form fields.
+		add_filter( 'woocommerce_form_field_args', 'understrap_wc_form_field_args', 10, 3 );
 	}
 }
 
-if ( ! function_exists( 'btn_woocommerce_header_cart' ) ) {
-	/**
-	 * Display Header Cart.
-	 *
-	 * @return void
-	 */
-	function btn_woocommerce_header_cart() {
-		if ( is_cart() ) {
-			$class = 'current-menu-item';
-		} else {
-			$class = '';
-		}
-		?>
-		<ul id="site-header-cart" class="site-header-cart">
-			<li class="<?php echo esc_attr( $class ); ?>">
-				<?php btn_woocommerce_cart_link(); ?>
-			</li>
-			<li>
-				<?php
-				$instance = array(
-					'title' => '',
+/**
+* First unhook the WooCommerce wrappers
+*/
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+/**
+* Then hook in your own functions to display the wrappers your theme requires
+*/
+add_action('woocommerce_before_main_content', 'understrap_woocommerce_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'understrap_woocommerce_wrapper_end', 10);
+if ( ! function_exists( 'understrap_woocommerce_wrapper_start' ) ) {
+	function understrap_woocommerce_wrapper_start() {
+		$container   = get_theme_mod( 'understrap_container_type' );
+		echo '<div class="wrapper" id="woocommerce-wrapper">';
+	  echo '<div class="' . esc_attr( $container ) . '" id="content" tabindex="-1">';
+		echo '<div class="row">';
+		get_template_part( 'global-templates/left-sidebar-check' );
+		echo '<main class="site-main" id="main">';
+	}
+}
+if ( ! function_exists( 'understrap_woocommerce_wrapper_end' ) ) {
+function understrap_woocommerce_wrapper_end() {
+	echo '</main><!-- #main -->';
+	get_template_part( 'global-templates/right-sidebar-check' );
+  echo '</div><!-- .row -->';
+	echo '</div><!-- Container end -->';
+	echo '</div><!-- Wrapper end -->';
+	}
+}
+
+
+/**
+ * Filter hook function monkey patching form classes
+ * Author: Adriano Monecchi http://stackoverflow.com/a/36724593/307826
+ *
+ * @param string $args Form attributes.
+ * @param string $key Not in use.
+ * @param null   $value Not in use.
+ *
+ * @return mixed
+ */
+if ( ! function_exists ( 'understrap_wc_form_field_args' ) ) {
+	function understrap_wc_form_field_args( $args, $key, $value = null ) {
+		// Start field type switch case.
+		switch ( $args['type'] ) {
+			/* Targets all select input type elements, except the country and state select input types */
+			case 'select' :
+				// Add a class to the field's html element wrapper - woocommerce
+				// input types (fields) are often wrapped within a <p></p> tag.
+				$args['class'][] = 'form-group';
+				// Add a class to the form input itself.
+				$args['input_class']       = array( 'form-control', 'input-lg' );
+				$args['label_class']       = array( 'control-label' );
+				$args['custom_attributes'] = array(
+					'data-plugin'      => 'select2',
+					'data-allow-clear' => 'true',
+					'aria-hidden'      => 'true',
+					// Add custom data attributes to the form input itself.
 				);
-
-				the_widget( 'WC_Widget_Cart', $instance );
-				?>
-			</li>
-		</ul>
-		<?php
+				break;
+			// By default WooCommerce will populate a select with the country names - $args
+			// defined for this specific input type targets only the country select element.
+			case 'country' :
+				$args['class'][]     = 'form-group single-country';
+				$args['label_class'] = array( 'control-label' );
+				break;
+			// By default WooCommerce will populate a select with state names - $args defined
+			// for this specific input type targets only the country select element.
+			case 'state' :
+				// Add class to the field's html element wrapper.
+				$args['class'][] = 'form-group';
+				// add class to the form input itself.
+				$args['input_class']       = array( '', 'input-lg' );
+				$args['label_class']       = array( 'control-label' );
+				$args['custom_attributes'] = array(
+					'data-plugin'      => 'select2',
+					'data-allow-clear' => 'true',
+					'aria-hidden'      => 'true',
+				);
+				break;
+			case 'password' :
+			case 'text' :
+			case 'email' :
+			case 'tel' :
+			case 'number' :
+				$args['class'][]     = 'form-group';
+				$args['input_class'] = array( 'form-control', 'input-lg' );
+				$args['label_class'] = array( 'control-label' );
+				break;
+			case 'textarea' :
+				$args['input_class'] = array( 'form-control', 'input-lg' );
+				$args['label_class'] = array( 'control-label' );
+				break;
+			case 'checkbox' :
+				$args['label_class'] = array( 'custom-control custom-checkbox' );
+				$args['input_class'] = array( 'custom-control-input', 'input-lg' );
+				break;
+			case 'radio' :
+				$args['label_class'] = array( 'custom-control custom-radio' );
+				$args['input_class'] = array( 'custom-control-input', 'input-lg' );
+				break;
+			default :
+				$args['class'][]     = 'form-group';
+				$args['input_class'] = array( 'form-control', 'input-lg' );
+				$args['label_class'] = array( 'control-label' );
+				break;
+		} // end switch ($args).
+		return $args;
 	}
 }
