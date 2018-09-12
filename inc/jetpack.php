@@ -2,66 +2,58 @@
 /**
  * Jetpack Compatibility File
  *
- * @link https://jetpack.me/
+ * @link https://jetpack.com/
  *
- * @package UnderStrap
+ * @package batanaWeb
  */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
 
 /**
  * Jetpack setup function.
  *
- * See: https://jetpack.me/support/infinite-scroll/
- * See: https://jetpack.me/support/responsive-videos/
+ * See: https://jetpack.com/support/infinite-scroll/
+ * See: https://jetpack.com/support/responsive-videos/
+ * See: https://jetpack.com/support/content-options/
  */
+function batanaweb_jetpack_setup() {
+	// Add theme support for Infinite Scroll.
+	add_theme_support( 'infinite-scroll', array(
+		'container' => 'main',
+		'render'    => 'batanaweb_infinite_scroll_render',
+		'footer'    => 'page',
+	) );
 
-add_action( 'after_setup_theme', 'understrap_components_jetpack_setup' );
+	// Add theme support for Responsive Videos.
+	add_theme_support( 'jetpack-responsive-videos' );
 
-if ( ! function_exists ( 'understrap_components_jetpack_setup' ) ) {
-	function understrap_components_jetpack_setup() {
-		// Add theme support for Infinite Scroll.
-		add_theme_support( 'infinite-scroll', array(
-			'container' => 'main',
-			'render'    => 'understrap_components_infinite_scroll_render',
-			'footer'    => 'page',
-		) );
-
-		// Add theme support for Responsive Videos.
-		add_theme_support( 'jetpack-responsive-videos' );
-
-		// Add theme support for Social Menus
-		add_theme_support( 'jetpack-social-menu' );
-
-	}
+	// Add theme support for Content Options.
+	add_theme_support( 'jetpack-content-options', array(
+		'post-details'    => array(
+			'stylesheet' => 'batanaweb-style',
+			'date'       => '.posted-on',
+			'categories' => '.cat-links',
+			'tags'       => '.tags-links',
+			'author'     => '.byline',
+			'comment'    => '.comments-link',
+		),
+		'featured-images' => array(
+			'archive'    => true,
+			'post'       => true,
+			'page'       => true,
+		),
+	) );
 }
-
+add_action( 'after_setup_theme', 'batanaweb_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-
-if ( ! function_exists ( 'understrap_components_infinite_scroll_render' ) ) {
-	function understrap_components_infinite_scroll_render() {
-		while ( have_posts() ) {
-			the_post();
-			if ( is_search() ) :
-				get_template_part( 'loop-templates/content', 'search' );
-			else :
-				get_template_part( 'loop-templates/content', get_post_format() );
-			endif;
-		}
-	}
-}
-
-if ( ! function_exists ( 'understrap_components_social_menu' ) ) {
-	function understrap_components_social_menu() {
-		if ( ! function_exists( 'jetpack_social_menu' ) ) {
-			return;
-		} else {
-			jetpack_social_menu();
-		}
+function batanaweb_infinite_scroll_render() {
+	while ( have_posts() ) {
+		the_post();
+		if ( is_search() ) :
+			get_template_part( 'template-parts/content', 'search' );
+		else :
+			get_template_part( 'template-parts/content', get_post_type() );
+		endif;
 	}
 }
