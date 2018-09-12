@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package tema__base
+ * @package batana
  */
 
 ?>
@@ -22,21 +22,21 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				tema__base_posted_on();
-				tema__base_posted_by();
+				btn_posted_on();
+				btn_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php tema__base_post_thumbnail(); ?>
+	<?php btn_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'tema__base' ),
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'btn' ),
 				array(
 					'span' => array(
 						'class' => array(),
@@ -47,13 +47,13 @@
 		) );
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'tema__base' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'btn' ),
 			'after'  => '</div>',
 		) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php tema__base_entry_footer(); ?>
+		<?php btn_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

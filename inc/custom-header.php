@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package tema__base
+ * @package batana
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses tema__base_header_style()
+ * @uses btn_header_style()
  */
-function tema__base_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'tema__base_custom_header_args', array(
+function btn_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'btn_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'tema__base_header_style',
+		'wp-head-callback'       => 'btn_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'tema__base_custom_header_setup' );
+add_action( 'after_setup_theme', 'btn_custom_header_setup' );
 
-if ( ! function_exists( 'tema__base_header_style' ) ) :
+if ( ! function_exists( 'btn_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see tema__base_custom_header_setup().
+	 * @see btn_custom_header_setup().
 	 */
-	function tema__base_header_style() {
+	function btn_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

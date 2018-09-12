@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package tema__base
+ * @package batana
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
@@ -12,13 +12,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-
-				<aside id="secondary" class="widget-area">
-					<?php dynamic_sidebar( 'sidebar-1' ); ?>
-				</aside><!-- #secondary -->
-			</div>
-		</div>
-</div>
+<aside id="secondary" class="widget-area">
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+</aside><!-- #secondary -->
