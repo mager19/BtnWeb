@@ -1,53 +1,37 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single posts
  *
- * @package understrap
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package batanaWeb
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
-
 get_header();
-$container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="wrapper" id="single-wrapper">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+		<?php
+		while ( have_posts() ) :
+			the_post();
 
-		<div class="row">
+			get_template_part( 'template-parts/content', get_post_type() );
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			the_post_navigation();
 
-			<main class="site-main" id="main">
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
 
-				<?php while ( have_posts() ) : the_post(); ?>
+		endwhile; // End of the loop.
+		?>
 
-					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-						<?php understrap_post_nav(); ?>
-
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</main><!-- #main -->
-
-		<!-- Do the right sidebar check -->
-		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
-	</div><!-- .row -->
-
-</div><!-- Container end -->
-
-</div><!-- Wrapper end -->
-
-<?php get_footer(); ?>
+<?php
+get_sidebar();
+get_footer();
