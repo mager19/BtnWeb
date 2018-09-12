@@ -2,6 +2,57 @@
 @import "_variables";
 @import "_mixins";
 
+a, a:visited{
+	color:$oscurouno;
+}
+
 header{
-	background-color: #f9f9f9;
+	background-color: $blanco;
+	padding: 1em;
+
+	ul {
+		
+		padding-top: 0.6em;
+
+		li{
+			display: inline-block;
+			font-size: 1.2em;
+			margin-right: 1em;
+		}
+	}
+
+}
+
+.menu-aux{
+	text-align: right;
+}
+
+.with-background{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+
+.header--home{
+	background-color: transparent;
+	color:#fff; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+
+	ul li a{
+		color:#fff;
+	}
+}
+
+.header__top{
+	padding: 10em 0; 
+
+	
+}
+
+.header__left, .header__right{
+	padding: 5em 0;
 }

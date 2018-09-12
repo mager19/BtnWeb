@@ -45,6 +45,7 @@ if ( ! function_exists( 'batanaweb_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'batanaweb' ),
+			'menu-aux' => esc_html__( 'Menu Auxiliar', 'batanaweb' ),
 		) );
 
 		/*
@@ -123,6 +124,8 @@ function batanaweb_scripts() {
 	wp_enqueue_style( 'batanaweb-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'bootstracss', get_template_directory_uri() . '/css/bootstrap.css' );
+
+	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
 
 	// wp_enqueue_style( 'fontgoogle', 'https://fonts.googleapis.com/css?family=Catamaran:300,400,500,700,900|Yantramanav:300,400,500,700,900' );
 

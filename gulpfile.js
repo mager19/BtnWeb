@@ -22,13 +22,6 @@ gulp.task('serve', function () {
     	'./*.php',
         './template-parts/*.php',
                 '**/*.js',
-                '**/*.svg',
-                '**/*.ttf',
-                '**/*.otf',
-                '**/*.eot',
-                '**/*.woff',
-                '**/*.woff2',
-
                 // include specific files and folders
                 'screenshot.png',
     	];

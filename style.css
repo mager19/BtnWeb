@@ -399,4 +399,22 @@ embed, iframe, object { max-width: 100%; }
 
 .gallery-caption { display: block; }
 
-header { background-color: #f9f9f9; }
+a, a:visited { color: #131313; }
+
+header { background-color: #fff; padding: 1em; }
+
+header ul { padding-top: 0.6em; }
+
+header ul li { display: inline-block; font-size: 1.2em; margin-right: 1em; }
+
+.menu-aux { text-align: right; }
+
+.with-background { background-repeat: no-repeat; background-size: cover; background-position: center; }
+
+.header--home { background-color: transparent; color: #fff; position: absolute; top: 0; left: 0; z-index: 1000; width: 100%; }
+
+.header--home ul li a { color: #fff; }
+
+.header__top { padding: 10em 0; }
+
+.header__left, .header__right { padding: 5em 0; }
