@@ -25,6 +25,72 @@ function batanaweb_customize_register( $wp_customize ) {
 			'render_callback' => 'batanaweb_customize_partial_blogdescription',
 		) );
 	}
+
+	//Register propios
+
+	// Add section.
+	$wp_customize->add_section( 'BatanaWeb' , array(
+		'title'    => __('Batana Web Configuración'),
+		'priority' => 10
+	) );
+	// Add setting
+	$wp_customize->add_setting( 'imagen_superior', array(
+		 'default'        => '',
+	) );
+
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+	    $wp_customize,
+		'imagen_superior',
+		    array(
+		        'label'    => __( 'Imagen Superior' ),
+		        'section'  => 'BatanaWeb',
+		        'settings' => 'imagen_superior',
+		 						
+		    )
+	    )
+	);
+
+
+	// Add setting
+	$wp_customize->add_setting( 'imagen_abajoizquierda', array(
+		 'default'        => '',
+	) );
+
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+	    $wp_customize,
+		'imagen_abajoizquierda',
+		    array(
+		        'label'    => __( 'Imagen Abajo Izquierda' ),
+		        'section'  => 'BatanaWeb',
+		        'settings' => 'imagen_abajoizquierda',
+		 						
+		    )
+	    )
+	);
+
+
+		// Add setting
+	$wp_customize->add_setting( 'imagen_abajoderecha', array(
+		 'default'        => '',
+	) );
+
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+	    $wp_customize,
+		'imagen_abajoderecha',
+		    array(
+		        'label'    => __( 'Imagen Abajo Derecha' ),
+		        'section'  => 'BatanaWeb',
+		        'settings' => 'imagen_abajoderecha',
+		 						
+		    )
+	    )
+	);
+
+
+
 }
 add_action( 'customize_register', 'batanaweb_customize_register' );
 
@@ -53,3 +119,5 @@ function batanaweb_customize_preview_js() {
 	wp_enqueue_script( 'batanaweb-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'batanaweb_customize_preview_js' );
+
+
