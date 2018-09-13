@@ -1,23 +1,39 @@
-/*!
-Theme Name: Alpha
-Theme URI: http://underscores.me/
-Author: mager19
-Author URI: http://mager19.com
-Description: tema para alpha
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: alpha-theme
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+@charset "UTF-8";
+/*/*
+Theme Name: Batana
+Theme URI: http://understrap.com
+Author: Holger Koenemann
+Author URI: http://www.holgerkoenemann.de
+GitHub Theme URI: https://github.com/understrap/understrap
+Description: Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid starting point for your next theme project and WordPress website. Use it as starter theme or as a parent theme. It is up to you. Including Font Awesome support, built-in widget slider and much more you need for basic websites. IMPORTANT: All developer dependencies are not bundled with this install file. Just download the .zip, extract it and run "npm install" and "gulp copy-assets" inside the extracted /understrap folder.
+That downloads everything and moves it in place so that you can recompile your CSS and JS files;
+A developer version (with Gulp/node and Sass sources) is available on gitHub: https://github.com/understrap/understrap
+A child theme is available on Github, too: https://github.com/understrap/understrap-child;
+Version: 0.8.7
+License: UnderStrap WordPress Theme, Copyright 2013-2017 Holger Koenemann
+UnderStrap is distributed under the terms of the GNU GPL version 2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: understrap
+Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+UnderStrap is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 
-Alpha is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
+Resource Licenses:
+Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under CC BY 3.0.)
+Owl Carousel 2: http://www.owlcarousel.owlgraphic.com/ | https://github.com/smashingboxes/OwlCarousel2/blob/develop/LICENSE (Code licensed under MIT)
+and of course
+jQuery: https://jquery.org | (Code licensed under MIT)
+WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker | GNU GPL
+*/
+/*
+This file is just used to identify the theme in WordPress.
+The compiled CSS output can be found in /css/theme.css
+The SASS sources for it can be found in /sass/
+The dependencies can be found in /src/ after running "gulp copy-assets" terminal command
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+...and now go out and play!
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -382,3 +398,60 @@ embed, iframe, object { max-width: 100%; }
 .gallery-columns-9 .gallery-item { max-width: 11.11%; }
 
 .gallery-caption { display: block; }
+
+a, a:visited { color: #131313; }
+
+header { background-color: #fff; padding: 1em; }
+
+header ul { padding-top: 0.6em; }
+
+header ul li { display: inline-block; font-size: 1.2em; margin-right: 1em; }
+
+.menu-aux { text-align: right; }
+
+.with-background { background-repeat: no-repeat; background-size: cover; background-position: center; }
+
+.header--home { background-color: transparent; color: #fff; position: absolute; top: 0; left: 0; z-index: 1000; width: 100%; }
+
+.header--home ul li a { color: #fff; }
+
+.header__top { padding: 10em 0; }
+
+.header__left, .header__right { padding: 5em 0; }
+
+.content-area { max-width: 1140px; width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+/****************************woo******************************/
+.woocommerce .woocommerce-ordering { margin: 0 0 1em; }
+
+.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering { float: right; }
+
+.woocommerce .products ul, .woocommerce ul.products { margin: 0 3em 1em; padding: 0; list-style: none outside; clear: both; }
+
+.woocommerce .woocommerce-result-count { margin: 0 0 1em; }
+
+.woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count { float: left; }
+
+ul.products { text-align: center; }
+
+ul.products li a { color: #333333; margin-bottom: 1.6em; display: block; }
+
+.woocommerce ul.products li.product .onsale { top: 0; right: 0; left: auto; margin: -.5em -.5em 0 0; }
+
+.woocommerce span.onsale { min-height: 3.236em; min-width: 3.236em; padding: .202em; font-size: 1em; font-weight: 700; position: absolute; text-align: center; line-height: 3.236; top: -.5em; left: -.5em; margin: 0; border-radius: 100%; background-color: #77a464; color: #fff; font-size: .857em; z-index: 9; }
+
+.woocommerce nav.woocommerce-pagination { text-align: center; }
+
+.woocommerce nav.woocommerce-pagination ul { display: inline-block; white-space: nowrap; padding: 0; clear: both; border: 1px solid #d3ced2; border-right: 0; margin: 1px; }
+
+.woocommerce nav.woocommerce-pagination ul li { display: inline-block; border-right: 1px solid #d3ced2; padding: 0; margin: 0; float: left; display: inline; overflow: hidden; }
+
+.woocommerce nav.woocommerce-pagination ul li a { margin: 0; text-decoration: none; padding: 0; line-height: 1; font-size: 1em; font-weight: 400; padding: .5em; min-width: 1em; display: block; }
+
+.woocommerce nav.woocommerce-pagination ul li span.current { background: #ebe9eb; color: #8a7e88; margin: 0; text-decoration: none; padding: 0; line-height: 1; font-size: 1em; font-weight: 400; padding: .5em; min-width: 1em; display: block; }
+
+p.woocommerce-result-count { text-transform: uppercase; }
+
+h2.woocommerce-loop-product__title { margin-top: 2.2em; }
+
+.add-to-cart-container { display: none; }

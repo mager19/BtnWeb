@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package tema__base
+ * @package batanaWeb
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function tema__base_jetpack_setup() {
+function batanaweb_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'tema__base_infinite_scroll_render',
+		'render'    => 'batanaweb_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function tema__base_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'tema__base-style',
+			'stylesheet' => 'batanaweb-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function tema__base_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'tema__base_jetpack_setup' );
+add_action( 'after_setup_theme', 'batanaweb_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function tema__base_infinite_scroll_render() {
+function batanaweb_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

@@ -1,13 +1,21 @@
 {
-  "name": "batanaweb",
+  "name": "btnweb",
   "version": "1.0.0",
   "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mager19/BtnWeb.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mager19/BtnWeb/issues"
+  },
+  "homepage": "https://github.com/mager19/BtnWeb#readme",
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
