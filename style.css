@@ -399,6 +399,10 @@ embed, iframe, object { max-width: 100%; }
 
 .gallery-caption { display: block; }
 
+@font-face { font-family: old; src: url("fonts/OLDSSCH_.TTF"); font-weight: normal; }
+
+@font-face { font-family: questrial; src: url("fonts/Questrial-Regular.otf"); font-weight: normal; }
+
 a, a:visited { color: #131313; }
 
 header { background-color: #fff; padding: 1em; }
@@ -415,7 +419,7 @@ header ul li { display: inline-block; font-size: 1.2em; margin-right: 1em; }
 
 .header--home ul li a { color: #fff; }
 
-.header__top { padding: 10em 0; }
+.header__top { font-family: old; padding: 10em 0; }
 
 .header__left, .header__right { padding: 5em 0; }
 

@@ -2,6 +2,18 @@
 @import "_variables";
 @import "_mixins";
 
+@font-face {
+    font-family: old;  
+    src: url('fonts/OLDSSCH_.TTF');  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: questrial;  
+    src: url('fonts/Questrial-Regular.otf');  
+    font-weight: normal;  
+}
+
 a, a:visited{
 	color:$oscurouno;
 }
@@ -48,6 +60,7 @@ header{
 }
 
 .header__top{
+	font-family: old;
 	padding: 10em 0; 
 
 	

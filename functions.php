@@ -127,8 +127,6 @@ function batanaweb_scripts() {
 
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
 
-	// wp_enqueue_style( 'fontgoogle', 'https://fonts.googleapis.com/css?family=Catamaran:300,400,500,700,900|Yantramanav:300,400,500,700,900' );
-
 	// wp_enqueue_style( 'slickcss', get_template_directory_uri() . '/css/slick.css' );
 
 	// wp_enqueue_style( 'slicktheme', get_template_directory_uri() . '/css/slick-theme.css' );
