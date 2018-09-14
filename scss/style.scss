@@ -98,7 +98,25 @@ header{
 }
 
 .menu-aux{
+	padding-top: 1.5em;
 	text-align: right;
+	li{
+		margin-right: 1em;
+
+		a, a:visited{
+			color:$negro;
+
+			&:hover{
+				color:$coral;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.aux-sinpadding{
+		margin-right: 0;
+		padding: 0; 
+	}
 }
 
 .with-background{
