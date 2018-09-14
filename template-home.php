@@ -53,11 +53,6 @@ get_template_part('template-parts/header', 'home'); ?>
 					<h2 class="titulo_seccion">
 						PV / 18<br> DESTACADOS
 					</h2>
-					<div class="paginator">
-						<ul>
-							<li class="prev_c"></li>
-						</ul>
-					</div>
 					<div class="destacados__carrousel">
 						<?php $args = array( 'post_type' => 'product', 'tax_query' => array( array( 'taxonomy' => 'product_visibility', 'field' => 'name', 'terms' => 'featured', ), ), ); 
 							$loop = new WP_Query( $args ); 

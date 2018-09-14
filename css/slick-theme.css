@@ -23,12 +23,12 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 42%;
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -67,7 +67,7 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
 
     opacity: 1;
@@ -88,10 +88,6 @@
 }
 .slick-prev:before
 {
-    border:2px solid #D0D0D0;
-    border-radius: 50%;
-    padding: 5px 11px 8px 10px;
-    font-weight: 700;
     content: '←';
 }
 [dir='rtl'] .slick-prev:before
@@ -114,7 +110,7 @@
 }
 [dir='rtl'] .slick-next:before
 {   
-    border:1px solid #D0D0D0;
+  
     content: '<';
 }
 

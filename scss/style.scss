@@ -111,14 +111,14 @@ header{
 .titulo_seccion{
 	color:$negro;
 	font-family: old;
-	font-size: 1.2em;
+	font-size: 1em;
+	font-weight: 600;
 	line-height: 1.5em;
-	letter-spacing: 5px;
+	letter-spacing: 2px;
 	text-align: center;
 }
 
 .destacados__carrousel__item{
-	color:$negro;
 	font-family: old;
 	padding: 2em 1em;
 	text-align: center;
@@ -132,6 +132,7 @@ header{
 	}
 
 	.woocommerce-loop-product__title{
+		color:$negro;
 		font-size: 0.7em;
 		font-weight: 700;
 		letter-spacing: 5px;
@@ -141,24 +142,14 @@ header{
 	}
 
 	.woocommerce-Price-amount.amount{
+		color:$negro;
 		font-size: 0.9em;
 		font-weight: 700;
 	}
 
 } 
 
-.paginator{
-	position: absolute;
-    top: 50%;
-    left: -8%;
 
-    .prev_c{
-	    display: block;
-	    height: 31px;
-	    width: 31px;
-	    background: url('css/fonts/arrowleft.png') no-repeat;
-	   }
-}
 
 
 

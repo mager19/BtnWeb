@@ -5,10 +5,9 @@
   				speed: 2000,
 				dots: false,
 				infinite: true,
-				prevArrow:"<img class='a-left control-c prev slick-prev' src='../css/fonts/arrowleft.png'>",
-		    	slidesToShow: 5, 
+				slidesToShow: 5, 
 		  		slidesToScroll: 1,
-		  		arrows:false,
+		  		arrows:true,
 		  		pauseOnHover: true,
 		  		responsive: [
 		  			
