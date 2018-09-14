@@ -26,9 +26,14 @@ font-family: 'opensans', sans-serif;*/
 	padding: 4em 0;
 } 
 
+.content-area{
+	margin-top: 10%;
+}
+
 header{
 	background-color: $blanco;
 	padding: 1em;
+	height: 17em;
 
 	ul {
 		
@@ -36,10 +41,59 @@ header{
 
 		li{
 			display: inline-block;
-			font-size: 1.2em;
-			margin-right: 1em;
+			margin-right: 4em;
 		}
 	}
+
+	.site-branding{
+		padding: 2em;
+	}
+
+	#primary-menu{
+		padding-top: 2.2em;
+
+		li{
+			display: inline-block;
+			a, a:visited{
+				color:$negro;
+				font-family: old;
+				font-size: 0.8em;
+				font-weight: 600;
+				letter-spacing: 5px;
+
+				&:hover{
+					color:$coral;
+					text-decoration: none;
+				}
+			}
+
+			.sub-menu{
+				width: 80vw;
+				padding-top: 3em;
+				li{
+					display: inline-block;
+
+					.sub-menu{
+						left: 0%;
+						padding-top: 2em; 
+						li{
+							display: block;
+							float: none;
+							margin-bottom: 0.5em;
+							a{
+								font-size: 0.65em;
+								letter-spacing: 1px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.main-navigation ul ul {
+   		 box-shadow: none;
+   	}
 
 }
 
@@ -55,7 +109,6 @@ header{
 
 .header--home{
 	background-color: transparent;
-	color:#fff; 
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -63,7 +116,7 @@ header{
 	width: 100%;
 
 	ul li a{
-		color:#fff;
+		
 	}
 }
 

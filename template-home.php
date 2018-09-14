@@ -25,12 +25,12 @@ get_template_part('template-parts/header', 'home'); ?>
 			?>
 				<div class="col-md-12 with-background" style="background-image:url(<?php echo $imagen_superior; ?>);height: 90vh;">
 					<div class="header__top">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laboriosam alias eveniet aut consequuntur, rem ut non eius, voluptatum repellendus repudiandae odio quos enim nisi commodi corporis ipsam? In, quas.
 					</div>
 				</div>
 				<div class="col-md-8 with-background" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
 						<h1 class="titulos__home"><?php echo $texto_abajoizquierda; ?></h1>
+						<i class="fas fa-address-book"></i>
 					</div>	
 				</div>
 				<div class="col-md-4 with-background" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
