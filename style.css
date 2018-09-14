@@ -450,6 +450,8 @@ header .main-navigation ul ul { box-shadow: none; }
 
 .menu-aux .aux-sinpadding { margin-right: 0; padding: 0; }
 
+.menu-aux .menu-aux-user { margin-left: 2em; }
+
 .with-background { background-repeat: no-repeat; background-size: cover; background-position: center; }
 
 .header--home { background-color: transparent; position: absolute; top: 0; left: 0; z-index: 1000; width: 100%; }
