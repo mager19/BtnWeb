@@ -440,7 +440,17 @@ header #primary-menu li .sub-menu li .sub-menu li a { font-size: 0.65em; letter-
 
 header .main-navigation ul ul { box-shadow: none; }
 
-.menu-aux { text-align: right; }
+.menu-aux { padding-top: 1.5em; text-align: right; }
+
+.menu-aux li { margin-right: 1em; }
+
+.menu-aux li a, .menu-aux li a:visited { color: #000000; }
+
+.menu-aux li a:hover, .menu-aux li a:visited:hover { color: #ce9a90; text-decoration: none; }
+
+.menu-aux .aux-sinpadding { margin-right: 0; padding: 0; }
+
+.menu-aux .menu-aux-user { margin-left: 2em; }
 
 .with-background { background-repeat: no-repeat; background-size: cover; background-position: center; }
 
