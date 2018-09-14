@@ -403,9 +403,10 @@ embed, iframe, object { max-width: 100%; }
 
 a, a:visited { color: #131313; }
 
-@font-face { font-family: 'old'; src: url("../fonts/OldStyle1HPLHS.eot?#iefix") format("embedded-opentype"), url("../fonts/OldStyle1HPLHS.woff") format("woff"), url("../fonts/OldStyle1HPLHS.ttf") format("truetype"), url("../fonts/OldStyle1HPLHS.svg#OldStyle1HPLHS") format("svg"); font-weight: normal; font-style: normal; }
-
-.contenedor { padding: 4em 0; }
+/*font-family: 'questrial', sans-serif;
+font-family: 'rokkitt', serif;
+font-family: 'opensans', sans-serif;*/
+@font-face { font-family: 'old'; src: url("fonts/oldsh___-webfont.woff2") format("woff2"), url("fonts/oldsh___-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
 header { background-color: #fff; padding: 1em; }
 
@@ -445,11 +446,15 @@ header ul li { display: inline-block; font-size: 1.2em; margin-right: 1em; }
 .destacados__carrousel__item .woocommerce-Price-amount.amount { color: #000000; font-size: 0.9em; font-weight: 700; }
 
 /****************************woo******************************/
+nav.woocommerce-breadcrumb { display: none; }
+
+header.woocommerce-products-header { display: none; }
+
 .woocommerce .woocommerce-ordering { margin: 0 0 1em; }
 
 .woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering { float: right; }
 
-.woocommerce .products ul, .woocommerce ul.products { margin: 0 3em 1em; padding: 0; list-style: none outside; clear: both; }
+.woocommerce .products ul, .woocommerce ul.products { margin: 0 3em 1em; padding: 0; list-style: none outside; clear: both; padding-top: 4em; }
 
 .woocommerce .woocommerce-result-count { margin: 0 0 1em; }
 
@@ -473,7 +478,9 @@ ul.products li a { color: #333333; margin-bottom: 1.6em; display: block; }
 
 .woocommerce nav.woocommerce-pagination ul li span.current { background: #ebe9eb; color: #8a7e88; margin: 0; text-decoration: none; padding: 0; line-height: 1; font-size: 1em; font-weight: 400; padding: .5em; min-width: 1em; display: block; }
 
-p.woocommerce-result-count { text-transform: uppercase; }
+p.woocommerce-result-count { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.9em; }
+
+select.orderby.custom-select { font-family: old; text-transform: uppercase; letter-spacing: 3px; font-size: 0.9em; border: none; margin-top: -9px; }
 
 h2.woocommerce-loop-product__title { margin-top: 2.2em; }
 
