@@ -46,6 +46,35 @@ get_template_part('template-parts/header', 'home'); ?>
 		</div>
 	</div>
 
+	<div class="container contenedor">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="home__destacados">
+					<h2 class="titulo_seccion">
+						PV / 18<br> DESTACADOS
+					</h2>
+					<div class="destacados__carrousel">
+						<?php $args = array( 'post_type' => 'product', 'tax_query' => array( array( 'taxonomy' => 'product_visibility', 'field' => 'name', 'terms' => 'featured', ), ), ); 
+							$loop = new WP_Query( $args ); 
+
+							if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+							<div class="destacados__carrousel__item">
+								<?php wc_get_template_part( 'content', 'product' ); ?>
+							</div>
+							
+							<?php endwhile; ?>
+							<!-- post navigation -->
+							<?php else: ?>
+							<!-- no posts found -->
+							<?php endif; ?>
+							<?php wp_reset_postdata(); ?>
+		 				</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
 <?php
 
 get_footer();
