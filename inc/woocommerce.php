@@ -96,7 +96,7 @@ add_filter( 'woocommerce_product_thumbnails_columns', 'batanaweb_woocommerce_thu
  * @return integer products per row.
  */
 function batanaweb_woocommerce_loop_columns() {
-	return 4;
+	return 3;
 }
 add_filter( 'loop_shop_columns', 'batanaweb_woocommerce_loop_columns' );
 

@@ -1,27 +1,26 @@
+@import "_underscore";
+@import "_variables";
+@import "_mixins"; 
+
 @import url('https://fonts.googleapis.com/css?family=Questrial|Rokkitt');
 a, a:visited{
 	color:$oscurouno;
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-font-family: 'questrial', sans-serif;
+/*font-family: 'questrial', sans-serif;
 font-family: 'rokkitt', serif;
-font-family: 'opensans', sans-serif;
+font-family: 'opensans', sans-serif;*/
 
-@import "_underscore";
-@import "_variables";
-@import "_mixins";
 
 
 @font-face {
-  font-family: 'old';
-  src: url('../fonts/OldStyle1HPLHS.eot?#iefix') format('embedded-opentype'),  
-  url('../fonts/OldStyle1HPLHS.woff') format('woff'), 
-  url('../fonts/OldStyle1HPLHS.ttf')  format('truetype'), 
-  url('../fonts/OldStyle1HPLHS.svg#OldStyle1HPLHS') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+    font-family: 'old';
+    src: url('fonts/oldsh___-webfont.woff2') format('woff2'),
+         url('fonts/oldsh___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 header{
 	background-color: $blanco;
@@ -84,7 +83,12 @@ header{
 }
 
 /****************************woo******************************/
-
+nav.woocommerce-breadcrumb {
+    display: none;
+}
+header.woocommerce-products-header {
+    display: none;
+}
 .woocommerce .woocommerce-ordering {
     margin: 0 0 1em;
 }
@@ -96,6 +100,7 @@ header{
     padding: 0;
     list-style: none outside;
     clear: both;
+        padding-top: 4em;
 }
 .woocommerce .woocommerce-result-count {
     margin: 0 0 1em;
@@ -185,6 +190,17 @@ ul.products{
 }
 p.woocommerce-result-count {
     text-transform: uppercase;
+        font-family: 'old';
+            letter-spacing: 3px;
+    font-size: 0.9em;
+}
+select.orderby.custom-select {
+    font-family: old;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9em;
+    border: none;
+    margin-top:-9px;
 }
 h2.woocommerce-loop-product__title {
     margin-top: 2.2em;

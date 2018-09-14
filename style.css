@@ -63,6 +63,8 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 /* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
+@import url("https://fonts.googleapis.com/css?family=Questrial|Rokkitt");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 
 /* Sections ========================================================================== */
@@ -399,11 +401,12 @@ embed, iframe, object { max-width: 100%; }
 
 .gallery-caption { display: block; }
 
-@font-face { font-family: old; src: url("fonts/OLDSSCH_.TTF"); font-weight: normal; }
-
-@font-face { font-family: questrial; src: url("fonts/Questrial-Regular.otf"); font-weight: normal; }
-
 a, a:visited { color: #131313; }
+
+/*font-family: 'questrial', sans-serif;
+font-family: 'rokkitt', serif;
+font-family: 'opensans', sans-serif;*/
+@font-face { font-family: 'old'; src: url("fonts/oldsh___-webfont.woff2") format("woff2"), url("fonts/oldsh___-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
 header { background-color: #fff; padding: 1em; }
 
@@ -426,11 +429,15 @@ header ul li { display: inline-block; font-size: 1.2em; margin-right: 1em; }
 .content-area { max-width: 1140px; width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
 
 /****************************woo******************************/
+nav.woocommerce-breadcrumb { display: none; }
+
+header.woocommerce-products-header { display: none; }
+
 .woocommerce .woocommerce-ordering { margin: 0 0 1em; }
 
 .woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering { float: right; }
 
-.woocommerce .products ul, .woocommerce ul.products { margin: 0 3em 1em; padding: 0; list-style: none outside; clear: both; }
+.woocommerce .products ul, .woocommerce ul.products { margin: 0 3em 1em; padding: 0; list-style: none outside; clear: both; padding-top: 4em; }
 
 .woocommerce .woocommerce-result-count { margin: 0 0 1em; }
 
@@ -454,7 +461,9 @@ ul.products li a { color: #333333; margin-bottom: 1.6em; display: block; }
 
 .woocommerce nav.woocommerce-pagination ul li span.current { background: #ebe9eb; color: #8a7e88; margin: 0; text-decoration: none; padding: 0; line-height: 1; font-size: 1em; font-weight: 400; padding: .5em; min-width: 1em; display: block; }
 
-p.woocommerce-result-count { text-transform: uppercase; }
+p.woocommerce-result-count { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.9em; }
+
+select.orderby.custom-select { font-family: old; text-transform: uppercase; letter-spacing: 3px; font-size: 0.9em; border: none; margin-top: -9px; }
 
 h2.woocommerce-loop-product__title { margin-top: 2.2em; }
 
