@@ -435,7 +435,7 @@ header ul li { display: inline-block; font-size: 1.2em; margin-right: 1em; }
 .content-area { max-width: 1140px; width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
 
 /*Home*/
-.titulo_seccion { color: #000000; font-family: old; font-size: 1em; font-weight: 600; line-height: 1.5em; letter-spacing: 2px; text-align: center; }
+.titulo_seccion { color: #000000; font-family: old; font-size: 1em; font-weight: 600; line-height: 1.5em; letter-spacing: 4px; text-align: center; }
 
 .destacados__carrousel { margin-bottom: 5em; }
 
