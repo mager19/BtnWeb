@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="site">
 	<header class="header--home">
 		<div class="container-fluid">
@@ -60,4 +61,8 @@
 			</div>
 		</div>
 	</header><!-- #masthead -->
-
+<?php 
+	if(is_woocommerce()){ ?>
+		<div class="container">
+		<div  class="woo row">
+<?php } ?>
