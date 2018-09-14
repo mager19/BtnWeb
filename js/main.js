@@ -30,5 +30,14 @@
 		    },
 		    	]
 		});
+
+		jQuery('.menu-hover').hover(function(){
+			jQuery('header').css('background-color', "#fff");
+		});
+
+		jQuery('.menu-hover').mouseleave(function(){
+			jQuery('header').css('background-color', "transparent");
+		});
+
 		
 	});
