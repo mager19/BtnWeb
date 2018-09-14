@@ -27,7 +27,9 @@
 			<div class="row">
 				<div class="col-md-2">
 					<div class="site-branding">
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">	<?php the_custom_logo();?>
+						</a>
+						<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1> -->
 					</div><!-- .site-branding -->
 				</div>
 				
@@ -53,6 +55,8 @@
 						?>
 					</nav><!-- #site-navigation -->
 				</div>
+
+				
 			</div>
 		</div>
 	</header><!-- #masthead -->

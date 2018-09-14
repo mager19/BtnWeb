@@ -22,9 +22,18 @@ font-family: 'opensans', sans-serif;*/
 
 }
 
+.contenedor{
+	padding: 4em 0;
+} 
+
+.content-area{
+	margin-top: 10%;
+}
+
 header{
 	background-color: $blanco;
 	padding: 1em;
+	height: 17em;
 
 	ul {
 		
@@ -32,15 +41,86 @@ header{
 
 		li{
 			display: inline-block;
-			font-size: 1.2em;
-			margin-right: 1em;
+			margin-right: 4em;
 		}
 	}
+
+	.site-branding{
+		padding: 2em;
+	}
+
+	#primary-menu{
+		padding-top: 2.2em;
+
+		li{
+			display: inline-block;
+			a, a:visited{
+				color:$negro;
+				font-family: old;
+				font-size: 0.8em;
+				font-weight: 600;
+				letter-spacing: 5px;
+
+				&:hover{
+					color:$coral;
+					text-decoration: none;
+				}
+			}
+
+			.sub-menu{
+				width: 80vw;
+				padding-top: 3em;
+				li{
+					display: inline-block;
+
+					.sub-menu{
+						left: 0%;
+						padding-top: 2em; 
+						li{
+							display: block;
+							float: none;
+							margin-bottom: 0.5em;
+							a{
+								font-size: 0.65em;
+								letter-spacing: 1px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.main-navigation ul ul {
+   		 box-shadow: none;
+   	}
 
 }
 
 .menu-aux{
+	padding-top: 1.5em;
 	text-align: right;
+	li{
+		margin-right: 1em;
+
+		a, a:visited{
+			color:$negro;
+
+			&:hover{
+				color:$coral;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.aux-sinpadding{
+		margin-right: 0;
+		padding: 0; 
+	}
+
+	.menu-aux-user{
+		margin-left: 2em;
+	} 
 }
 
 .with-background{
@@ -51,7 +131,6 @@ header{
 
 .header--home{
 	background-color: transparent;
-	color:#fff; 
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -59,7 +138,7 @@ header{
 	width: 100%;
 
 	ul li a{
-		color:#fff;
+		
 	}
 }
 
@@ -73,6 +152,23 @@ header{
 .header__left, .header__right{
 	padding: 5em 0;
 }
+
+.header__left, .header__right{
+	font-family: old;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+	
+	.titulos__home{
+		color:$blanco;
+		font-size: 2em;
+		letter-spacing: 10px;
+		padding: 80px;
+		
+	}
+}
+
 /*.content-area {
     max-width: 1140px;
     width: 100%;
@@ -81,6 +177,139 @@ header{
     margin-right: auto;
     margin-left: auto;
 }*/
+
+/*Home*/
+
+.titulo_seccion{
+	color:$negro;
+	font-family: old;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1.5em;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+.destacados__carrousel{
+	margin-bottom: 5em;
+}
+
+.destacados__carrousel__item{
+	font-family: old;
+	padding: 2em 1em;
+	text-align: center;
+
+	img{
+		padding: 0 1em;
+	}
+
+	li{
+		list-style: none;
+	}
+
+	.woocommerce-loop-product__title{
+		color:$negro;
+		font-size: 0.7em;
+		font-weight: 700;
+		letter-spacing: 5px;
+		line-height: 1.4em;
+		margin-top: 4em;
+		text-transform: uppercase;
+	}
+
+	.woocommerce-Price-amount.amount{
+		color:$negro;
+		font-size: 0.9em;
+		font-weight: 700;
+	}
+
+} 
+
+
+/*footer*/
+footer{
+	border-top:2px solid #F5F5F5;
+	padding: 2em;
+	padding-top: 4em;
+
+	.footer__item{
+
+		h3{
+			color:$negro;
+			font-size: 0.9em;
+			font-family: old;
+			font-weight: 800;
+			letter-spacing: 3px;
+			margin-bottom: 1.5em;
+		}
+
+		ul{
+			li{
+				display: block;
+				float:none;
+				margin-bottom: 0.9em;
+
+				a, a:visited{
+					font-family: 'Questrial';
+					font-size: 0.8em;
+					font-weight: 500;
+					letter-spacing: 1px;
+					color:#bbbbbb;
+					text-transform: uppercase;
+
+					i{
+						color:$negro;
+						font-size: 2em;
+					}
+				}
+			}
+		}
+
+		.socialFooter{
+			ul{
+				li{
+					display: inline-block;
+					margin-right: 1em;
+				}
+			}
+		}
+	}
+
+	.newsletter{
+		input{
+			border-color:#BBBBBB;
+			border-radius: none;
+			padding: 1em;
+			width: 80%;
+		}
+
+		button{
+			background-color: $negro;
+			border:none;
+			color:$blanco;
+			font-family: old;
+			font-size: 0.9em;
+			letter-spacing: 3px;
+			padding: 1em;
+			width: 80%;
+			margin-top: 1em;
+		}
+	}
+
+	.copyright h4{
+		font-family: 'Questrial';
+		font-size: 0.6em;
+		font-weight: 500;
+		letter-spacing: 1px;
+		color:#bbbbbb;
+		text-transform: uppercase;
+		margin-top: 10em;
+	}
+}
+
+
+
+
 
 /****************************woo******************************/
 nav.woocommerce-breadcrumb {

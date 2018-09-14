@@ -46,6 +46,9 @@ if ( ! function_exists( 'batanaweb_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'batanaweb' ),
 			'menu-aux' => esc_html__( 'Menu Auxiliar', 'batanaweb' ),
+			'menu-nosotros' => esc_html__( 'Menú Nosotros', 'batanaweb'),
+			'menu-ayuda' => esc_html__( 'Menú Ayuda', 'batanaweb'),
+			'menu-socialFooter' => esc_html__( 'Menú Social Footer', 'batanaweb'),
 		) );
 
 		/*
@@ -127,9 +130,9 @@ function batanaweb_scripts() {
 
 	wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
 
-	// wp_enqueue_style( 'slickcss', get_template_directory_uri() . '/css/slick.css' );
+	wp_enqueue_style( 'slickcss', get_template_directory_uri() . '/css/slick.css' );
 
-	// wp_enqueue_style( 'slicktheme', get_template_directory_uri() . '/css/slick-theme.css' );
+	wp_enqueue_style( 'slicktheme', get_template_directory_uri() . '/css/slick-theme.css' );
 
 	wp_enqueue_style( 'woocommerce', get_template_directory_uri() . '/css/woocommerce.css' );
 		
@@ -137,7 +140,7 @@ function batanaweb_scripts() {
 
 	wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), true );
 
-	// wp_enqueue_script( 'slickjs', get_template_directory_uri() . '/js/slick.min.js' );
+	wp_enqueue_script( 'slickjs', get_template_directory_uri() . '/js/slick.min.js' );
 
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/js/main.js' );
 
@@ -184,3 +187,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
