@@ -30,12 +30,12 @@ get_template_part('template-parts/header', 'home'); ?>
 				</div>
 				<div class="col-md-8 with-background" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
-						<h3><?php echo $texto_abajoizquierda; ?></h3>
+						<h1 class="titulos__home"><?php echo $texto_abajoizquierda; ?></h1>
 					</div>	
 				</div>
 				<div class="col-md-4 with-background" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
 					<div class="header__right">
-						<h3><?php echo $texto_abajoderecha; ?></h3>
+						<h2 class="titulos__home"><?php echo $texto_abajoderecha; ?></h2>
 					</div>
 				</div>
 
