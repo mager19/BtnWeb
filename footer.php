@@ -41,8 +41,21 @@
 							?>
 						</nav>
 					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="footer__item">
+						<h3>TIENDA ONLINE</h3>
+						<nav id="site-navigation" class="main-navigation">
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'menu-tiendaOnline',
+									'menu_id'        => 'tiendaOnline-menu',
+								) );
+							?>
+						</nav>
+					</div>
 				</div>	
-				<div class="col-md-5">
+				<div class="col-md-3">
 					<div class="footer__item">
 						<h3>ENCUENTRANOS EN:</h3>
 						<nav id="site-navigation" class="main-navigation socialFooter">
