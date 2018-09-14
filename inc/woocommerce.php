@@ -159,7 +159,8 @@ if ( ! function_exists( 'batanaweb_woocommerce_wrapper_before' ) ) {
 	 */
 	function batanaweb_woocommerce_wrapper_before() {
 		?>
-		<div id="primary" class="content-area">
+
+		<div id="primary " class="content-area">
 			<main id="main" class="site-main" role="main">
 			<?php
 	}
