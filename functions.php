@@ -46,6 +46,9 @@ if ( ! function_exists( 'batanaweb_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'batanaweb' ),
 			'menu-aux' => esc_html__( 'Menu Auxiliar', 'batanaweb' ),
+			'menu-nosotros' => esc_html__( 'Menú Nosotros', 'batanaweb'),
+			'menu-ayuda' => esc_html__( 'Menú Ayuda', 'batanaweb'),
+			'menu-socialFooter' => esc_html__( 'Menú Social Footer', 'batanaweb'),
 		) );
 
 		/*

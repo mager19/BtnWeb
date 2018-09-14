@@ -85,7 +85,7 @@ header{
 	justify-content: center;
 	height: 75vh;
 	
-	h3{
+	.titulos__home{
 		color:$blanco;
 		font-size: 2em;
 		letter-spacing: 10px;
@@ -113,6 +113,10 @@ header{
 	line-height: 1.5em;
 	letter-spacing: 2px;
 	text-align: center;
+}
+
+.destacados__carrousel{
+	margin-bottom: 5em;
 }
 
 .destacados__carrousel__item{
@@ -147,6 +151,86 @@ header{
 } 
 
 
+/*footer*/
+footer{
+	border-top:2px solid #F5F5F5;
+	padding: 2em;
+	padding-top: 4em;
+
+	.footer__item{
+
+		h3{
+			color:$negro;
+			font-size: 0.9em;
+			font-family: old;
+			font-weight: 800;
+			letter-spacing: 3px;
+			margin-bottom: 1.5em;
+		}
+
+		ul{
+			li{
+				display: block;
+				float:none;
+				margin-bottom: 0.9em;
+
+				a, a:visited{
+					font-family: 'Questrial';
+					font-size: 0.8em;
+					font-weight: 500;
+					letter-spacing: 1px;
+					color:#bbbbbb;
+					text-transform: uppercase;
+
+					i{
+						color:$negro;
+						font-size: 2em;
+					}
+				}
+			}
+		}
+
+		.socialFooter{
+			ul{
+				li{
+					display: inline-block;
+					margin-right: 1em;
+				}
+			}
+		}
+	}
+
+	.newsletter{
+		input{
+			border-color:#BBBBBB;
+			border-radius: none;
+			padding: 1em;
+			width: 80%;
+		}
+
+		button{
+			background-color: $negro;
+			border:none;
+			color:$blanco;
+			font-family: old;
+			font-size: 0.9em;
+			letter-spacing: 3px;
+			padding: 1em;
+			width: 80%;
+			margin-top: 1em;
+		}
+	}
+
+	.copyright h4{
+		font-family: 'Questrial';
+		font-size: 0.6em;
+		font-weight: 500;
+		letter-spacing: 1px;
+		color:#bbbbbb;
+		text-transform: uppercase;
+		margin-top: 10em;
+	}
+}
 
 
 

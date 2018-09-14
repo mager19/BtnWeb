@@ -14,22 +14,66 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
+				<div class="col-md-2">
+					<div class="footer__item">
+						<h3>NOSOTROS</h3>
+						<nav id="site-navigation" class="main-navigation">
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'menu-nosotros',
+									'menu_id'        => 'nosotros-menu',
+								) );
+							?>
+						</nav><!-- #site-navigation -->
+					</div>
+				</div>	
+				<div class="col-md-2">
+					<div class="footer__item">
+						<h3>AYUDA</h3>
+						<nav id="site-navigation" class="main-navigation">
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'menu-ayuda',
+									'menu_id'        => 'ayuda-menu',
+								) );
+							?>
+						</nav>
+					</div>
+				</div>	
+				<div class="col-md-5">
+					<div class="footer__item">
+						<h3>ENCUENTRANOS EN:</h3>
+						<nav id="site-navigation" class="main-navigation socialFooter">
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'menu-socialFooter',
+									'menu_id'        => 'socialFooter-menu',
+								) );
+							?>
+						</nav><!-- #site-navigation -->
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer__item">
+						<h3>NEWSLETTER</h3>
+						<nav id="site-navigation" class="main-navigation socialFooter">
+							<ul>
+								<li><a href="#">SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES</a></li>
+							</ul>
+						</nav>
+
+						<form action="#" class="newsletter">
+							<input type="text" placeholder="Introduce tu email">
+							<button>SUSCRIBETE</button>
+						</form>
+					</div>
+				</div>
 				<div class="col-md-12">
-					<div class="site-info">
-						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'batanaweb' ) ); ?>">
-							<?php
-							/* translators: %s: CMS name, i.e. WordPress. */
-							printf( esc_html__( 'Proudly powered by %s', 'batanaweb' ), 'WordPress' );
-							?>
-						</a>
-						<span class="sep"> | </span>
-							<?php
-							/* translators: 1: Theme name, 2: Theme author. */
-							printf( esc_html__( 'Theme: %1$s by %2$s.', 'batanaweb' ), 'batanaweb', '<a href="http://underscores.me/">Underscores.me</a>' );
-							?>
-					</div><!-- .site-info -->
+					<div class="copyright">
+						<h4>COPYRIGHT @ 2018 BATANA</h4>
+					</div>
 				</div>
 			</div>
 		</div>
