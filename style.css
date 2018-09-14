@@ -408,6 +408,8 @@ font-family: 'rokkitt', serif;
 font-family: 'opensans', sans-serif;*/
 @font-face { font-family: 'old'; src: url("fonts/oldsh___-webfont.woff2") format("woff2"), url("fonts/oldsh___-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
+.contenedor { padding: 4em 0; }
+
 header { background-color: #fff; padding: 1em; }
 
 header ul { padding-top: 0.6em; }
