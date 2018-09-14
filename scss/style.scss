@@ -98,7 +98,15 @@ header{
 }
 
 .menu-aux{
+	padding-top: 1.5em;
 	text-align: right;
+	li{
+		margin-right: 1em;
+
+		a{
+			color:$negro;
+		}
+	}
 }
 
 .with-background{

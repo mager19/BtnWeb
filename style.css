@@ -440,7 +440,11 @@ header #primary-menu li .sub-menu li .sub-menu li a { font-size: 0.65em; letter-
 
 header .main-navigation ul ul { box-shadow: none; }
 
-.menu-aux { text-align: right; }
+.menu-aux { padding-top: 1.5em; text-align: right; }
+
+.menu-aux li { margin-right: 1em; }
+
+.menu-aux li a { color: #000000; }
 
 .with-background { background-repeat: no-repeat; background-size: cover; background-position: center; }
 
