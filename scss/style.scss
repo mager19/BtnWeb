@@ -332,7 +332,7 @@ footer{
 
 	p{
 		color:$negro;
-		font-family: 'rokkitt', serif;
+		font-family: 'questrial', sans-serif;
 		font-weight: 500;
 		font-size: 0.9em;
 		letter-spacing: 2px;
@@ -340,6 +340,10 @@ footer{
 
 		&:first-child{
 			padding-top: 2em;
+		}
+
+		strong{
+			font-family: old;
 		}
 	}
 }
