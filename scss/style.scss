@@ -314,6 +314,38 @@ footer{
     margin-bottom: 60px;
 }
 
+/*Content page*/
+
+.title__page{
+	border-bottom:2px solid #F5F5F5;;
+	color:$coral;
+	font-family: old;
+	font-size: 1.3em;
+	letter-spacing: 7px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 3em;
+}
+
+.contenido__page{
+	padding-top: 4em;
+
+	p{
+		color:$negro;
+		font-family: 'rokkitt', serif;
+		font-weight: 500;
+		font-size: 0.9em;
+		letter-spacing: 2px;
+		padding: 0 3em;
+
+		&:first-child{
+			padding-top: 2em;
+		}
+	}
+}
+
+
+
 
 /****************************woo******************************/
 nav.woocommerce-breadcrumb {
