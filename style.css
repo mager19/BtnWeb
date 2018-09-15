@@ -511,11 +511,13 @@ footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 
 /*Content page*/
 .title__page { border-bottom: 2px solid #F5F5F5; color: #ce9a90; font-family: old; font-size: 1.3em; letter-spacing: 7px; text-align: center; text-transform: uppercase; padding-bottom: 3em; }
 
-.contenido__page { padding-top: 2em; }
+.contenido__page { padding-top: 4em; }
 
-.contenido__page p { color: #000000; font-family: 'rokkitt', serif; font-weight: 500; font-size: 0.9em; letter-spacing: 2px; padding: 0 3em; }
+.contenido__page p { color: #000000; font-family: 'questrial', sans-serif; font-weight: 500; font-size: 0.9em; letter-spacing: 2px; padding: 0 3em; }
 
 .contenido__page p:first-child { padding-top: 2em; }
+
+.contenido__page p strong { font-family: old; }
 
 /****************************woo******************************/
 nav.woocommerce-breadcrumb { display: none; }
