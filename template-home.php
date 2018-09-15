@@ -30,7 +30,6 @@ get_template_part('template-parts/header', 'home'); ?>
 				<div class="col-md-8 with-background" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
 						<h1 class="titulos__home"><?php echo $texto_abajoizquierda; ?></h1>
-						<i class="fas fa-address-book"></i>
 					</div>	
 				</div>
 				<div class="col-md-4 with-background" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
