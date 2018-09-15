@@ -10,7 +10,11 @@
  */
 
 ?>
-
+<?php 
+	if(is_woocommerce()){ ?>
+		</div>
+		</div>
+<?php } ?>
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
