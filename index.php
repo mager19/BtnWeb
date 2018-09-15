@@ -15,43 +15,39 @@
 get_header();
 ?>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-
-					<?php
-					if ( have_posts() ) :
-
-						if ( is_home() && ! is_front_page() ) :
-							?>
-							<?php single_post_title(); 
-						endif;
-
-						/* Start the Loop */
-						while ( have_posts() ) :
-							the_post();
-
-							/*
-							 * Include the Post-Type-specific template for the content.
-							 * If you want to override this in a child theme, then include a file
-							 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-							 */
-							get_template_part( 'template-parts/content', get_post_type() );
-
-						endwhile;
-
-						the_posts_navigation();
-
-					else :
-
-						get_template_part( 'template-parts/content', 'none' );
-
-					endif;
-					?>
-				</div>
-			</div><!-- #main -->
-		</div><!-- #primary -->
+	<div class="container-fluid contenedor-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="title__page">NEWS</h1>
+					<div class="contenido__page">
+						<div class="news__items">			
+						<?php 
+						if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+							<article>
+								<div class="row">
+									
+									<div class="col-md-6">
+										<h2><?php the_title(); ?></h2>
+										<?php the_content(); ?>
+										<a href="<?php the_permalink(); ?>">VER MÁS</a>
+									</div>	
+									<div class="col-md-6">
+										<?php the_post_thumbnail( $size = 'post-thumbnail' ); ?>
+									</div>
+				
+								</div>
+							</article>
+						<!-- post -->
+						<?php endwhile; ?>
+						<!-- post navigation -->
+						<?php else: ?>
+						<!-- no posts found -->
+						<?php endif; ?>		
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
 
 <?php
-get_sidebar();
 get_footer();

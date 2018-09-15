@@ -42,5 +42,8 @@
 			jQuery("header").height(_altura);
 		});
 
+
+		jQuery('.news__items>article:nth-child(2) div:first-child').addClass('order-2');
+
 		
 	});
