@@ -269,3 +269,118 @@ if ( ! function_exists( 'batanaweb_woocommerce_header_cart' ) ) {
 		<?php
 	}
 }
+
+
+
+/*********************/
+
+//adding new tab//
+add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab' );
+function woo_new_product_tab( $tabs ) {
+	
+	// Adds the new tab
+	
+	$tabs['detalles'] = array(
+		'title' 	=> __( 'Detalles', 'woocommerce' ),
+		'priority' 	=> 50,
+		'callback' 	=> 'woo_new_product_tab_content'
+	);
+
+	return $tabs;
+
+}
+function woo_new_product_tab_content() {
+	// The new tab content
+	echo '<h2>'.__( 'Detalles', 'woocommerce' ).'</h2>';
+    echo get_field('detalles', $post_id);
+	
+}
+	
+add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab2' );
+function woo_new_product_tab2( $tabs ) {
+	
+	// Adds the new tab
+	
+	$tabs['cuidados'] = array(
+		'title' 	=> __( 'Cuidados', 'woocommerce' ),
+		'priority' 	=> 50,
+		'callback' 	=> 'woo_new_product_tab_content2'
+	);
+
+	return $tabs;
+
+}
+function woo_new_product_tab_content2() {
+	// The new tab content
+	echo '<h2>'.__( 'Cuidados', 'woocommerce' ).'</h2>';
+    echo get_field('cuidados', $post_id);
+	
+}
+
+add_action( 'woocommerce_product_meta_end', 'product_last_information' );
+
+function product_last_information() {
+ //echo '<h2>'.__( 'Tallas', 'woocommerce' ).'</h2>';
+echo '<div class="mt-3 info">';
+
+if(get_field('disponible', $post_id)){
+echo '
+<h5>
+  <a href="#" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible', 'woocommerce' ).'</a> </h5>
+
+<div style="display: none;" class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">'
+.do_shortcode(get_field('disponible', $post_id)).
+      '</div>
+      
+    </div>
+  </div>
+</div>
+';
+}
+if(get_field('guia_de_tallas', $post_id)){
+echo '
+<h5>
+  <a href="#" class="color-white" data-toggle="modal" data-target="#tallasModal">'. __( 'Guia de tallas', 'woocommerce' ). '</a> </h5>
+
+<div style="display: none;" class="modal fade" id="tallasModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body"><center><h3>Guia de tallas</h3></center>'
+.do_shortcode(get_field('guia_de_tallas', $post_id)).
+      '</div>
+      
+    </div>
+  </div>
+</div>
+';
+}
+if(get_field('envios', $post_id)){
+echo '<h5>
+  <a href="'.get_field('envios', $post_id).'" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Envios', 'woocommerce' ).'</a> </h5>';
+}
+if(get_field('cambios_y_devoluciones', $post_id)){
+echo '<h5>
+  <a href="'.get_field('cambios_y_devoluciones', $post_id).'" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Cambios y devoluciones', 'woocommerce' ).'</a> </h5>';
+}
+if(get_field('descripcion_y_cuidados', $post_id)){
+echo '<h5>
+  <a href="'.get_field('descripcion_y_cuidados', $post_id).'" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Descripción y cuidados', 'woocommerce' ).'</a> </h5>';
+}
+echo '</div>';
+ //echo get_field('guia_de_tallas', $post_id);
+}
