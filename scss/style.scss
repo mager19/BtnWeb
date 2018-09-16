@@ -378,10 +378,6 @@ footer{
 
 		}
 
-		img{
-			padding: 0 3em;
-		}
-
 		a, a:visited{	
 			color:$negro; 
 			display: block;
@@ -395,7 +391,19 @@ footer{
 
 }
 
+.article__single{
+	padding-top: 4em;
+	padding-bottom: 0em!important;
 
+	img{
+		padding-bottom: 4em;
+	}
+
+	p{
+		padding-right: 0!important;
+		padding-top: 2em!important;
+	}
+}
 
 
 

@@ -530,9 +530,13 @@ footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 
 
 .news__items article p { font-family: 'questrial'; line-height: 2em; padding-left: 0; padding-right: 6em; }
 
-.news__items article img { padding: 0 3em; }
-
 .news__items article a, .news__items article a:visited { color: #000000; display: block; font-family: 'old'; font-size: 1.2em; letter-spacing: 5px; text-transform: uppercase; margin-top: 2em; }
+
+.article__single { padding-top: 4em; padding-bottom: 0em !important; }
+
+.article__single img { padding-bottom: 4em; }
+
+.article__single p { padding-right: 0 !important; padding-top: 2em !important; }
 
 /****************************woo******************************/
 nav.woocommerce-breadcrumb { display: none; }
