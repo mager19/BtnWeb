@@ -21,6 +21,9 @@ get_template_part('template-parts/header', 'home'); ?>
 				$imagen_abajoderecha = get_theme_mod( 'imagen_abajoderecha' );
 				$texto_abajoizquierda = get_theme_mod( 'texto_abajoizquierda' );
 				$texto_abajoderecha = get_theme_mod( 'texto_abajoderecha' );
+				$enlace_abajoizquierda = get_theme_mod( 'enlace_abajoizquierda' );
+				$enlace_abajoderecha = get_theme_mod( 'enlace_abajoderecha' );
+				
 
 			?>
 				<div class="col-md-12 with-background" style="background-image:url(<?php echo $imagen_superior; ?>);height: 90vh;">
@@ -29,12 +32,12 @@ get_template_part('template-parts/header', 'home'); ?>
 				</div>
 				<div class="col-md-8 with-background" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
-						<h1 class="titulos__home"><?php echo $texto_abajoizquierda; ?></h1>
+						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
 					</div>	
 				</div>
 				<div class="col-md-4 with-background" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
 					<div class="header__right">
-						<h2 class="titulos__home"><?php echo $texto_abajoderecha; ?></h2>
+						<h2 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoderecha); ?>"><?php echo $texto_abajoderecha; ?></a></h2>
 					</div>
 				</div>
 

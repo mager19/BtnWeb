@@ -30,6 +30,7 @@
 		    },
 		    	]
 		});
+		
 		var _altura= jQuery("header").height();
 		jQuery('.menu-hover').hover(function(){
 			jQuery('header').css('background-color', "#fff");
