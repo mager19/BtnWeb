@@ -88,6 +88,24 @@ function batanaweb_customize_register( $wp_customize ) {
 	    )
 	);
 
+	// Add setting
+	$wp_customize->add_setting( 'enlace_abajoizquierda', array(
+		 'default'        => '',
+	) );
+
+	$wp_customize->add_control(new WP_Customize_Control(
+	        $wp_customize,
+	        'enlace_abajoizquierda',
+	        array(
+	            'label'          => __( 'Enlace Imagen izquierda' ),
+	            'section'        => 'BatanaWeb',
+	            'settings'       => 'enlace_abajoizquierda',
+	            'type'           => 'text',
+	            
+	        )
+	    )
+	);
+
 
 		// Add setting
 	$wp_customize->add_setting( 'imagen_abajoderecha', array(
@@ -119,6 +137,24 @@ function batanaweb_customize_register( $wp_customize ) {
 	            'label'          => __( 'Texto Imagen Derecha' ),
 	            'section'        => 'BatanaWeb',
 	            'settings'       => 'texto_abajoderecha',
+	            'type'           => 'text',
+	            
+	        )
+	    )
+	);
+
+	// Add setting
+	$wp_customize->add_setting( 'enlace_abajoderecha', array(
+		 'default'        => '',
+	) );
+
+	$wp_customize->add_control(new WP_Customize_Control(
+	        $wp_customize,
+	        'enlace_abajoderecha',
+	        array(
+	            'label'          => __( 'Enlace Imagen derecha' ),
+	            'section'        => 'BatanaWeb',
+	            'settings'       => 'enlace_abajoderecha',
 	            'type'           => 'text',
 	            
 	        )
