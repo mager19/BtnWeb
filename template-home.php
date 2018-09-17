@@ -32,12 +32,12 @@ get_template_part('template-parts/header', 'home'); ?>
 				</div>
 				<div class="col-md-8 with-background" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
-						<h1 class="titulos__home"><a href="<?php echo $enlace_abajoizquierda; ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
+						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
 					</div>	
 				</div>
 				<div class="col-md-4 with-background" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
 					<div class="header__right">
-						<h2 class="titulos__home"><a href="<?php echo $enlace_abajoderecha; ?>"><?php echo $texto_abajoderecha; ?></a></h2>
+						<h2 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoderecha); ?>"><?php echo $texto_abajoderecha; ?></a></h2>
 					</div>
 				</div>
 
