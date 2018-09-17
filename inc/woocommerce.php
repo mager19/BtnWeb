@@ -384,3 +384,7 @@ echo '<h5>
 echo '</div>';
  //echo get_field('guia_de_tallas', $post_id);
 }
+
+
+
+remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
