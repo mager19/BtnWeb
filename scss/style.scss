@@ -171,6 +171,11 @@ header{
 		font-size: 2em;
 		letter-spacing: 10px;
 		padding: 80px;
+
+		a, a:visited{
+			color:$blanco;
+			text-decoration: none;
+		}
 		
 	}
 }
