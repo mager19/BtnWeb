@@ -58,7 +58,7 @@ get_header();
 										
 									<form action="#" class="newsletter">
 										<input type="text" placeholder="Introduce tu email">
-										<button>SUSCRIBETE</button>
+										<button>SUSCRÍBETE</button>
 									</form>
 								</div>
 							</div>
