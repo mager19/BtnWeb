@@ -11,7 +11,7 @@ a, a:visited{
 font-family: 'rokkitt', serif;
 font-family: 'opensans', sans-serif;*/
 
-
+a:focus {  outline: none; }
 
 @font-face {
     font-family: 'old';
@@ -635,6 +635,12 @@ footer{
 
 
 /****************************woo******************************/
+
+.current-cat{
+	font-weight: 800;
+	text-decoration: underline;
+}
+
 nav.woocommerce-breadcrumb {
     display: none;
 }
@@ -835,6 +841,12 @@ span.woocommerce-Price-amount.amount {
 	    padding-left: 0px;
 	    margin-left: 10px;
 
+	    li{
+	    	a{
+	    		font-size: 0.8em;
+	    	}
+	    }
+
 	}
 	button.button {
 	    background-color: #000000;
@@ -850,7 +862,7 @@ span.woocommerce-Price-amount.amount {
 }
 .widget-area{
 	padding-top: 117px;
-	    width: 160px;
+	width: 200px;
 	.price_label{
 		text-align: center;
 	}
