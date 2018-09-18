@@ -23,7 +23,8 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 
 	<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
 
-	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
+	<div class="direcciones">
+		<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
 		<label for="account_first_name"><?php esc_html_e( 'First name', 'understrap' ); ?>&nbsp;<span class="required">*</span></label>
 		<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="account_first_name" id="account_first_name" autocomplete="given-name" value="<?php echo esc_attr( $user->first_name ); ?>" />
 	</p>
@@ -69,6 +70,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 		<button type="submit" class="btn btn-outline-primary" name="save_account_details" value="<?php esc_attr_e( 'Save changes', 'understrap' ); ?>"><?php esc_html_e( 'Save changes', 'understrap' ); ?></button>
 		<input type="hidden" name="action" value="save_account_details" />
 	</p>
+	</div>
 
 	<?php do_action( 'woocommerce_edit_account_form_end' ); ?>
 </form>
