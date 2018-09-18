@@ -51,6 +51,9 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
 	<?php endif; ?>
+	<!-- <div class="col-lg-3 loginencheck">
+		<?php do_action( 'woocommerce_login_checkout' ); ?>
+	</div> -->
 	<div class="col-lg-6 pl-5 pr-2 order">
 	<h3 id="order_review_heading"><?php _e( 'Your order', 'understrap' ); ?></h3>
 
