@@ -21,8 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 wc_print_notices();
-
+echo '<div class="col-lg-12 mb-5 pb-5">';
 do_action( 'woocommerce_before_checkout_form', $checkout );
+echo '</div>';
 
 // If checkout registration is disabled and not logged in, the user cannot checkout
 if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_required() && ! is_user_logged_in() ) {
@@ -51,6 +52,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
 	<?php endif; ?>
+	
 	<div class="col-lg-6 pl-5 pr-2 order">
 	<h3 id="order_review_heading"><?php _e( 'Your order', 'understrap' ); ?></h3>
 

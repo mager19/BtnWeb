@@ -46,5 +46,10 @@
 
 		jQuery('.news__items>article:nth-child(2) div:first-child').addClass('order-2');
 
+
+
+/*jQuery('a.woocommerce-product-gallery__trigger img').replaceWith('<img draggable="false" class="emoji" alt="🔍" src="../../wp-content/themes/BtnWeb/lupa.png" width="40" height="40">');*/
+
 		
 	});
+

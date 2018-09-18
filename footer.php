@@ -16,8 +16,31 @@
 		</div>
 <?php } ?>
 	</div><!-- #content -->
+	<div style="display: none;" class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body"><center><h3>Guia de tallas</h3></center>
+      	<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+			<div>
+				<label class="screen-reader-text" for="s">Search for:</label>
+				<input type="text" value="<?php _e('search site', 'avia_framework')?>" name="s" id="s" placeholder="Search for products">
+				<input type="submit" id="searchsubmit" value="Search">
+				<input type="hidden" name="post_type" value="product">
+			</div>
+		</form></div>
+      
+    </div>
+  </div>
+</div>
 
 	<footer id="colophon" class="site-footer">
+		
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-2">
