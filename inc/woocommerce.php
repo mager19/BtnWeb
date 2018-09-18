@@ -325,6 +325,7 @@ echo '<div class="mt-3 info">';
 
 if(get_field('disponible', $post_id)){
 echo '
+<div class="available">
 <h5>
   <a href="#" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible', 'woocommerce' ).'</a> </h5>
 
@@ -343,6 +344,7 @@ echo '
       
     </div>
   </div>
+</div>
 </div>
 ';
 }
@@ -388,6 +390,10 @@ echo '</div>';
 
 
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
+
+
+
+
 /*
 function mi_funcion () {
   // ell código que queramos
@@ -400,3 +406,4 @@ add_action( 'woocommerce_login_checkout', 'mi_funcion');
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
 add_action( 'woocommerce_login_checkout', 'woocommerce_checkout_login_form' );
 */
+

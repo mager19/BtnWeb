@@ -599,7 +599,9 @@ footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 
 .woocommerce-info, .woocommerce-noreviews, p.no-comments { background-color: #fff !important; border: 2px solid #000000; margin-top: 2em; padding: 1em; }
 
 /****************************woo******************************/
-nav.woocommerce-breadcrumb { display: none; }
+nav.woocommerce-breadcrumb { /*display: none;*/ padding-bottom: 20px; }
+
+nav.woocommerce-breadcrumb a { color: #000; }
 
 header.woocommerce-products-header { display: none; }
 
@@ -702,6 +704,10 @@ span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
 .product-template-default .summary.entry-summary button.btn { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 0.65em; width: 76%; border-radius: 0; text-transform: uppercase; }
 
 .product-template-default .summary.entry-summary .product_meta .info a { font-family: 'questrial', sans-serif; font-size: 0.8em; color: #000; }
+
+.product-template-default .summary.entry-summary .product_meta span.sku_wrapper { display: none; }
+
+.product-template-default .summary.entry-summary .product_meta span.posted_in { display: none; }
 
 .product-template-default .summary.entry-summary span.woocommerce-Price-amount.amount { font-size: 1.2em; }
 

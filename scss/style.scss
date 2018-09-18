@@ -639,7 +639,9 @@ footer {
 
 /****************************woo******************************/
 nav.woocommerce-breadcrumb {
-    display: none;
+    /*display: none;*/
+    padding-bottom: 20px;
+    a{color:#000;}
 }
 
 header.woocommerce-products-header {
@@ -960,6 +962,13 @@ span.woocommerce-Price-amount.amount {
                     color: #000;
                 }
             }
+            span.sku_wrapper {
+			    display: none;
+			}
+			span.posted_in {
+			    display: none;
+			}
+
         }
         span.woocommerce-Price-amount.amount {
             font-size: 1.2em;
