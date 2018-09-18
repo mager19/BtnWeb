@@ -389,17 +389,30 @@ footer {
             padding-right: 6em;
         }
 
-        a,
-        a:visited {
-            color: $negro;
-            display: block;
-            font-family: 'old';
-            font-size: 1.2em;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            margin-top: 2em;
-        }
-    }
+		}
+
+		a, a:visited{	
+			color:$negro; 
+			display: block;
+			font-family: 'old';
+			font-size: 1.2em;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			margin-top: 2em;
+		}
+	}
+
+	.boton__back{
+		text-align: center;
+
+		a{
+			border:1px solid $coral;
+			color:$coral;
+			font-weight: 600;
+			padding: 1em 2em;
+		}
+	}
+
 }
 
 .article__single {
