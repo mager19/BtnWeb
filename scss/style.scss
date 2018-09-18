@@ -341,6 +341,10 @@ footer{
 .contenido__page{
 	padding-top: 4em;
 
+	.addtoany_content{
+		display: none;
+	}
+
 	p{
 		color:$negro;
 		font-family: 'questrial', sans-serif;
