@@ -519,6 +519,8 @@ footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 
 
 .contenido__page { padding-top: 4em; }
 
+.contenido__page .addtoany_content { display: none; }
+
 .contenido__page p { color: #000000; font-family: 'questrial', sans-serif; font-weight: 500; font-size: 0.9em; letter-spacing: 2px; padding: 0 3em; }
 
 .contenido__page p:first-child { padding-top: 2em; }

@@ -346,13 +346,17 @@ footer {
 .contenido__page {
     padding-top: 4em;
 
-    p {
-        color: $negro;
-        font-family: 'questrial', sans-serif;
-        font-weight: 500;
-        font-size: 0.9em;
-        letter-spacing: 2px;
-        padding: 0 3em;
+	.addtoany_content{
+		display: none;
+	}
+
+	p{
+		color:$negro;
+		font-family: 'questrial', sans-serif;
+		font-weight: 500;
+		font-size: 0.9em;
+		letter-spacing: 2px;
+		padding: 0 3em;
 
         &:first-child {
             padding-top: 2em;
