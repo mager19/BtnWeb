@@ -48,22 +48,8 @@
 
 
 
-
+/*jQuery('a.woocommerce-product-gallery__trigger img').replaceWith('<img draggable="false" class="emoji" alt="🔍" src="../../wp-content/themes/BtnWeb/lupa.png" width="40" height="40">');*/
 
 		
 	});
 
-
-	jQuery( "woocommerce-product-gallery" ).ready(function() {
-		alert("hola");
-		jQuery('a.woocommerce-product-gallery__trigger img').delay(5000).replaceWith('<img draggable="false" class="emoji" alt="🔍" src="../../wp-content/themes/BtnWeb/lupa.png" width="40" height="40" style="width:40px !important; height:40px !important;">');
-    jQuery('a.woocommerce-product-gallery__trigger img').fadeOut("200").delay("200").queue(function(next) {
-    jQuery('a.woocommerce-product-gallery__trigger img').delay(5000).replaceWith('<img draggable="false" class="emoji" alt="🔍" src="../../wp-content/themes/BtnWeb/lupa.png" width="40" height="40" style="width:40px !important; height:40px !important;">');
-    next();
-    alert("hola");
-}).delay("2000").fadeIn("2000");
-
-
-
-   
-});

@@ -755,13 +755,13 @@ span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
 
 .modal .formulario input.wpcf7-form-control.wpcf7-submit { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.2em; width: 60%; border-radius: 0; text-transform: uppercase; margin-bottom: 30px; }
 
-.woocommerce-message { padding: 1em 2em; margin-bottom: 1em; background-color: #ddd !important; font-family: 'questrial', sans-serif; }
+.woocommerce-message { padding: 1em 2em; margin-bottom: 1em; background-color: #f9f9f9 !important; font-family: 'questrial', sans-serif; }
 
 .woocommerce-message a { font-family: old; font-size: 0.8em; letter-spacing: 3px; text-transform: uppercase; color: #000; padding: 0.5em 1.2em; border: 1px solid #000; margin-right: 10px; }
 
 .woocommerce-message a:hover { color: #000; }
 
-.woocommerce-info { padding: 1em 2em; margin-bottom: 1em; background-color: #ddd !important; font-family: 'questrial', sans-serif; }
+.woocommerce-info { padding: 1em 2em; margin-bottom: 1em; background-color: #f9f9f9 !important; font-family: 'questrial', sans-serif; border: none; }
 
 .woocommerce-info a { font-family: old; font-size: 0.8em; letter-spacing: 3px; text-transform: uppercase; color: #000; padding: 0.5em 1.2em; border: 1px solid #000; margin-right: 10px; margin-left: 10px; }
 
@@ -860,3 +860,17 @@ td.product-total, tr.cart-subtotal td, tr.shipping td, tr.order-total td { text-
 .woocommerce-order .addresses { display: flex; }
 
 .woocommerce-order .addresses h2 { font-family: old; font-size: 1em; letter-spacing: 3px; text-transform: uppercase; }
+
+p.return-to-shop a.btn { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.5em; /*width: 100%;*/ border-radius: 0; text-transform: uppercase; }
+
+form.woocommerce-form-login.login { width: 50%; }
+
+form.woocommerce-form-login.login button.btn { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.5em; width: 100%; border-radius: 0; text-transform: uppercase; margin-bottom: 8px; }
+
+form.woocommerce-form-login.login a { color: #000; }
+
+form.checkout_coupon.woocommerce-form-coupon { width: 50%; }
+
+form.checkout_coupon.woocommerce-form-coupon button.btn { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.5em; width: 100%; border-radius: 0; text-transform: uppercase; margin-bottom: 8px; }
+
+form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
