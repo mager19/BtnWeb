@@ -33,7 +33,7 @@
 					</div><!-- .site-branding -->
 				</div>
 				
-				<div class="col-md-7">
+				<div class="col-md-5">
 					<nav id="site-navigation" class="main-navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'batanaweb' ); ?></button>
 						<?php
@@ -45,7 +45,7 @@
 					</nav><!-- #site-navigation -->
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-5">
 					<nav class="menu-aux">
 						<?php
 						wp_nav_menu( array(
