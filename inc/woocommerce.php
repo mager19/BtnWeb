@@ -373,15 +373,15 @@ echo '
 }
 if(get_field('envios', $post_id)){
 echo '<h5>
-  <a href="'.get_field('envios', $post_id).'" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Envios', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_field('envios', $post_id).'" class="color-white" target="_blank" >'.__( 'Envios', 'woocommerce' ).'</a> </h5>';
 }
 if(get_field('cambios_y_devoluciones', $post_id)){
 echo '<h5>
-  <a href="'.get_field('cambios_y_devoluciones', $post_id).'" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Cambios y devoluciones', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_field('cambios_y_devoluciones', $post_id).'" class="color-white" target="_blank">'.__( 'Cambios y devoluciones', 'woocommerce' ).'</a> </h5>';
 }
 if(get_field('descripcion_y_cuidados', $post_id)){
 echo '<h5>
-  <a href="'.get_field('descripcion_y_cuidados', $post_id).'" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Descripción y cuidados', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_field('descripcion_y_cuidados', $post_id).'" class="color-white" target="_blank">'.__( 'Descripción y cuidados', 'woocommerce' ).'</a> </h5>';
 }
 echo '</div>';
  //echo get_field('guia_de_tallas', $post_id);
@@ -393,10 +393,26 @@ remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display')
 
 
 /*disponibilidad*/
-add_filter( 'woocommerce_get_availability', 'wcs_custom_get_availability', 1, 2); function wcs_custom_get_availability( $availability, $_product ) {      
-    if ( ! $_product->is_in_stock() ) {         $availability['availability'] = __('Agotado <br><a href="#" class="color-white agotado" data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible', 'woocommerce' ).'</a>', 'woocommerce');     }   
+/*add_filter( 'woocommerce_get_availability', 'wcs_custom_get_availability', 1, 2); 
+function wcs_custom_get_availability( $availability, $_product ) {  
+	   
+    if ( ! $_product->is_in_stock() ) {         
+    	$availability['availability'] = __('Agotado', 'woocommerce').'<br><a href="#" class="color-white agotado"   data-toggle="modal" data-target="#largeModal">avisame</a>';
+    	
+    //.'<br><a href="#" class="color-white agotado"  data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible', 'woocommerce' ).'</a>')
+         }  
      
-	return $availability; }
+	return $availability; }*/
+add_action('woocommerce_product_meta_end', 'add_contact_form', 10);
+
+function add_contact_form() {
+    global $product;
+    if(!$product->is_in_stock( )) {
+       echo '<a href="#" class="color-white agotado"  data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible2', 'woocommerce' ).'</a>';
+    }
+}
+
+
 
 /* ELIMINACION DE CAMPOS DEL CHECKOUT WOOCOMMERCE */
 
