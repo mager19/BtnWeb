@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package tema__base
+ * @package batanaWeb
  */
 
 ?>
@@ -22,46 +22,48 @@
 
 <body <?php body_class(); ?>>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-
-				<div id="page" class="site">
-					<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tema__base' ); ?></a>
-
-					<header id="masthead" class="site-header">
-						<div class="site-branding">
-							<?php
-							the_custom_logo();
-							if ( is_front_page() && is_home() ) :
-								?>
-								<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-								<?php
-							else :
-								?>
-								<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-								<?php
-							endif;
-							$tema__base_description = get_bloginfo( 'description', 'display' );
-							if ( $tema__base_description || is_customize_preview() ) :
-								?>
-								<p class="site-description"><?php echo $tema__base_description; /* WPCS: xss ok. */ ?></p>
-							<?php endif; ?>
-						</div><!-- .site-branding -->
-
-						<nav id="site-navigation" class="main-navigation">
-							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tema__base' ); ?></button>
-							<?php
-							wp_nav_menu( array(
-								'theme_location' => 'menu-1',
-								'menu_id'        => 'primary-menu',
-							) );
-							?>
-						</nav><!-- #site-navigation -->
-					</header><!-- #masthead -->
+<div id="page" class="site">
+	<header class="header--home">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="site-branding">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">	<?php the_custom_logo();?>
+						</a>
+						<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1> -->
+					</div><!-- .site-branding -->
 				</div>
+				
+				<div class="col-md-5">
+					<nav id="site-navigation" class="main-navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'batanaweb' ); ?></button>
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						) );
+						?>
+
+					</nav><!-- #site-navigation -->
+				</div>
+
+				<div class="col-md-5">
+					<nav class="menu-aux">
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-aux',
+							'menu_id'        => 'auxiliar-menu',
+						) );
+						?>
+					</nav><!-- #site-navigation -->
+				</div>
+
+				
 			</div>
 		</div>
-	</div>
-
-	
+	</header><!-- #masthead -->
+<?php 
+	if(is_woocommerce()){ ?>
+		<div class="container">
+		<div  class="woo row">
+<?php } ?>

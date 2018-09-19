@@ -22,13 +22,6 @@ gulp.task('serve', function () {
     	'./*.php',
         './template-parts/*.php',
                 '**/*.js',
-                '**/*.svg',
-                '**/*.ttf',
-                '**/*.otf',
-                '**/*.eot',
-                '**/*.woff',
-                '**/*.woff2',
-
                 // include specific files and folders
                 'screenshot.png',
     	];
@@ -36,7 +29,7 @@ gulp.task('serve', function () {
     // Serve files from the root of this project
     browserSync.init(files, {
       
-             proxy: "batanaweb.local/",
+             proxy: "batana.dev.cc/",
        
     });
 
