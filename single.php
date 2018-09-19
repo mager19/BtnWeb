@@ -33,6 +33,9 @@ get_header();
 						
 										</div>
 									</article>
+									<div class="boton__back mt-2">
+										<a href="/news">Regresar a News</a>
+									</div>
 								<?php
 								}	
 							 ?>

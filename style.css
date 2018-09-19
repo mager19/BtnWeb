@@ -517,6 +517,8 @@ footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 
 
 .contenido__page { padding-top: 4em; }
 
+.contenido__page .addtoany_content { display: none; }
+
 .contenido__page p { color: #000000; font-family: 'questrial', sans-serif; font-weight: 500; font-size: 0.9em; letter-spacing: 2px; padding: 0 3em; }
 
 .contenido__page p:first-child { padding-top: 2em; }
@@ -533,6 +535,10 @@ footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 
 .news__items article p { font-family: 'questrial'; line-height: 2em; padding-left: 0; padding-right: 6em; }
 
 .news__items article a, .news__items article a:visited { color: #000000; display: block; font-family: 'old'; font-size: 1.2em; letter-spacing: 5px; text-transform: uppercase; margin-top: 2em; }
+
+.news__items .boton__back { text-align: center; }
+
+.news__items .boton__back a { border: 1px solid #ce9a90; color: #ce9a90; font-weight: 600; padding: 1em 2em; }
 
 .article__single { padding-top: 4em; padding-bottom: 0em !important; }
 
