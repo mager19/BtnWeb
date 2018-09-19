@@ -1738,7 +1738,9 @@ form.checkout_coupon.woocommerce-form-coupon{
         padding: 0 2em;
 
         .updatecart{
-            display: none;
+            button.btn{
+            	width: 100%;
+            }
         }
     
         .product-subtotal{
@@ -1751,15 +1753,46 @@ form.checkout_coupon.woocommerce-form-coupon{
 
     }
 
-    .woocommerce-cart-form td.product-thumbnail {
-        width: 100%!important;
+    .woocommerce-cart-form {
+    	td.product-thumbnail {
+	        width: 100%!important;
 
-        img{
-            width: 100%!important;
-        }
+	        img{
+	            width: 100%!important;
+	        }
+	    }
+        a.remove {
+
+		    margin: 1.5em;
+		    text-align: center;
+		}
     }
 
-        
+     .cart-collaterals {
+		    width: 100%;
+		    margin-top: 0;
+		    .cart_totals {
+		    	.wc-proceed-to-checkout {
+		    		a {
+					    
+					    width: 100%;
+					 } 
+				}	   
+			}
 
+	}   
+	.woocommerce-info a,.woocommerce-message a {
+	    
+	    display: block;
+	}
+	form.checkout.woocommerce-checkout {
+	    padding: 1em;
+	    .order {
+		    padding: 1em !important;
+		}
+	}
+	form.checkout_coupon.woocommerce-form-coupon,form.woocommerce-form-login.login {
+	    width: 100%;
+	}
 
 }

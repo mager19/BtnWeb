@@ -35,7 +35,28 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -941,8 +962,15 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .modal .modal-lg { min-width: 80%; }
   .woocommerce-message { padding: 2em 2em; margin-left: -3em; }
   .woocommerce-cart-form { padding: 0 2em; }
-  .woocommerce-cart-form .updatecart { display: none; }
+  .woocommerce-cart-form .updatecart button.btn { width: 100%; }
   .woocommerce-cart-form .product-subtotal { margin-bottom: 4em; }
   .woocommerce-cart-form .product-name { padding-top: 2em; }
   .woocommerce-cart-form td.product-thumbnail { width: 100% !important; }
-  .woocommerce-cart-form td.product-thumbnail img { width: 100% !important; } }
+  .woocommerce-cart-form td.product-thumbnail img { width: 100% !important; }
+  .woocommerce-cart-form a.remove { margin: 1.5em; text-align: center; }
+  .cart-collaterals { width: 100%; margin-top: 0; }
+  .cart-collaterals .cart_totals .wc-proceed-to-checkout a { width: 100%; }
+  .woocommerce-info a, .woocommerce-message a { display: block; }
+  form.checkout.woocommerce-checkout { padding: 1em; }
+  form.checkout.woocommerce-checkout .order { padding: 1em !important; }
+  form.checkout_coupon.woocommerce-form-coupon, form.woocommerce-form-login.login { width: 100%; } }
