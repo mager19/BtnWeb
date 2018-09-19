@@ -344,7 +344,9 @@ footer {
 
 .contenido__page {
     padding-top: 4em;
-
+    .addtoany_content{
+    	display: none;
+    }
     p {
         color: $negro;
         font-family: 'questrial', sans-serif;
@@ -399,6 +401,16 @@ footer {
             margin-top: 2em;
         }
     }
+    .boton__back{
+		text-align: center;
+
+		a{
+			border:1px solid $coral;
+			color:$coral;
+			font-weight: 600;
+			padding: 1em 2em;
+		}
+	}
 }
 
 .article__single {
