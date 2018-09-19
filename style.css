@@ -35,28 +35,7 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -401,6 +380,20 @@ embed, iframe, object { max-width: 100%; }
 
 .gallery-caption { display: block; }
 
+@media screen and (max-width: 1024px) { .contenedor { padding: 2em 0 !important; }
+  header .site-branding { padding: 0em !important; }
+  header .site-branding img { padding-top: 2.5em; }
+  header ul li { margin-right: 1em !important; }
+  .news__items h2 { margin-top: 2em; } }
+
+@media screen and (max-width: 768px) { #auxiliar-menu { display: none; }
+  .title__page { padding-bottom: 1.5em; padding-top: 1em; }
+  .footer__item { margin-top: 1em; }
+  .footer__item ul { margin-left: -2.5em; }
+  .footer__item #socialFooter-menu li { display: inline; margin-left: 10px; }
+  .news__items { padding: 0 1em !important; }
+  .news__items article p { padding-right: 0em; } }
+
 a, a:visited { color: #131313; }
 
 /*font-family: 'questrial', sans-serif;
@@ -498,13 +491,15 @@ footer { border-top: 2px solid #F5F5F5; padding: 2em; padding-top: 4em; }
 
 footer .footer__item h3 { color: #000000; font-size: 0.9em; font-family: old; font-weight: 800; letter-spacing: 3px; margin-bottom: 1.5em; text-align: left; }
 
+footer .footer__item ul { margin-left: -2.5em; }
+
 footer .footer__item ul li { display: block; float: none; margin-bottom: 0.9em; }
 
 footer .footer__item ul li a, footer .footer__item ul li a:visited { font-family: 'Questrial'; font-size: 0.8em; font-weight: 500; letter-spacing: 1px; color: #bbbbbb !important; text-transform: uppercase; }
 
 footer .footer__item ul li a i, footer .footer__item ul li a:visited i { color: #000000; font-size: 2em; }
 
-footer .footer__item .socialFooter ul li { display: inline-block; margin-right: 1em; }
+footer .footer__item #socialFooter-menu li { display: inline-block !important; margin-right: 1em; }
 
 footer .newsletter input { border-color: #BBBBBB; border-radius: none; padding: 1em; width: 80%; }
 
@@ -920,3 +915,27 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
 .popBuscar input { padding: 0.5em; width: 70%; border-radius: 0px; }
 
 .popBuscar input#searchsubmit { border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.17em; width: 25%; border-radius: 0; text-transform: uppercase; background-color: #000; }
+
+@media screen and (max-width: 1024px) { .contenedor { padding: 2em 0 !important; }
+  header .site-branding { padding: 0em !important; }
+  header .site-branding img { padding-top: 2.5em; }
+  header ul li { margin-right: 1em !important; }
+  .news__items h2 { margin-top: 2em; }
+  .contacto .item__contacto form input { padding-right: 0%; }
+  .add-to-cart-container a.add_to_cart_button { font-size: 0.7em; white-space: normal; } }
+
+@media screen and (max-width: 768px) { #auxiliar-menu { display: none; }
+  .title__page { padding-bottom: 1.5em; padding-top: 2em; }
+  .footer__item { margin-top: 1em; }
+  .footer__item ul { margin-left: -2.5em; }
+  .footer__item #socialFooter-menu li { display: inline; margin-left: 10px; }
+  .news__items { padding: 0 1em !important; }
+  .news__items article p { padding-right: 0em; }
+  .contacto { padding: 0 16px; }
+  .woocommerce-page .content-area { padding-left: 10%; width: 100%; }
+  .product { margin-bottom: 4em !important; }
+  .widget-area { width: 100%; padding: 0 2em; }
+  /*producto*/
+  .product-template-default .summary.entry-summary { float: none; width: 90%; }
+  .product-template-default .summary.entry-summary .product_title { padding-top: 2em; }
+  .modal .modal-lg { min-width: 80%; } }
