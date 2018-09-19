@@ -160,7 +160,7 @@ if ( ! function_exists( 'batanaweb_woocommerce_wrapper_before' ) ) {
 	function batanaweb_woocommerce_wrapper_before() {
 		?>
 
-		<div id="primary " class="content-area order-2 order-md-1">
+		<div id="primary " class="content-area">
 			<main id="main" class="site-main" role="main">
 			<?php
 	}
@@ -383,7 +383,7 @@ if(get_field('descripcion_y_cuidados', $post_id)){
 echo '<h5>
   <a href="'.get_field('descripcion_y_cuidados', $post_id).'" class="color-white" target="_blank">'.__( 'Descripción y cuidados', 'woocommerce' ).'</a> </h5>';
 }
-
+echo '</div>';
  //echo get_field('guia_de_tallas', $post_id);
 }
 
@@ -443,4 +443,5 @@ add_action( 'woocommerce_login_checkout', 'mi_funcion');
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
 add_action( 'woocommerce_login_checkout', 'woocommerce_checkout_login_form' );
 */
+
 

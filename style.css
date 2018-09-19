@@ -938,4 +938,11 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   /*producto*/
   .product-template-default .summary.entry-summary { float: none; width: 90%; }
   .product-template-default .summary.entry-summary .product_title { padding-top: 2em; }
-  .modal .modal-lg { min-width: 80%; } }
+  .modal .modal-lg { min-width: 80%; }
+  .woocommerce-message { padding: 2em 2em; margin-left: -3em; }
+  .woocommerce-cart-form { padding: 0 2em; }
+  .woocommerce-cart-form .updatecart { display: none; }
+  .woocommerce-cart-form .product-subtotal { margin-bottom: 4em; }
+  .woocommerce-cart-form .product-name { padding-top: 2em; }
+  .woocommerce-cart-form td.product-thumbnail { width: 100% !important; }
+  .woocommerce-cart-form td.product-thumbnail img { width: 100% !important; } }

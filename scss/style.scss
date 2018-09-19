@@ -1729,5 +1729,37 @@ form.checkout_coupon.woocommerce-form-coupon{
         min-width: 80%;
     }
 
+    .woocommerce-message {
+        padding: 2em 2em;
+        margin-left: -3em;
+    }
+
+    .woocommerce-cart-form{
+        padding: 0 2em;
+
+        .updatecart{
+            display: none;
+        }
+    
+        .product-subtotal{
+            margin-bottom: 4em;
+        }
+
+        .product-name{
+            padding-top: 2em;
+        }
+
+    }
+
+    .woocommerce-cart-form td.product-thumbnail {
+        width: 100%!important;
+
+        img{
+            width: 100%!important;
+        }
+    }
+
+        
+
 
 }
