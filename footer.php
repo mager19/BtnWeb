@@ -38,7 +38,24 @@
     </div>
   </div>
 </div>
-
+<style type="text/css">	jQuery(".agotado").attr({"data-toggle": "modal","data-target": "#largeModal"});</style>
+<div style="display: none;" class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">'
+.do_shortcode(get_field('disponible', $post_id)).
+      '</div>
+      
+    </div>
+  </div>
+</div>
+</div>
 	<footer id="colophon" class="site-footer">
 		
 		<div class="container-fluid">

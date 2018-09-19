@@ -204,12 +204,12 @@ add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
 
  /**
 * Add a custom link to the end of a specific menu that uses the wp_nav_menu() function
-*//*
+*/
 add_filter('wp_nav_menu_items', 'add_admin_link', 20, 2);
 function add_admin_link($items, $args){
     if( $args->theme_location == 'menu-aux' ){
-        $items .= '<li id="menu-item-120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120"><a title="Admin" href="#" data-toggle="modal" data-target="#searchModal"><i class="fas fa-search"></a></li>';
+        $items .= '<li id="menu-item-220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-220"><a  href="#" data-toggle="modal" data-target="#searchModal"><i class="fas fa-search"></i></a></li>';
     }
     return $items;
-}*/
+}
 

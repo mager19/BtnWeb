@@ -22,7 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 do_action( 'woocommerce_before_account_navigation' );
 ?>
-
+<div class="row">
+	<div class="col-lg-3">
 <nav class="woocommerce-MyAccount-navigation" role="navigation">
 	<div class="list-group">
 			<?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
@@ -31,5 +32,6 @@ do_action( 'woocommerce_before_account_navigation' );
 			<?php endforeach; ?>
 	</div>
 </nav>
+</div>
 
 <?php do_action( 'woocommerce_after_account_navigation' ); ?>

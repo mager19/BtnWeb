@@ -392,7 +392,28 @@ echo '</div>';
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
 
 
+/*disponibilidad*/
+add_filter( 'woocommerce_get_availability', 'wcs_custom_get_availability', 1, 2); function wcs_custom_get_availability( $availability, $_product ) {      
+    if ( ! $_product->is_in_stock() ) {         $availability['availability'] = __('Agotado <br><a href="#" class="color-white agotado" data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible', 'woocommerce' ).'</a>', 'woocommerce');     }   
+     
+	return $availability; }
 
+/* ELIMINACION DE CAMPOS DEL CHECKOUT WOOCOMMERCE */
+
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+ 
+function custom_override_checkout_fields( $fields ) {
+ 
+ unset($fields['billing']['billing_company']);
+/*unset($fields['billing']['billing_address_1']);
+ unset($fields['billing']['billing_address_2']);
+ unset($fields['billing']['billing_city']);
+ unset($fields['billing']['billing_postcode']);
+ unset($fields['billing']['billing_state']);
+ unset($fields['order']['order_comments']);*/
+ 
+ return $fields;
+}
 
 /*
 function mi_funcion () {
