@@ -384,6 +384,9 @@ echo '<h5>
   <a href="'.get_field('descripcion_y_cuidados', $post_id).'" class="color-white" target="_blank">'.__( 'Descripción y cuidados', 'woocommerce' ).'</a> </h5>';
 }
 echo '</div>';
+echo '<div class="sharer">';
+echo do_shortcode('[wpsr_button id="4203"]');
+echo '</div>';
  //echo get_field('guia_de_tallas', $post_id);
 }
 
