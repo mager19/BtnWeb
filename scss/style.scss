@@ -23,7 +23,7 @@ font-family: 'opensans', sans-serif;*/
 }
 
 a{
-	color:$black;
+	color:#000;
 }
 .contenedor {
     padding: 4em 0;
@@ -146,7 +146,7 @@ header {
 
 .header--home {
     /*background-color: transparent;*/
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
     position: absolute;
     top: 0;
     left: 0;
@@ -327,6 +327,11 @@ footer {
         color: #bbbbbb;
         text-transform: uppercase;
         margin-top: 10em;
+    }
+    .whatsapp{
+    	color: #bbb;
+	    margin-right: 10px;
+	    font-size: 1.5em;
     }
 }
 
