@@ -973,4 +973,6 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .woocommerce-info a, .woocommerce-message a { display: block; }
   form.checkout.woocommerce-checkout { padding: 1em; }
   form.checkout.woocommerce-checkout .order { padding: 1em !important; }
-  form.checkout_coupon.woocommerce-form-coupon, form.woocommerce-form-login.login { width: 100%; } }
+  form.checkout_coupon.woocommerce-form-coupon, form.woocommerce-form-login.login { width: 100%; }
+  .woocommerce-order-details { padding: 0 2em; }
+  .woocommerce-customer-details { padding: 0 2em; } }
