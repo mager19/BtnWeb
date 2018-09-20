@@ -1877,16 +1877,22 @@ form.checkout_coupon.woocommerce-form-coupon{
 	    	height: auto;
 		    background-size: contain;
 		    margin-top: 45%;
-		    margin-top: -10px;
-		    
-		    
-	}
-    .header__left, .header__right {
+		   .header__left, .header__right {
+    			 margin-top: -10px;
 			    font-family: old;
 			    display: flex;
 			    align-items: center;
 			    justify-content: center;
 			    height: 36vh;
 			}
-    
+
+		    
+	}
+	.home{
+	    .contenedor{
+	    	.row{
+	    		margin: 0px !important;
+	    	}
+	    }
+	}
 } /*fin max-width: 768px*/
