@@ -50,6 +50,7 @@
         </button>
       </div>
       <div class="modal-body">
+      	<h4 style="text-align: center;">Envíos</h4>
       	<p>ENVÍOS GRATUITOS para pedidos superiores a 100€ a cualquier parte del mundo. Los impuestos de aduana o costes ajenos al envío serán pagados por el comprador.</p>
 
 <p>España y Portugal (excluyendo Baleares, Canarias, Ceuta y Melilla): 5 euros
@@ -58,7 +59,7 @@ Resto del mundo: Pedir presupuesto por email <a href="mailto:pedidos@batanashop.
 Los costes de aduana no están incluidos en el precio y deberán ser pagados por el comprador.</p>
 
 <p>IMPORTANTE: En caso de devolución del producto se descontarán los gastos de envío a la hora de realizar la devolución del importe de la compra.</p></div>
-<h2 style="text-align: center;"><a href="#">¿Te gustaría pagar a plazos?</a></h2>
+<h4 style="text-align: center;"><a href="#">¿Te gustaría pagar a plazos?</a></h4><br>
       
     </div>
   </div>
@@ -75,6 +76,7 @@ Los costes de aduana no están incluidos en el precio y deberán ser pagados por
         </button>
       </div>
       <div class="modal-body">
+      	<h4 style="text-align: center;">Devoluciones</h4>
       	<p>Nuestro objetivo es tu total satisfacción como cliente. Para proceder al cambio o devolución de un artículo adquirido en la tienda online, deberás solicitarla a través de un email a pedidos@batanashop.com en un plazo no superior a 15 días naturales desde la recepción del producto, haciéndonos saber el motivo del cambio o devolución en caso que lo creas necesario para ayudarnos a seguir mejorando.</p>
 <p>Mas info en <a href="https://batana.snswebs.es/condiciones-de-venta/">"condiciones de venta"</a></p></div>
       

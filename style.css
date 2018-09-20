@@ -415,7 +415,9 @@ embed, iframe, object { max-width: 100%; }
   .news__items { padding: 0 1em !important; }
   .news__items article p { padding-right: 0em; } }
 
-a, a:visited { color: #131313 !important; }
+a, a:visited, p > a, h2 > a, h4 > a { color: #131313; }
+
+a:hover, a:visited:hover, p > a:hover, h2 > a:hover, h4 > a:hover { color: #131313; }
 
 /*font-family: 'questrial', sans-serif;
 font-family: 'rokkitt', serif;
@@ -528,7 +530,7 @@ footer .newsletter button { background-color: #000000; border: none; color: #fff
 
 footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 500; letter-spacing: 1px; color: #bbbbbb; text-transform: uppercase; margin-top: 10em; }
 
-footer .whatsapp { color: #bbb; margin-right: 10px; font-size: 1.5em; }
+footer .whatsapp a i { color: #BBBBBB !important; margin-right: 10px; font-size: 1.5em !important; }
 
 .container { margin-top: 60px; margin-bottom: 60px; }
 
@@ -697,7 +699,7 @@ span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
 
 .widget button.button { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.9em; letter-spacing: 3px; padding: 0.5em; width: 100%; margin-top: 1em; }
 
-.widget-area { padding-top: 117px; width: 160px; }
+.widget-area { padding-top: 117px; width: 200px; }
 
 .widget-area .price_label { text-align: center; }
 
