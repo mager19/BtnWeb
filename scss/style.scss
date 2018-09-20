@@ -1630,6 +1630,8 @@ form.checkout_coupon.woocommerce-form-coupon{
             padding:0em!important;
             img{
                 padding-top: 2.5em;
+                width: 70%;
+                margin-left: 15%;
             }
         }
 
@@ -1800,5 +1802,13 @@ form.checkout_coupon.woocommerce-form-coupon{
 	.woocommerce-customer-details {
 	    padding: 0 2em;
 	}
+
+
+    .menu-toggle{
+        background-color: transparent;
+        border:none;
+        margin-left: 40%;
+        margin-top: 1em;
+    }
 
 }

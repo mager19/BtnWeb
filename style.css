@@ -35,28 +35,7 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -939,7 +918,7 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
 
 @media screen and (max-width: 1024px) { .contenedor { padding: 2em 0 !important; }
   header .site-branding { padding: 0em !important; }
-  header .site-branding img { padding-top: 2.5em; }
+  header .site-branding img { padding-top: 2.5em; width: 70%; margin-left: 15%; }
   header ul li { margin-right: 1em !important; }
   .news__items h2 { margin-top: 2em; }
   .contacto .item__contacto form input { padding-right: 0%; }
@@ -975,4 +954,5 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   form.checkout.woocommerce-checkout .order { padding: 1em !important; }
   form.checkout_coupon.woocommerce-form-coupon, form.woocommerce-form-login.login { width: 100%; }
   .woocommerce-order-details { padding: 0 2em; }
-  .woocommerce-customer-details { padding: 0 2em; } }
+  .woocommerce-customer-details { padding: 0 2em; }
+  .menu-toggle { background-color: transparent; border: none; margin-left: 40%; margin-top: 1em; } }
