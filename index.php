@@ -28,7 +28,7 @@ get_header();
 									
 									<div class="col-lg-6 col-md-12 col-sm-12 order-md-2 order-2">
 										<h2><?php the_title(); ?></h2>
-										<?php the_content(); ?>
+										<?php the_excerpt(); ?>
 										<a href="<?php the_permalink(); ?>">VER MÁS</a>
 									</div>	
 									<div class="col-lg-6 col-md-12 col-sm-12 order-md-1 order-1">
