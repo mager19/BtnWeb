@@ -162,6 +162,30 @@ function batanaweb_customize_register( $wp_customize ) {
 	);
 
 
+	//Section Responsive
+
+
+	// Add setting
+	$wp_customize->add_setting( 'responsive_imagen_superior', array(
+		 'default'        => '',
+	) );
+
+
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+	    $wp_customize,
+		'responsive_imagen_superior',
+		    array(
+		        'label'    => __( 'Moviles Imagen Superior' ),
+		        'section'  => 'BatanaWeb',
+		        'settings' => 'responsive_imagen_superior',
+		        'description' => 'En esta zona va la imagen superior para la versión moviles 800x800'
+		 						
+		    )
+	    )
+	);
+
+
 
 
 }

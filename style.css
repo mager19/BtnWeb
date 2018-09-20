@@ -960,4 +960,6 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .woocommerce-order-details { padding: 0 2em; }
   .woocommerce-customer-details { padding: 0 2em; }
   .menu-toggle { background-color: transparent; border: none; margin-left: 40%; margin-top: 1em; }
-  .header__left .titulos__home, .header__right .titulos__home { font-size: 1em; padding: 0px; } }
+  .header__left .titulos__home, .header__right .titulos__home { font-size: 1em; padding: 0px; }
+  .superior { background-size: contain; height: auto; margin-top: 20%; }
+  .superior__moviles { height: 50vh; background-size: contain; margin-top: 45%; } }
