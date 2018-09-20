@@ -1000,6 +1000,6 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .header__left .titulos__home, .header__right .titulos__home { font-size: 1em; padding: 0px; }
   .header__top { /* font-family: old; */ /* padding: 10em 0; */ padding-top: 10em; padding-bottom: 4em; }
   .with-background { height: auto; background-size: contain; margin-top: 45%; margin-top: -10px; }
-  .with-background .header__left, .with-background .header__right { font-family: old; display: flex; align-items: center; justify-content: center; height: 36vh; } }
+  .header__left, .header__right { font-family: old; display: flex; align-items: center; justify-content: center; height: 36vh; } }
 
 /*fin max-width: 768px*/
