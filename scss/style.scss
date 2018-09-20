@@ -13,6 +13,10 @@ a:visited, p > a, h2 > a, h4 > a {
 
     }
 }
+#sb_instagram .sb_instagram_header h3.sbi_no_bio {
+    padding-top: 9px!important;
+    color: #000;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
@@ -835,8 +839,11 @@ p.woocommerce-result-count {
     text-transform: uppercase;
     font-family: 'old';
     letter-spacing: 3px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #bbb;
+}
+p.woocommerce-ordering{
+	font-size: 0.8em;
 }
 
 select.orderby.custom-select {
@@ -928,9 +935,11 @@ span.woocommerce-Price-amount.amount {
 .widget-area {
     padding-top: 117px;
     width: 200px;
+    color: $gris;
     .price_label {
         text-align: center;
     }
+    a{color: $gris; font-size: 0.9em;}
 }
 
 .widget_price_filter .ui-slider .ui-slider-range,
@@ -1083,9 +1092,12 @@ span.woocommerce-Price-amount.amount {
             font-family: 'questrial', sans-serif;
             h2 {
                 font-family: old;
-                font-size: 1em;
+                font-size: 1.2em;
                 letter-spacing: 3px;
                 text-transform: uppercase;
+            }
+            .shop_attributes{
+            	font-size: 0.8em;
             }
         }
     }

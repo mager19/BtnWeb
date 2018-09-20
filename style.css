@@ -35,7 +35,28 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -398,6 +419,8 @@ a, a:visited, p > a, h2 > a, h4 > a { color: #131313; }
 
 a:hover, a:visited:hover, p > a:hover, h2 > a:hover, h4 > a:hover { color: #131313; }
 
+#sb_instagram .sb_instagram_header h3.sbi_no_bio { padding-top: 9px !important; color: #000; }
+
 /*font-family: 'questrial', sans-serif;
 font-family: 'rokkitt', serif;
 font-family: 'opensans', sans-serif;*/
@@ -736,7 +759,9 @@ span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
 
 .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: right; width: 80%; clear: none; font-family: 'questrial', sans-serif; }
 
-.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel h2 { font-family: old; font-size: 1em; letter-spacing: 3px; text-transform: uppercase; }
+.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel h2 { font-family: old; font-size: 1.2em; letter-spacing: 3px; text-transform: uppercase; }
+
+.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel .shop_attributes { font-size: 0.8em; }
 
 .product-template-default section.related.products { text-align: center; border-top: 1px solid #ddd; margin-top: 3.5em; padding-top: 2em; padding-bottom: 4em; }
 
