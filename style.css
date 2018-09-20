@@ -675,7 +675,9 @@ ul.products li:hover .add-to-cart-container { display: block; }
 
 .woocommerce nav.woocommerce-pagination ul li a.next.page-numbers { color: #000; }
 
-p.woocommerce-result-count { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.9em; color: #bbb; }
+p.woocommerce-result-count { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.8em; color: #bbb; }
+
+p.woocommerce-ordering { font-size: 0.8em; }
 
 select.orderby.custom-select { font-family: old; text-transform: uppercase; letter-spacing: 3px; font-size: 0.9em; border: none; margin-top: -9px; color: #bbb; }
 
@@ -703,11 +705,21 @@ span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
 
 .widget button.button { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.9em; letter-spacing: 3px; padding: 0.5em; width: 100%; margin-top: 1em; }
 
-.widget-area { padding-top: 117px; width: 200px; }
+.widget-area { padding-top: 117px; width: 200px; color: #BBBBBB; }
 
 .widget-area .price_label { text-align: center; }
 
+.widget-area a { color: #BBBBBB; font-size: 0.9em; }
+
+/*.product-categories{
+	color: $gris;
+	a{
+		color: $gris;
+	}
+}*/
 .widget_price_filter .ui-slider .ui-slider-range, .widget_price_filter .ui-slider .ui-slider-handle { background: #000 !important; border-radius: 50%; }
+
+li.outofstock add-to-cart-container a button.btn { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 0.65em; width: 76%; border-radius: 0; text-transform: uppercase; }
 
 .product-template-default .content-area { width: 100%; }
 
