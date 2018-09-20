@@ -25,11 +25,11 @@
           <span aria-hidden="true">×</span>
         </button>
       </div>
-      <div class="modal-body"><center><h3>Guia de tallas</h3></center>
+      <div class="modal-body">
       	<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-			<div>
+			<div class="popBuscar">
 				<label class="screen-reader-text" for="s">Search for:</label>
-				<input type="text" value="<?php _e('search site', 'avia_framework')?>" name="s" id="s" placeholder="Search for products">
+				<input type="text" value="<?php __('Buscar', 'woocommerce')?>" name="s" id="s" placeholder="Search for products">
 				<input type="submit" id="searchsubmit" value="Search">
 				<input type="hidden" name="post_type" value="product">
 			</div>
@@ -60,10 +60,10 @@
 		
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-lg-2 col-md-4 col-sm-6">
 					<div class="footer__item">
 						<h3>NOSOTROS</h3>
-						<nav id="site-navigation" class="main-navigation">
+						<nav>
 							<?php
 								wp_nav_menu( array(
 									'theme_location' => 'menu-nosotros',
@@ -73,10 +73,10 @@
 						</nav><!-- #site-navigation -->
 					</div>
 				</div>	
-				<div class="col-md-2">
+				<div class="col-lg-2 col-md-4 col-sm-6 ">
 					<div class="footer__item">
 						<h3>AYUDA</h3>
-						<nav id="site-navigation" class="main-navigation">
+						<nav>
 							<?php
 								wp_nav_menu( array(
 									'theme_location' => 'menu-ayuda',
@@ -86,10 +86,10 @@
 						</nav>
 					</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-lg-2 col-md-4">
 					<div class="footer__item">
 						<h3>TIENDA ONLINE</h3>
-						<nav id="site-navigation" class="main-navigation">
+						<nav>
 							<?php
 								wp_nav_menu( array(
 									'theme_location' => 'menu-tiendaOnline',
@@ -99,10 +99,10 @@
 						</nav>
 					</div>
 				</div>	
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-4">
 					<div class="footer__item">
 						<h3>ENCUENTRANOS EN:</h3>
-						<nav id="site-navigation" class="main-navigation socialFooter">
+						<nav>
 							<?php
 								wp_nav_menu( array(
 									'theme_location' => 'menu-socialFooter',
@@ -112,10 +112,10 @@
 						</nav><!-- #site-navigation -->
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-8">
 					<div class="footer__item">
 						<h3>NEWSLETTER</h3>
-						<nav id="site-navigation" class="main-navigation socialFooter">
+						<nav >
 							<ul>
 								<li><a href="#">SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES</a></li>
 							</ul>

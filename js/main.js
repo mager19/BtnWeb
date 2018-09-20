@@ -14,7 +14,7 @@
 				    {
 				      breakpoint: 800,
 				      settings: {
-				        slidesToShow: 1,
+				        slidesToShow: 2,
 				        slidesToScroll: 1,
 				        infinite: true,
 				        
@@ -39,12 +39,13 @@
 		});
 
 		jQuery('.menu-hover').mouseleave(function(){
-			jQuery('header').css('background-color', "transparent");
+			jQuery('header').css('background-color', "#fff");
 			jQuery("header").height(_altura);
 		});
 
 
-		jQuery('.news__items>article:nth-child(2) div:first-child').addClass('order-2');
+		jQuery('.news__items>article:nth-child(2) div:first-child').addClass('order-lg-1');
+		jQuery('.news__items>article:nth-child(2) div:nth-child(2n)').addClass('order-lg-2');
 
 		jQuery('.agotado').attr({
 		   'data-toggle': 'modal',

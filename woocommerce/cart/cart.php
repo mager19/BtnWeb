@@ -128,7 +128,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
 						?>
 						</td>
-						<td>
+						<td class="updatecart">
 							<button type="submit" class="btn btn-outline-primary"  name="update_cart" value="<?php esc_attr_e( 'Update cart', 'understrap' ); ?>"><?php esc_html_e( 'Update cart', 'understrap' ); ?></button>
 						</td>
 

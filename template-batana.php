@@ -23,10 +23,10 @@ get_header();
 
 				<div class="contenido__page">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 order-2">
 							<?php the_content(); ?>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 order-1">
 							<?php the_post_thumbnail( $size = 'full' ); ?>
 						</div>
 					</div>
