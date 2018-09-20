@@ -120,16 +120,21 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.83em;
-    li {
-        margin-right: 1em;
 
-        a,
-        a:visited {
-            color: $negro;
+    ul{
+        margin-left: -1em;
 
-            &:hover {
-                color: $coral;
-                text-decoration: none;
+        li {
+            margin-right: 1em;
+
+            a,
+            a:visited {
+                color: $negro;
+
+                &:hover {
+                    color: $coral;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -188,7 +193,9 @@ header {
 		a, a:visited{
 			color:$blanco;
 			text-decoration: none;
-		}
+            background-color: rgba(0,0,0,0.3);
+            padding: 10px;
+        }
 		
 	}
 }
@@ -263,7 +270,7 @@ footer {
 
         h3 {
             color: $negro;
-            font-size: 0.9em;
+            font-size: 0.7em;
             font-family: old;
             font-weight: 800;
             letter-spacing: 3px;
@@ -277,12 +284,12 @@ footer {
             li {
                 display: block;
                 float: none;
-                margin-bottom: 0.9em;
+                margin-bottom: 5px;
 
                 a,
                 a:visited {
                     font-family: 'Questrial';
-                    font-size: 0.8em;
+                    font-size: 0.6em;
                     font-weight: 500;
                     letter-spacing: 1px;
                     color: #bbbbbb !important;
@@ -340,7 +347,7 @@ footer {
     	a{
             i{
                 color: $gris!important;
-                margin-right: 10px;
+                margin-right: 5px;
                 font-size: 1.5em!important;
             }
         }
@@ -403,7 +410,7 @@ footer {
 
         h2 {
             font-family: 'old';
-            font-size: 1.2em;
+            font-size: 0.9em;
             letter-spacing: 5px;
             text-transform: uppercase;
             margin-bottom: 1em;
@@ -421,7 +428,7 @@ footer {
             color: $negro;
             display: block;
             font-family: 'old';
-            font-size: 1.2em;
+            font-size: 0.7em;
             letter-spacing: 5px;
             text-transform: uppercase;
             margin-top: 2em;
@@ -684,6 +691,8 @@ nav.woocommerce-breadcrumb {
     /*display: none;*/
     padding-bottom: 20px;
     color: #bbb;
+    font-family: 'old';
+    font-size: 0.7em;
     a{color:#bbb;}
 }
 
@@ -1812,12 +1821,17 @@ form.checkout_coupon.woocommerce-form-coupon{
 	    padding: 0 2em;
 	}
 
-
     .menu-toggle{
         background-color: transparent;
         border:none;
         margin-left: 40%;
         margin-top: 1em;
+    }
+
+    .header__left .titulos__home, .header__right .titulos__home {
+        font-size: 1em;
+        padding: 0px;
+        
     }
 
 }
