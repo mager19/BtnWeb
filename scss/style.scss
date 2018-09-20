@@ -5,8 +5,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Questrial|Rokkitt');
 a,
-a:visited {
+a:visited, p > a, h2 > a {
     color: $oscurouno;
+
+    &:hover{
+        color: $oscurouno;
+
+    }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
@@ -332,9 +337,13 @@ footer {
         margin-top: 10em;
     }
     .whatsapp{
-    	color: #bbb;
-	    margin-right: 10px;
-	    font-size: 1.5em;
+    	a{
+            i{
+                color: $gris!important;
+                margin-right: 10px;
+                font-size: 1.5em!important;
+            }
+        }
     }
 }
 
@@ -909,7 +918,7 @@ span.woocommerce-Price-amount.amount {
 
 .widget-area {
     padding-top: 117px;
-    width: 160px;
+    width: 200px;
     .price_label {
         text-align: center;
     }
