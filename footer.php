@@ -16,7 +16,8 @@
 		</div>
 <?php } ?>
 	</div><!-- #content -->
-	<div style="display: none;" class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+	<!-- #Search Modal -->
+<div style="display: none;" class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -38,7 +39,51 @@
     </div>
   </div>
 </div>
+<!-- #Envios Modal -->
+<div style="display: none;" class="modal fade" id="enviosModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<p>ENVÍOS GRATUITOS para pedidos superiores a 100€ a cualquier parte del mundo. Los impuestos de aduana o costes ajenos al envío serán pagados por el comprador.</p>
+
+<p>España y Portugal (excluyendo Baleares, Canarias, Ceuta y Melilla): 5 euros
+Europa y resto de España: 18 euros <br>
+Resto del mundo: Pedir presupuesto por email <a href="mailto:pedidos@batanashop.com">pedidos@batanashop.com</a>
+Los costes de aduana no están incluidos en el precio y deberán ser pagados por el comprador.</p>
+
+<p>IMPORTANTE: En caso de devolución del producto se descontarán los gastos de envío a la hora de realizar la devolución del importe de la compra.</p></div>
+<h2 style="text-align: center;"><a href="#">¿Te gustaría pagar a plazos?</a></h2>
+      
+    </div>
+  </div>
+</div>
+
+<!-- #devoluciones Modal -->
+<div style="display: none;" class="modal fade" id="devolucionesModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<p>Nuestro objetivo es tu total satisfacción como cliente. Para proceder al cambio o devolución de un artículo adquirido en la tienda online, deberás solicitarla a través de un email a pedidos@batanashop.com en un plazo no superior a 15 días naturales desde la recepción del producto, haciéndonos saber el motivo del cambio o devolución en caso que lo creas necesario para ayudarnos a seguir mejorando.</p>
+<p>Mas info en <a href="https://batana.snswebs.es/condiciones-de-venta/">"condiciones de venta"</a></p></div>
+      
+    </div>
+  </div>
+</div>
+
 <style type="text/css">	jQuery(".agotado").attr({"data-toggle": "modal","data-target": "#largeModal"});</style>
+<!-- #disponibilidad Modal -->
 <div style="display: none;" class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
