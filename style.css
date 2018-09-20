@@ -463,7 +463,7 @@ header .main-navigation ul ul { box-shadow: none; }
 
 .header__left .titulos__home, .header__right .titulos__home { color: #fff; font-size: 2em; letter-spacing: 10px; padding: 80px; }
 
-.header__left .titulos__home a, .header__left .titulos__home a:visited, .header__right .titulos__home a, .header__right .titulos__home a:visited { color: #fff; text-decoration: none; }
+.header__left .titulos__home a, .header__left .titulos__home a:visited, .header__right .titulos__home a, .header__right .titulos__home a:visited { color: #fff; text-decoration: none; background-color: rgba(0, 0, 0, 0.3); padding: 10px; }
 
 /*.content-area {
     max-width: 1140px;
@@ -491,13 +491,13 @@ header .main-navigation ul ul { box-shadow: none; }
 /*footer*/
 footer { border-top: 2px solid #F5F5F5; padding: 2em; padding-top: 4em; }
 
-footer .footer__item h3 { color: #000000; font-size: 0.9em; font-family: old; font-weight: 800; letter-spacing: 3px; margin-bottom: 1.5em; text-align: left; }
+footer .footer__item h3 { color: #000000; font-size: 0.7em; font-family: old; font-weight: 800; letter-spacing: 3px; margin-bottom: 1.5em; text-align: left; }
 
 footer .footer__item ul { margin-left: -2.5em; }
 
-footer .footer__item ul li { display: block; float: none; margin-bottom: 0.9em; }
+footer .footer__item ul li { display: block; float: none; margin-bottom: 5px; }
 
-footer .footer__item ul li a, footer .footer__item ul li a:visited { font-family: 'Questrial'; font-size: 0.8em; font-weight: 500; letter-spacing: 1px; color: #bbbbbb !important; text-transform: uppercase; }
+footer .footer__item ul li a, footer .footer__item ul li a:visited { font-family: 'Questrial'; font-size: 0.6em; font-weight: 500; letter-spacing: 1px; color: #bbbbbb !important; text-transform: uppercase; }
 
 footer .footer__item ul li a i, footer .footer__item ul li a:visited i { color: #000000; font-size: 2em; }
 
@@ -509,7 +509,7 @@ footer .newsletter button { background-color: #000000; border: none; color: #fff
 
 footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 500; letter-spacing: 1px; color: #bbbbbb; text-transform: uppercase; margin-top: 10em; }
 
-footer .whatsapp a i { color: #BBBBBB !important; margin-right: 10px; font-size: 1.5em !important; }
+footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 1.5em !important; }
 
 .container { margin-top: 60px; margin-bottom: 60px; }
 
@@ -957,4 +957,5 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   form.checkout_coupon.woocommerce-form-coupon, form.woocommerce-form-login.login { width: 100%; }
   .woocommerce-order-details { padding: 0 2em; }
   .woocommerce-customer-details { padding: 0 2em; }
-  .menu-toggle { background-color: transparent; border: none; margin-left: 40%; margin-top: 1em; } }
+  .menu-toggle { background-color: transparent; border: none; margin-left: 40%; margin-top: 1em; }
+  .header__left .titulos__home, .header__right .titulos__home { font-size: 1em; padding: 0px; } }
