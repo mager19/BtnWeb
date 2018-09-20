@@ -397,7 +397,7 @@ add_filter( 'woocommerce_get_availability', 'wcs_custom_get_availability', 1, 2)
 function wcs_custom_get_availability( $availability, $_product ) {  
 	   
     if ( ! $_product->is_in_stock() ) {         
-    	$availability['availability'] = __('Agotado', 'woocommerce').'<br><p>Solicita avizo de disponivilidad.</p>';
+    	$availability['availability'] = __('Agotado', 'woocommerce').',<span> Solicita aviso de disponibilidad.</span>';
     	
     //.'<br><a href="#" class="color-white agotado"  data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible', 'woocommerce' ).'</a>')
          }  
