@@ -35,7 +35,28 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -394,9 +415,9 @@ embed, iframe, object { max-width: 100%; }
   .news__items { padding: 0 1em !important; }
   .news__items article p { padding-right: 0em; } }
 
-a, a:visited, p > a, h2 > a { color: #131313; }
+a, a:visited, p > a, h2 > a, h4 > a { color: #131313; }
 
-a:hover, a:visited:hover, p > a:hover, h2 > a:hover { color: #131313; }
+a:hover, a:visited:hover, p > a:hover, h2 > a:hover, h4 > a:hover { color: #131313; }
 
 /*font-family: 'questrial', sans-serif;
 font-family: 'rokkitt', serif;

@@ -373,11 +373,11 @@ echo '
 }
 if(get_field('envios', $post_id)){
 echo '<h5>
-  <a href="'.get_field('envios', $post_id).'" class="color-white" target="_blank" >'.__( 'Envios', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_field('envios', $post_id).'" class="color-white" data-toggle="modal" data-target="#enviosModal" >'.__( 'Envios', 'woocommerce' ).'</a> </h5>';
 }
 if(get_field('cambios_y_devoluciones', $post_id)){
 echo '<h5>
-  <a href="'.get_field('cambios_y_devoluciones', $post_id).'" class="color-white" target="_blank">'.__( 'Cambios y devoluciones', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_field('cambios_y_devoluciones', $post_id).'" class="color-white" data-toggle="modal" data-target="#devolucionesModal">'.__( 'Cambios y devoluciones', 'woocommerce' ).'</a> </h5>';
 }
 if(get_field('descripcion_y_cuidados', $post_id)){
 echo '<h5>
