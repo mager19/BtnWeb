@@ -432,6 +432,8 @@ a { color: #000; }
 
 .contenedor-fluid { padding: 8em 0; }
 
+.totop a { display: none; }
+
 .content-area { margin-top: 10%; }
 
 header { background-color: #fff; padding: 1em; /*height: 17em;*/ }
@@ -1001,6 +1003,12 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .header__top { /* font-family: old; */ /* padding: 10em 0; */ padding-top: 10em; padding-bottom: 4em; }
   .with-background { height: auto; background-size: contain; margin-top: 45%; }
   .with-background .header__left, .with-background .header__right { margin-top: -10px; font-family: old; display: flex; align-items: center; justify-content: center; height: 36vh; }
-  .home .contenedor .row { margin: 0px !important; } }
+  .home .contenedor .row { margin: 0px !important; }
+  .product-template-default ol.flex-control-nav.flex-control-thumbs { position: inherit; width: 100%; left: 0; }
+  .product-template-default .woocommerce-product-gallery { width: 90%; margin-left: 0px; float: none; }
+  .product-template-default ol.flex-control-nav.flex-control-thumbs li { min-width: auto; margin-bottom: 10px; }
+  .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: none; width: 90%; padding-top: 15px; }
+  ul.woocommerce-error, .woocommerce-info { margin-top: 17%; margin-left: 0; margin-right: 35px; }
+  .totop a { display: block; position: fixed; bottom: 93px; right: 33px; font-size: 1.2em; border: 2px solid; border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; } }
 
 /*fin max-width: 768px*/
