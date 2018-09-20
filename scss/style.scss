@@ -1866,4 +1866,24 @@ form.checkout_coupon.woocommerce-form-coupon{
         
     }
 
-}
+    .header__top {
+    /* font-family: old; */
+    /* padding: 10em 0; */
+	    padding-top: 10em;
+	    padding-bottom: 4em;
+	    .with-background{
+	    	height: auto;
+		    background-size: contain;
+		    margin-top: 45%;
+		    margin-top: -10px;
+	    }
+	    .header_left, .header_right {
+		    font-family: old;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    height: 36vh;
+		}
+	}
+    
+} /*fin max-width: 768px*/
