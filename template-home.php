@@ -26,7 +26,7 @@ get_template_part('template-parts/header', 'home'); ?>
 				
 
 			?>
-				<div class="col-md-12 with-background" style="background-image:url(<?php echo $imagen_superior; ?>);height: 90vh;">
+				<div class="col-md-12 with-background superior" style="background-image:url(<?php echo $imagen_superior; ?>);height: 90vh;">
 					<div class="header__top">
 					</div>
 				</div>
