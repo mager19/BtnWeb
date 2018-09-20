@@ -719,7 +719,7 @@ span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
 }*/
 .widget_price_filter .ui-slider .ui-slider-range, .widget_price_filter .ui-slider .ui-slider-handle { background: #000 !important; border-radius: 50%; }
 
-li.outofstock .add-to-cart-container a { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 0.65em; width: 76%; border-radius: 0; text-transform: uppercase; }
+li.outofstock .add-to-cart-container a { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.2em; width: 100%; border-radius: 0; text-transform: uppercase; }
 
 .product-template-default .content-area { width: 100%; }
 
