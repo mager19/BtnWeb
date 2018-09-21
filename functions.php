@@ -213,3 +213,24 @@ function add_admin_link($items, $args){
     return $items;
 }
 
+
+
+// For Woocommerce version 3 and above only
+add_filter( 'woocommerce_loop_add_to_cart_link', 'filter_loop_add_to_cart_link', 20, 3 );
+function filter_loop_add_to_cart_link( $button, $product, $args = array() ) {
+    if( $product->is_in_stock() ) return $button;
+
+    // HERE set your button text (when product is not on stock)
+    $button_text = __('Ver Producto', 'woocommerce');
+
+   	$url = get_permalink($product_id);
+
+   	$toggle = __('modal', 'woocommerce');
+
+   
+
+    return sprintf( '<div class="add-to-cart-container">
+    	                <a class="add_to_cart_button product_type_simple single_add_to_cart_button btn btn-outline-primary btn-block ajax_add_to_cart" href="%s" rel="nofollow" data-toggle="%s" >%s</a></div>', $url, $toogle, $button_text );
+    
+}
+
