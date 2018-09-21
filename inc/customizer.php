@@ -185,6 +185,49 @@ function batanaweb_customize_register( $wp_customize ) {
 	    )
 	);
 
+	// Add setting
+	$wp_customize->add_setting( 'responsive_imagen_izquierda', array(
+		 'default'        => '',
+	) );
+
+
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+	    $wp_customize,
+		'responsive_imagen_izquierda',
+		    array(
+		        'label'    => __( 'Moviles Imagen Izquierda' ),
+		        'section'  => 'BatanaWeb',
+		        'settings' => 'responsive_imagen_izquierda',
+		        'description' => 'En esta zona va la imagen IZQUIERDA para la versión moviles 800x800'
+		 						
+		    )
+	    )
+	);
+
+
+
+	// Add setting
+	$wp_customize->add_setting( 'responsive_imagen_derecha', array(
+		 'default'        => '',
+	) );
+
+
+	// Add control
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+	    $wp_customize,
+		'responsive_imagen_derecha',
+		    array(
+		        'label'    => __( 'Moviles Imagen Derecha' ),
+		        'section'  => 'BatanaWeb',
+		        'settings' => 'responsive_imagen_derecha',
+		        'description' => 'En esta zona va la imagen DERECHA para la versión moviles 800x800'
+		 						
+		    )
+	    )
+	);
+
+
 
 
 

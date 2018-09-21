@@ -24,6 +24,10 @@ get_template_part('template-parts/header', 'home'); ?>
 				$texto_abajoderecha = get_theme_mod( 'texto_abajoderecha' );
 				$enlace_abajoizquierda = get_theme_mod( 'enlace_abajoizquierda' );
 				$enlace_abajoderecha = get_theme_mod( 'enlace_abajoderecha' );
+
+				//rESPONSIVE
+				$responsive_imagen_izquierda = get_theme_mod( 'responsive_imagen_izquierda' );
+				$responsive_imagen_derecha = get_theme_mod( 'responsive_imagen_derecha' );
 				
 
 			?>
@@ -43,16 +47,45 @@ get_template_part('template-parts/header', 'home'); ?>
 					</div>
 				</div>
 
-				<div class="col-md-8 with-background" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
+				<div class="col-md-8 with-background d-none d-sm-block" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
 						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
 					</div>	
 				</div>
-				<div class="col-md-4 with-background" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
+				<!-- Izquierda -->
+				<div class="col-md-8 with-background d-block d-sm-none" style="background-image:url(<?php
+				 	if($responsive_imagen_izquierda){
+						echo $responsive_imagen_izquierda;
+				 	}else
+				 	echo $imagen_abajoizquierda; 
+
+				?>);">
+					<div class="header__left">
+						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
+					</div>	
+				</div>
+
+
+
+				<div class="col-md-4 with-background d-none d-sm-block" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
 					<div class="header__right">
 						<h2 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoderecha); ?>"><?php echo $texto_abajoderecha; ?></a></h2>
 					</div>
 				</div>
+
+				<!-- derecha -->
+				<div class="col-md-4 with-background d-block d-sm-none" style="background-image:url(<?php
+				 	if($responsive_imagen_derecha){
+						echo $responsive_imagen_derecha;
+				 	}else
+				 	echo $imagen_abajoderecha; 
+
+				?>);">
+					<div class="header__left">
+						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
+					</div>	
+				</div>
+				
 
 			<?php	
 			endwhile; // End of the loop.
