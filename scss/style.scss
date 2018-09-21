@@ -70,6 +70,9 @@ header {
         padding: 2em 0.5em;
     }
 
+	.menu-principal-container {
+	    padding-left: 10%;
+	}
     #primary-menu {
         padding-top: 2.2em;
 
@@ -701,6 +704,7 @@ nav.woocommerce-breadcrumb {
     color: #bbb;
     font-family: 'old';
     font-size: 0.7em;
+        text-transform: lowercase;
     a{color:#bbb;}
 }
 
@@ -1915,7 +1919,7 @@ form.checkout_coupon.woocommerce-form-coupon{
 	.totop a {
 		display: block;
 	    position: fixed;
-	    bottom: 93px;
+	    bottom: 33px;
 	    right: 33px;
 	    font-size: 1.2em;
 	    border: 2px solid;
@@ -1930,6 +1934,38 @@ form.checkout_coupon.woocommerce-form-coupon{
         margin-top: 45%;
     }
 
+    .menu-principal-container {
+	    
+    	padding-left: 0% !important;
+
+	    ul#primary-menu{
+	    	text-align: center;
+		     li {
+			    text-align: center;
+			    float: initial;
+			    margin: 0 2% !important;
+			}
+		}
+		ul.sub-menu {
+		    width: 100vw !important;
+		    background-color: #fff;
+		    padding-bottom: 16px;
+		        position: absolute;
+    		left: -87%;
+    		li{
+    			text-align: left !important;
+    			padding-left: 12%;
+    		}
+    		ul.sub-menu{
+    			    position: initial;
+    			    li{
+    			    	padding-left: 0px;
+    			    	padding-bottom: 5px;
+    			    }
+    		}
+		}
+	}
+    
 
 
 }
