@@ -701,7 +701,7 @@ h2.woocommerce-loop-product__title { margin-top: 2.2em; text-transform: uppercas
 
 .woo.row { flex-direction: row-reverse; justify-content: space-between; }
 
-span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
+span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; color: #ce9a90; }
 
 .widget h2.widget-title { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.9em; }
 
