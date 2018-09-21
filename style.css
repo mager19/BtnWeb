@@ -470,7 +470,7 @@ header #primary-menu li .sub-menu li .sub-menu li a { font-size: 0.65em; letter-
 
 header .main-navigation ul ul { box-shadow: none; }
 
-.menu-aux { padding-top: 2em; text-align: right; font-family: old; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; font-size: 0.83em; }
+.menu-aux { padding-top: 3em; text-align: right; font-family: old; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; font-size: 0.7em; }
 
 .menu-aux ul { margin-left: -1em; }
 
