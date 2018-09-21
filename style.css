@@ -436,7 +436,7 @@ a { color: #000; }
 
 .contenedor-fluid { padding: 8em 0; }
 
-.totop a { display: none; }
+.totop a, .carttotop a { display: none; }
 
 .content-area { margin-top: 10%; }
 
@@ -1017,7 +1017,8 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .product-template-default ol.flex-control-nav.flex-control-thumbs li { min-width: auto; margin-bottom: 10px; }
   .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: none; width: 90%; padding-top: 15px; }
   ul.woocommerce-error, .woocommerce-info { margin-top: 17%; margin-left: 0; margin-right: 35px; }
-  .totop a { display: block; position: fixed; bottom: 33px; right: 33px; font-size: 1.2em; border: 2px solid; border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; }
+  .totop a { display: block; position: fixed; bottom: 33px; right: 33px; font-size: 1.2em; /*border: 2px solid;*/ border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; }
+  .carttotop a { display: block; position: fixed; bottom: 33px; right: 74px; font-size: 1.2em; /* border: 2px solid; */ border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; }
   .superior__moviles { height: 50vh; background-size: contain; margin-top: 45%; }
   .menu-principal-container { padding-left: 0% !important; }
   .menu-principal-container ul#primary-menu { text-align: center; }
