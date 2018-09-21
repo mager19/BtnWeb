@@ -47,7 +47,7 @@ a{
     padding: 8em 0;
 }
 
-.totop a {display: none;}
+.totop a,.carttotop a {display: none;}
 .content-area {
     margin-top: 10%;
 }
@@ -1930,6 +1930,18 @@ form.checkout_coupon.woocommerce-form-coupon{
 	    right: 33px;
 	    font-size: 1.2em;
 	    border: 2px solid;
+	    border-radius: 50%;
+	    padding: 0px 11px 3px;
+	    background-color: #fff;
+	    color: #000;
+	}
+	.carttotop a{
+	    display: block;
+	    position: fixed;
+	    bottom: 36px;
+	    right: 74px;
+	    font-size: 1.2em;
+	    /* border: 2px solid; */
 	    border-radius: 50%;
 	    padding: 0px 11px 3px;
 	    background-color: #fff;
