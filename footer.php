@@ -186,6 +186,14 @@ Los costes de aduana no están incluidos en el precio y deberán ser pagados por
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64292992-47"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
+gtag('config', 'UA-64292992-47');
+</script>
 </body>
 </html>
