@@ -1000,17 +1000,12 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .woocommerce-customer-details { padding: 0 2em; }
   .menu-toggle { background-color: transparent; border: none; margin-left: 40%; margin-top: 1em; }
   .header__left .titulos__home, .header__right .titulos__home { font-size: 1em; padding: 0px; }
-  .header__top { /* font-family: old; */ /* padding: 10em 0; */ padding-top: 10em; padding-bottom: 4em; }
-  .with-background { height: auto; background-size: contain; margin-top: 45%; }
-  .with-background .header__left, .with-background .header__right { margin-top: -10px; font-family: old; display: flex; align-items: center; justify-content: center; height: 36vh; }
+  .superior { background-size: contain; height: auto; margin-top: 20%; }
   .home .contenedor .row { margin: 0px !important; }
   .product-template-default ol.flex-control-nav.flex-control-thumbs { position: inherit; width: 100%; left: 0; }
   .product-template-default .woocommerce-product-gallery { width: 90%; margin-left: 0px; float: none; }
   .product-template-default ol.flex-control-nav.flex-control-thumbs li { min-width: auto; margin-bottom: 10px; }
   .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: none; width: 90%; padding-top: 15px; }
   ul.woocommerce-error, .woocommerce-info { margin-top: 17%; margin-left: 0; margin-right: 35px; }
-  .totop a { display: block; position: fixed; bottom: 93px; right: 33px; font-size: 1.2em; border: 2px solid; border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; } }
-  .superior { background-size: contain; height: auto; margin-top: 20%; }
+  .totop a { display: block; position: fixed; bottom: 93px; right: 33px; font-size: 1.2em; border: 2px solid; border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; }
   .superior__moviles { height: 50vh; background-size: contain; margin-top: 45%; } }
-
-/*fin max-width: 768px*/
