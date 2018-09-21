@@ -181,6 +181,7 @@ Los costes de aduana no están incluidos en el precio y deberán ser pagados por
 				</div>
 			</div>
 		</div>
+		<div class="totop"><a href="#page"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
