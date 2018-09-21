@@ -2,13 +2,14 @@
 
 		$('.destacados__carrousel').slick({
   				autoplay: false,
-  				speed: 2000,
+  				speed: 500,
 				dots: false,
 				infinite: true,
 				slidesToShow: 5, 
 		  		slidesToScroll: 1,
 		  		arrows:true,
 		  		pauseOnHover: true,
+		  		swipeToSlide: true,
 		  		responsive: [
 		  			
 				    {
