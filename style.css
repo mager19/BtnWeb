@@ -35,28 +35,7 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -415,6 +394,10 @@ embed, iframe, object { max-width: 100%; }
   .news__items { padding: 0 1em !important; }
   .news__items article p { padding-right: 0em; } }
 
+a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
+
+a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
+
 a, a:visited, p > a, h2 > a, h4 > a { color: #131313; }
 
 a:hover, a:visited:hover, p > a:hover, h2 > a:hover, h4 > a:hover { color: #131313; }
@@ -448,7 +431,7 @@ header #primary-menu { padding-top: 2.2em; }
 
 header #primary-menu li { display: inline-block; }
 
-header #primary-menu li a, header #primary-menu li a:visited { color: #000000; font-family: old; font-size: 0.8em; font-weight: 600; letter-spacing: 5px; }
+header #primary-menu li a, header #primary-menu li a:visited { color: #000000; font-family: old; font-size: 1em; font-weight: 600; letter-spacing: 5px; }
 
 header #primary-menu li a:hover, header #primary-menu li a:visited:hover { color: #ce9a90; text-decoration: none; }
 
@@ -677,9 +660,9 @@ ul.products li:hover .add-to-cart-container { display: block; }
 
 .woocommerce nav.woocommerce-pagination ul li a.next.page-numbers { color: #000; }
 
-p.woocommerce-result-count { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.8em; color: #bbb; }
+p.woocommerce-result-count { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.7em; color: #bbb; }
 
-p.woocommerce-ordering { font-size: 0.8em; }
+p.woocommerce-ordering { font-size: 0.7em; }
 
 select.orderby.custom-select { font-family: old; text-transform: uppercase; letter-spacing: 3px; font-size: 0.9em; border: none; margin-top: -9px; color: #bbb; }
 

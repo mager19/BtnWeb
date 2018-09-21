@@ -4,6 +4,10 @@
 @import "_mediaqueries";
 
 @import url('https://fonts.googleapis.com/css?family=Questrial|Rokkitt');
+
+a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
+a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
+
 a,
 a:visited, p > a, h2 > a, h4 > a {
     color: $oscurouno;
@@ -75,7 +79,7 @@ header {
             a:visited {
                 color: $negro;
                 font-family: old;
-                font-size: 0.8em;
+                font-size: 1em;
                 font-weight: 600;
                 letter-spacing: 5px;
 
@@ -839,11 +843,11 @@ p.woocommerce-result-count {
     text-transform: uppercase;
     font-family: 'old';
     letter-spacing: 3px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: #bbb;
 }
 p.woocommerce-ordering{
-	font-size: 0.8em;
+	font-size: 0.7em;
 }
 
 select.orderby.custom-select {
