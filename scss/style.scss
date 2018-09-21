@@ -124,13 +124,13 @@ header {
 }
 
 .menu-aux {
-    padding-top: 2em;
+    padding-top: 3em;
     text-align: right;
     font-family: old;
     letter-spacing: 2px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.83em;
+    font-size: 0.7em;
 
     ul{
         margin-left: -1em;
@@ -262,7 +262,7 @@ header {
     }
 
     .woocommerce-Price-amount.amount {
-        color: $negro;
+        color: $coral;
         font-size: 0.9em;
         font-weight: 700;
     }
@@ -701,6 +701,7 @@ footer {
 ul.products.columns-3 {
     width: 100%;
 }
+
 
 nav.woocommerce-breadcrumb {
     /*display: none;*/
@@ -1973,7 +1974,7 @@ form.checkout_coupon.woocommerce-form-coupon{
 		    background-color: #fff;
 		    padding-bottom: 16px;
 		        position: absolute;
-    		left: -87%;
+    		left: -87% !important;
     		li{
     			text-align: left !important;
     			/*padding-left: 12%;*/
