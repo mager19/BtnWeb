@@ -17,6 +17,7 @@ get_template_part('template-parts/header', 'home'); ?>
 			while ( have_posts() ) : the_post();
 
 				$imagen_superior = get_theme_mod( 'imagen_superior' );
+				$responsive_imagen_superior = get_theme_mod( 'responsive_imagen_superior' );
 				$imagen_abajoizquierda = get_theme_mod( 'imagen_abajoizquierda' );
 				$imagen_abajoderecha = get_theme_mod( 'imagen_abajoderecha' );
 				$texto_abajoizquierda = get_theme_mod( 'texto_abajoizquierda' );
@@ -26,10 +27,22 @@ get_template_part('template-parts/header', 'home'); ?>
 				
 
 			?>
-				<div class="col-md-12 with-background" style="background-image:url(<?php echo $imagen_superior; ?>);height: 90vh;">
+				<div class="col-md-12 with-background superior d-none d-sm-block" style="background-image:url(<?php echo $imagen_superior; ?>);height: 90vh;">
 					<div class="header__top">
 					</div>
 				</div>
+				
+				<div class="col-md-8 superior__moviles d-block d-sm-none" style="background-image:url(<?php 
+					if($responsive_imagen_superior){
+						echo $responsive_imagen_superior;
+					}else
+					echo $imagen_superior; 
+
+				?>);">
+					<div class="header__top">
+					</div>
+				</div>
+
 				<div class="col-md-8 with-background" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
 						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>

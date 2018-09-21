@@ -34,12 +34,13 @@
 		var _altura= jQuery("header").height();
 		jQuery('.menu-hover').hover(function(){
 			jQuery('header').css('background-color', "#fff");
-
+			jQuery('.sub-menu').show();
 			jQuery("header").height(jQuery("header").height()+jQuery("ul#primary-menu li ul.sub-menu li ul.sub-menu").height()+40);
 		});
 
 		jQuery('.menu-hover').mouseleave(function(){
 			jQuery('header').css('background-color', "#fff");
+			jQuery('.sub-menu').hide();
 			jQuery("header").height(_altura);
 		});
 
