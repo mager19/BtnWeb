@@ -1112,7 +1112,7 @@ li.outofstock {
             li {
                 a {
                     font-family: old;
-                    font-size: 0.8em;
+                    font-size: 0.7em;
                     letter-spacing: 3px;
                     text-transform: uppercase;
                     padding-top: 0;
@@ -1125,9 +1125,10 @@ li.outofstock {
             width: 80%;
             clear: none;
             font-family: 'questrial', sans-serif;
+            padding-left: 3em;
             h2 {
                 font-family: old;
-                font-size: 1em;
+                font-size: 0.7em;
                 letter-spacing: 3px;
                 text-transform: uppercase;
             }
@@ -1737,6 +1738,7 @@ form.checkout_coupon.woocommerce-form-coupon{
     .title__page {
         padding-bottom: 1.5em;
         padding-top: 2em;
+        margin-top: 2em;
     }
 
     .footer__item {
@@ -1917,7 +1919,8 @@ form.checkout_coupon.woocommerce-form-coupon{
 	.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel {
 	    float: none;
 	    width: 90%;
-	    padding-top: 15px
+	    padding-top: 15px;
+        padding-left:0em;
 	}
 	ul.woocommerce-error, .woocommerce-info {
 	    margin-top: 17%;
