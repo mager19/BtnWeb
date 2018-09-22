@@ -1,5 +1,5 @@
 	jQuery(document).ready(function($){
-
+ 		
 		$('.destacados__carrousel').slick({
   				autoplay: false,
   				speed: 500,
@@ -112,6 +112,13 @@
 	}, 5);
 	
 	});
+
+/*setTimeout(function(){*/
+	if ( jQuery( "p.stock.out-of-stock" )  ) {
+	    jQuery( ".available" ).show(); console.log("show");
+		}
+/*}, 5);*/
+
 		
-	});
+});
 
