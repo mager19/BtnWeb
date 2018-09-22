@@ -59,6 +59,11 @@
 
 		jQuery('#ship-to-different-address-checkbox').attr('checked', false);
 
+
+		jQuery(".nav-menu li a").on("touchend", function(event) {
+		  window.location.href = $(this).attr("href");
+		});
+
 /*jQuery('a.woocommerce-product-gallery__trigger img').replaceWith('<img draggable="false" class="emoji" alt="🔍" src="../../wp-content/themes/BtnWeb/lupa.png" width="40" height="40">');*/
 
 		
