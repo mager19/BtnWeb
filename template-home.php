@@ -16,6 +16,8 @@ get_template_part('template-parts/header', 'home'); ?>
 			<?php
 			while ( have_posts() ) : the_post();
 
+
+				$texto_destacados = get_theme_mod( 'texto_destacados' );
 				$imagen_superior = get_theme_mod( 'imagen_superior' );
 				$responsive_imagen_superior = get_theme_mod( 'responsive_imagen_superior' );
 				$imagen_abajoizquierda = get_theme_mod( 'imagen_abajoizquierda' );
@@ -99,7 +101,18 @@ get_template_part('template-parts/header', 'home'); ?>
 			<div class="col-md-12">
 				<div class="home__destacados">
 					<h2 class="titulo_seccion">
-						PV / 18<br> DESTACADOS
+						
+						<?php 
+							if( $texto_destacados ){
+								echo  $texto_destacados;
+							}
+							else{
+								
+								 _e( 'ARTÍCULOS', 'woocommerce' );
+							}
+						?>
+						<br> 
+						DESTACADOS
 					</h2>
 					<div class="destacados__carrousel">
 						<?php $args = array( 'post_type' => 'product', 'tax_query' => array( array( 'taxonomy' => 'product_visibility', 'field' => 'name', 'terms' => 'featured', ), ), ); 

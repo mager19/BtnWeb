@@ -35,7 +35,28 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -394,6 +415,8 @@ embed, iframe, object { max-width: 100%; }
   .news__items { padding: 0 1em !important; }
   .news__items article p { padding-right: 0em; } }
 
+.available { display: none; }
+
 a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
 
 a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
@@ -517,7 +540,7 @@ footer .footer__item #socialFooter-menu li { display: inline-block !important; m
 
 footer .newsletter input { border-color: #BBBBBB; border-radius: none; padding: 1em; width: 80%; }
 
-footer .newsletter button { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.9em; letter-spacing: 3px; padding: 1em; width: 80%; margin-top: 1em; }
+footer .newsletter button, footer .newsletter input.wpcf7-submit { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.9em; letter-spacing: 3px; padding: 1em; width: 80%; margin-top: 1em; }
 
 footer .copyright h4 { font-family: 'Questrial'; font-size: 0.6em; font-weight: 500; letter-spacing: 1px; color: #bbbbbb; text-transform: uppercase; margin-top: 10em; }
 

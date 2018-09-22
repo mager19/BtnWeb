@@ -234,3 +234,37 @@ function filter_loop_add_to_cart_link( $button, $product, $args = array() ) {
     
 }
 
+//intento agotado
+
+add_action('woocommerce_after_add_to_cart_button','cmk_additional_button');
+function cmk_additional_button()
+{
+
+// 	echo '<a href="cart/?add-to-cart=10233&variation_id=10234&attribute_pa_color=red" button type="submit" class="button alt">Sample 
+// Pot</a>';
+
+}
+
+
+
+// The sold_out button replacement
+function sold_out_button() {
+    global $post, $product;
+
+    ?>
+    <div class="woocommerce-variation-add-to-cart variations_button">
+        <?php
+            do_action( 'woocommerce_before_add_to_cart_quantity' );
+
+            woocommerce_quantity_input( array(
+                'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
+                'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
+                'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : $product->get_min_purchase_quantity(),
+            ) );
+
+            do_action( 'woocommerce_after_add_to_cart_quantity' );
+        ?>
+        <a class="single_sold_out_button button alt disabled wc-variation-is-unavailable"><?php _e( "Sold Out", "woocommerce" ); ?></a>
+    </div>
+    <?php
+}

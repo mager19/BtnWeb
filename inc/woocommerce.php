@@ -393,7 +393,7 @@ remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display')
 
 
 /*disponibilidad*/
-add_filter( 'woocommerce_get_availability', 'wcs_custom_get_availability', 1, 2); 
+/*add_filter( 'woocommerce_get_availability', 'wcs_custom_get_availability', 1, 2); 
 function wcs_custom_get_availability( $availability, $_product ) {  
 	   
     if ( ! $_product->is_in_stock() ) {         
@@ -402,15 +402,15 @@ function wcs_custom_get_availability( $availability, $_product ) {
     //.'<br><a href="#" class="color-white agotado"  data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible', 'woocommerce' ).'</a>')
          }  
      
-	return $availability; }
-add_action('woocommerce_product_meta_end', 'add_contact_form', 10);
+	return $availability; }*/
+/*add_action('woocommerce_product_meta_end', 'add_contact_form', 10);
 
 function add_contact_form() {
     global $product;
     if(!$product->is_in_stock( )) {
        echo '<a href="#" class="color-white agotado"  data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible2', 'woocommerce' ).'</a>';
     }
-}
+}*/
 
 
 
