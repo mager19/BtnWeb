@@ -35,28 +35,7 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -436,7 +415,7 @@ a { color: #000; }
 
 .contenedor-fluid { padding: 8em 0; }
 
-.totop a { display: none; }
+.totop a, .carttotop a { display: none; }
 
 .content-area { margin-top: 10%; }
 
@@ -470,7 +449,7 @@ header #primary-menu li .sub-menu li .sub-menu li a { font-size: 0.65em; letter-
 
 header .main-navigation ul ul { box-shadow: none; }
 
-.menu-aux { padding-top: 2em; text-align: right; font-family: old; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; font-size: 0.83em; }
+.menu-aux { padding-top: 3em; text-align: right; font-family: old; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; font-size: 0.7em; }
 
 .menu-aux ul { margin-left: -1em; }
 
@@ -496,7 +475,7 @@ header .main-navigation ul ul { box-shadow: none; }
 
 .header__left .titulos__home, .header__right .titulos__home { color: #fff; font-size: 2em; letter-spacing: 10px; padding: 80px; }
 
-.header__left .titulos__home a, .header__left .titulos__home a:visited, .header__right .titulos__home a, .header__right .titulos__home a:visited { color: #fff; text-decoration: none; background-color: rgba(0, 0, 0, 0.3); padding: 10px; }
+.header__left .titulos__home a, .header__left .titulos__home a:visited, .header__right .titulos__home a, .header__right .titulos__home a:visited { color: #fff; text-decoration: none; }
 
 /*.content-area {
     max-width: 1140px;
@@ -519,7 +498,7 @@ header .main-navigation ul ul { box-shadow: none; }
 
 .destacados__carrousel__item .woocommerce-loop-product__title { color: #000000; font-size: 0.7em; font-weight: 700; letter-spacing: 5px; line-height: 1.4em; margin-top: 4em; text-transform: uppercase; }
 
-.destacados__carrousel__item .woocommerce-Price-amount.amount { color: #000000; font-size: 0.9em; font-weight: 700; }
+.destacados__carrousel__item .woocommerce-Price-amount.amount { color: #ce9a90; font-size: 0.9em; font-weight: 700; }
 
 /*footer*/
 footer { border-top: 2px solid #F5F5F5; padding: 2em; padding-top: 4em; }
@@ -547,7 +526,7 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 .container { margin-top: 60px; margin-bottom: 60px; }
 
 /*Content page*/
-.title__page { border-bottom: 2px solid #F5F5F5; color: #ce9a90; font-family: old; font-size: 2.1em; letter-spacing: 7px; text-align: center; text-transform: uppercase; padding-bottom: 2.5em; }
+.title__page { border-bottom: 2px solid #F5F5F5; color: #ce9a90; font-family: old; font-size: 2.1em; letter-spacing: 7px; text-align: center; text-transform: uppercase; padding-bottom: 2.5em; margin-top: 1em; }
 
 .contenido__page { padding-top: 4em; }
 
@@ -685,13 +664,13 @@ ul.products li:hover .add-to-cart-container { display: block; }
 
 .woocommerce nav.woocommerce-pagination ul li a.next.page-numbers { color: #000; }
 
-p.woocommerce-result-count { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.7em; color: #bbb; }
+p.woocommerce-result-count { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.8em; color: #bbb; }
 
 p.woocommerce-ordering { font-size: 0.7em; }
 
-select.orderby.custom-select { font-family: old; text-transform: uppercase; letter-spacing: 3px; font-size: 0.9em; border: none; margin-top: -9px; color: #bbb; }
+select.orderby.custom-select { font-family: old; text-transform: uppercase; letter-spacing: 3px; font-size: 0.8em; border: none; margin-top: -9px; color: #bbb; }
 
-h2.woocommerce-loop-product__title { margin-top: 2.2em; text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.9em !important; }
+h2.woocommerce-loop-product__title { margin-top: 2.2em; text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.85em !important; }
 
 .add-to-cart-container { display: none; }
 
@@ -701,9 +680,9 @@ h2.woocommerce-loop-product__title { margin-top: 2.2em; text-transform: uppercas
 
 .woo.row { flex-direction: row-reverse; justify-content: space-between; }
 
-span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
+span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; color: #ce9a90; }
 
-.widget h2.widget-title { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.9em; }
+.widget h2.widget-title { text-transform: uppercase; font-family: 'old'; letter-spacing: 3px; font-size: 0.75em; }
 
 .widget a { color: #000; font-size: 0.8em; font-weight: 600; letter-spacing: 1px; }
 
@@ -719,7 +698,7 @@ span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; }
 
 .widget-area .price_label { text-align: center; }
 
-.widget-area a { color: #BBBBBB; font-size: 0.9em; }
+.widget-area a { color: #BBBBBB; font-size: 0.72em; }
 
 /*.product-categories{
 	color: $gris;
@@ -747,9 +726,9 @@ li.outofstock .add-to-cart-container a { background-color: #000000; border: none
 
 .product-template-default .summary.entry-summary a { color: #000; }
 
-.product-template-default .summary.entry-summary h1.product_title.entry-title { font-family: "old"; text-transform: uppercase; font-size: 1em; letter-spacing: 3px; }
+.product-template-default .summary.entry-summary h1.product_title.entry-title { font-family: "old"; text-transform: uppercase; font-size: 0.99em; letter-spacing: 3px; }
 
-.product-template-default .summary.entry-summary p { font-family: 'questrial', sans-serif; }
+.product-template-default .summary.entry-summary p { font-family: 'questrial', sans-serif; font-size: 0.95em; }
 
 .product-template-default .summary.entry-summary .quantity { width: 20%; float: left; margin-right: 10px; }
 
@@ -777,11 +756,13 @@ li.outofstock .add-to-cart-container a { background-color: #000000; border: none
 
 .product-template-default .woocommerce-tabs ul.tabs { width: 20%; float: left; min-width: 170px; margin-top: 1.5em; }
 
-.product-template-default .woocommerce-tabs ul.tabs li a { font-family: old; font-size: 0.8em; letter-spacing: 3px; text-transform: uppercase; padding-top: 0; color: #000; }
+.product-template-default .woocommerce-tabs ul.tabs li a { font-family: old; font-size: 0.7em; letter-spacing: 3px; text-transform: uppercase; padding-top: 0; color: #000; }
 
-.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: right; width: 80%; clear: none; font-family: 'questrial', sans-serif; }
+.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: right; width: 80%; clear: none; font-family: 'questrial', sans-serif; padding-left: 3em; }
 
-.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel h2 { font-family: old; font-size: 1.2em; letter-spacing: 3px; text-transform: uppercase; }
+.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel h2 { font-family: old; font-size: 0.7em; letter-spacing: 3px; text-transform: uppercase; }
+
+.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel p { font-size: 0.95em; }
 
 .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel .shop_attributes { font-size: 0.8em; }
 
@@ -976,7 +957,7 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .add-to-cart-container a.add_to_cart_button { font-size: 0.7em; white-space: normal; } }
 
 @media screen and (max-width: 768px) { #auxiliar-menu { display: none; }
-  .title__page { padding-bottom: 1.5em; padding-top: 2em; }
+  .title__page { padding-bottom: 1.5em; padding-top: 2em; margin-top: 2em; }
   .footer__item { margin-top: 1em; }
   .footer__item ul { margin-left: -2.5em; }
   .footer__item #socialFooter-menu li { display: inline; margin-left: 10px; }
@@ -1013,14 +994,15 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .product-template-default ol.flex-control-nav.flex-control-thumbs { position: inherit; width: 100%; left: 0; }
   .product-template-default .woocommerce-product-gallery { width: 90%; margin-left: 0px; float: none; }
   .product-template-default ol.flex-control-nav.flex-control-thumbs li { min-width: auto; margin-bottom: 10px; }
-  .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: none; width: 90%; padding-top: 15px; }
+  .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: none; width: 90%; padding-top: 15px; padding-left: 0em; }
   ul.woocommerce-error, .woocommerce-info { margin-top: 17%; margin-left: 0; margin-right: 35px; }
-  .totop a { display: block; position: fixed; bottom: 33px; right: 33px; font-size: 1.2em; border: 2px solid; border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; }
+  .totop a { display: block; position: fixed; bottom: 33px; right: 33px; font-size: 1.2em; /*border: 2px solid;*/ border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; }
+  .carttotop a { display: block; position: fixed; bottom: 33px; right: 74px; font-size: 1.2em; /* border: 2px solid; */ border-radius: 50%; padding: 1px 9px 3px; background-color: #fff; color: #000000; }
   .superior__moviles { height: 50vh; background-size: contain; margin-top: 45%; }
   .menu-principal-container { padding-left: 0% !important; }
   .menu-principal-container ul#primary-menu { text-align: center; }
   .menu-principal-container ul#primary-menu li { text-align: center; float: initial; margin: 0 2% !important; }
-  .menu-principal-container ul.sub-menu { padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 16px; position: absolute; left: -87%; }
+  .menu-principal-container ul.sub-menu { padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 16px; position: absolute; left: -87% !important; }
   .menu-principal-container ul.sub-menu li { text-align: left !important; /*padding-left: 12%;*/ padding-bottom: 10px; }
   .menu-principal-container ul.sub-menu ul.sub-menu { display: none; position: initial; }
   .menu-principal-container ul.sub-menu ul.sub-menu li { padding-left: 0px; padding-bottom: 5px; }

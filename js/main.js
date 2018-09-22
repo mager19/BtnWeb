@@ -2,13 +2,14 @@
 
 		$('.destacados__carrousel').slick({
   				autoplay: false,
-  				speed: 2000,
+  				speed: 500,
 				dots: false,
 				infinite: true,
 				slidesToShow: 5, 
 		  		slidesToScroll: 1,
 		  		arrows:true,
 		  		pauseOnHover: true,
+		  		swipeToSlide: true,
 		  		responsive: [
 		  			
 				    {
@@ -35,12 +36,14 @@
 		jQuery('.menu-hover').hover(function(){
 			jQuery('header').css('background-color', "#fff");
 			jQuery('.sub-menu').show();
+						
 			jQuery("header").height(jQuery("header").height()+jQuery("ul#primary-menu li ul.sub-menu li ul.sub-menu").height()+40);
 		});
 
 		jQuery('.menu-hover').mouseleave(function(){
 			jQuery('header').css('background-color', "#fff");
 			jQuery('.sub-menu').hide();
+						
 			jQuery("header").height(_altura);
 		});
 
@@ -54,7 +57,12 @@
 		});
 
 
+		jQuery('#ship-to-different-address-checkbox').attr('checked', false);
 
+
+		jQuery(".nav-menu li a").on("touchend", function(event) {
+		  window.location.href = $(this).attr("href");
+		});
 
 /*jQuery('a.woocommerce-product-gallery__trigger img').replaceWith('<img draggable="false" class="emoji" alt="🔍" src="../../wp-content/themes/BtnWeb/lupa.png" width="40" height="40">');*/
 
