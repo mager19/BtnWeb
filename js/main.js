@@ -35,23 +35,15 @@
 		var _altura= jQuery("header").height();
 		jQuery('.menu-hover').hover(function(){
 			jQuery('header').css('background-color', "#fff");
-			if (window.matchMedia('(min-width: 769px)').matches)
-			{
-			    // do functionality on screens smaller than 768px
-			    jQuery('.sub-menu').show();
-			}
-			
+			jQuery('.sub-menu').show();
+						
 			jQuery("header").height(jQuery("header").height()+jQuery("ul#primary-menu li ul.sub-menu li ul.sub-menu").height()+40);
 		});
 
 		jQuery('.menu-hover').mouseleave(function(){
 			jQuery('header').css('background-color', "#fff");
-			if (window.matchMedia('(max-width: 768px)').matches)
-			{
-			    // do functionality on screens smaller than 768px
-			    jQuery('.sub-menu').hide();
-			}
-			
+			jQuery('.sub-menu').hide();
+						
 			jQuery("header").height(_altura);
 		});
 

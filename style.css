@@ -35,28 +35,7 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -777,11 +756,11 @@ li.outofstock .add-to-cart-container a { background-color: #000000; border: none
 
 .product-template-default .woocommerce-tabs ul.tabs { width: 20%; float: left; min-width: 170px; margin-top: 1.5em; }
 
-.product-template-default .woocommerce-tabs ul.tabs li a { font-family: old; font-size: 0.8em; letter-spacing: 3px; text-transform: uppercase; padding-top: 0; color: #000; }
+.product-template-default .woocommerce-tabs ul.tabs li a { font-family: old; font-size: 0.7em; letter-spacing: 3px; text-transform: uppercase; padding-top: 0; color: #000; }
 
-.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: right; width: 80%; clear: none; font-family: 'questrial', sans-serif; }
+.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: right; width: 80%; clear: none; font-family: 'questrial', sans-serif; padding-left: 3em; }
 
-.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel h2 { font-family: old; font-size: 1em; letter-spacing: 3px; text-transform: uppercase; }
+.product-template-default .woocommerce-tabs .woocommerce-Tabs-panel h2 { font-family: old; font-size: 0.7em; letter-spacing: 3px; text-transform: uppercase; }
 
 .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel p { font-size: 0.95em; }
 
@@ -978,7 +957,7 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .add-to-cart-container a.add_to_cart_button { font-size: 0.7em; white-space: normal; } }
 
 @media screen and (max-width: 768px) { #auxiliar-menu { display: none; }
-  .title__page { padding-bottom: 1.5em; padding-top: 2em; }
+  .title__page { padding-bottom: 1.5em; padding-top: 2em; margin-top: 2em; }
   .footer__item { margin-top: 1em; }
   .footer__item ul { margin-left: -2.5em; }
   .footer__item #socialFooter-menu li { display: inline; margin-left: 10px; }
@@ -1015,7 +994,7 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .product-template-default ol.flex-control-nav.flex-control-thumbs { position: inherit; width: 100%; left: 0; }
   .product-template-default .woocommerce-product-gallery { width: 90%; margin-left: 0px; float: none; }
   .product-template-default ol.flex-control-nav.flex-control-thumbs li { min-width: auto; margin-bottom: 10px; }
-  .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: none; width: 90%; padding-top: 15px; }
+  .product-template-default .woocommerce-tabs .woocommerce-Tabs-panel { float: none; width: 90%; padding-top: 15px; padding-left: 0em; }
   ul.woocommerce-error, .woocommerce-info { margin-top: 17%; margin-left: 0; margin-right: 35px; }
   .totop a { display: block; position: fixed; bottom: 33px; right: 33px; font-size: 1.2em; /*border: 2px solid;*/ border-radius: 50%; padding: 0px 11px 3px; background-color: #fff; color: #000; }
   .carttotop a { display: block; position: fixed; bottom: 33px; right: 74px; font-size: 1.2em; /* border: 2px solid; */ border-radius: 50%; padding: 1px 9px 3px; background-color: #fff; color: #000000; }
