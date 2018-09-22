@@ -21,6 +21,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+
 <div id="page" class="site">
 	<header class="header--home">
 		<div class="container-fluid">

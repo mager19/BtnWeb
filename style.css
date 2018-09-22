@@ -394,6 +394,8 @@ embed, iframe, object { max-width: 100%; }
   .news__items { padding: 0 1em !important; }
   .news__items article p { padding-right: 0em; } }
 
+.available { display: none; }
+
 a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
 
 a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
