@@ -167,11 +167,11 @@ Los costes de aduana no están incluidos en el precio y deberán ser pagados por
 								<li><a href="#">SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES</a></li>
 							</ul>
 						</nav>
-
-						<form action="#" class="newsletter">
+						<?php echo do_shortcode('[contact-form-7 id="912" title="newsletter" html_class="newsletter"]'); ?>
+						<!-- <form action="#" class="newsletter">
 							<input type="text" placeholder="Introduce tu email">
 							<button>SUSCRIBETE</button>
-						</form>
+						</form> -->
 					</div>
 				</div>
 				<div class="col-md-12">
