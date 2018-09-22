@@ -33,6 +33,26 @@ function batanaweb_customize_register( $wp_customize ) {
 		'title'    => __('Batana Web Configuración'),
 		'priority' => 10
 	) );
+
+	// Add setting
+	$wp_customize->add_setting( 'texto_destacados', array(
+		 'default'        => '',
+	) );
+
+	$wp_customize->add_control(new WP_Customize_Control(
+	        $wp_customize,
+	        'texto_destacados',
+	        array(
+	            'label'          => __( 'TEXTO DESTACADOS HOME' ),
+	            'section'        => 'BatanaWeb',
+	            'settings'       => 'texto_destacados',
+	            'type'           => 'text',
+	            
+	        )
+	    )
+	);
+
+
 	// Add setting
 	$wp_customize->add_setting( 'imagen_superior', array(
 		 'default'        => '',
