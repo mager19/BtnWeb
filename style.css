@@ -35,7 +35,28 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -528,7 +549,7 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 .container { margin-top: 60px; margin-bottom: 60px; }
 
 /*Content page*/
-.title__page { border-bottom: 2px solid #F5F5F5; color: #ce9a90; font-family: old; font-size: 2.1em; letter-spacing: 7px; text-align: center; text-transform: uppercase; padding-bottom: 2.5em; margin-top: 1em; }
+.title__page { border-bottom: 2px solid #F5F5F5; color: #ce9a90; font-family: old; font-size: 1.5em; letter-spacing: 7px; text-align: center; text-transform: uppercase; padding-bottom: 2.5em; margin-top: 1em; }
 
 .contenido__page { padding-top: 4em; }
 

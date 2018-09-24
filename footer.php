@@ -51,8 +51,9 @@
       </div>
       <div class="modal-body">
       	<h4 style="text-align: center;">Envíos</h4>
-      	<?php get_theme_mod( 'textoEnvios' ); ?>
-      	
+      	<p>
+      	<?php echo get_theme_mod( 'textoEnvios' ); ?>
+      	</p>
       	</div>
 
       
@@ -72,7 +73,7 @@
       </div>
       <div class="modal-body">
       	<h4 style="text-align: center;">Devoluciones</h4>
-      	<?php get_theme_mod( 'textoCambioDevoluciones' ); ?>
+      	<?php echo get_theme_mod( 'textoCambioDevoluciones' ); ?>
       	</div>
       
     </div>
@@ -90,8 +91,8 @@
         </button>
       </div>
       <div class="modal-body">
-      	<h4 style="text-align: center;">Devoluciones</h4>
-      	<?php get_theme_mod( 'textoPagoPlazos' ); ?>
+      	<h4 style="text-align: center;">Pago a plazos</h4>
+      	<?php echo get_theme_mod( 'textoPagoPlazos' ); ?>
       	</div>
       
     </div>
