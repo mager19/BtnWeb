@@ -1,5 +1,5 @@
 	jQuery(document).ready(function($){
-
+ 		
 		$('.destacados__carrousel').slick({
   				autoplay: false,
   				speed: 500,
@@ -101,6 +101,24 @@
 
 /*jQuery('a.woocommerce-product-gallery__trigger img').replaceWith('<img draggable="false" class="emoji" alt="🔍" src="../../wp-content/themes/BtnWeb/lupa.png" width="40" height="40">');*/
 
-		
+	/*Activa o desactiva  segun existencia de las variaciones el enlace  para  el popup de avisar*/
+	jQuery(".variations select").change(function(){
+	
+	console.log("cambio selector");
+	setTimeout(function(){
+	  if ( jQuery( "button.single_add_to_cart_button" ).is( ".wc-variation-is-unavailable" ) ) {
+	    jQuery( ".available" ).show(); console.log("show");
+		} else {jQuery( ".available" ).hide();console.log("hide");}
+	}, 5);
+	
 	});
+
+/*setTimeout(function(){*/
+	if ( jQuery( "p.stock.out-of-stock" )  ) {
+	    jQuery( ".available" ).show(); console.log("show");
+		}
+/*}, 5);*/
+
+		
+});
 
