@@ -248,6 +248,71 @@ function batanaweb_customize_register( $wp_customize ) {
 	);
 
 
+	// Customize opciones envios
+
+	// Add section.
+	$wp_customize->add_section( 'Textos_BatanaWeb' , array(
+		'title'    => __('Batana Web Textos'),
+		'priority' => 11
+	) );
+
+
+	// Add setting
+	$wp_customize->add_setting( 'textoEnvios', array(
+		 'default'        => '',
+	) );
+
+		// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'textoEnvios',
+		    array(
+		        'label'    => __( 'Texto Envios' ),
+		        'section'  => 'Textos_BatanaWeb',
+		        'settings' => 'textoEnvios',
+		        'description' => 'Por favor, utilizar para cada parrafo las etiquetas HTML de apertura y cierre de parrafo. <code>&#65308;p&#65310;ejemplo&#65308;/p&#65310;</code>. En esta zona puedes cambiar el texto de Envios que aparece en cada producto.',
+		        'type' => 'textarea'		 						
+		    )
+	    )
+	);
+
+		// Add setting
+	$wp_customize->add_setting( 'textoCambioDevoluciones', array(
+		 'default'        => '',
+	) );
+
+		// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'textoCambioDevoluciones',
+		    array(
+		        'label'    => __( 'Texto Cambios y Devoluciones' ),
+		        'section'  => 'Textos_BatanaWeb',
+		        'settings' => 'textoCambioDevoluciones',
+		        'description' => 'En esta zona puedes cambiar el texto de Cambios y Devoluciones que aparece en cada producto',
+		        'type' => 'textarea'		 						
+		    )
+	    )
+	);
+
+			// Add setting
+	$wp_customize->add_setting( 'textoPagoPlazos', array(
+		 'default'        => '',
+	) );
+
+		// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'textoPagoPlazos',
+		    array(
+		        'label'    => __( 'Texto Pago a Plazos' ),
+		        'section'  => 'Textos_BatanaWeb',
+		        'settings' => 'textoPagoPlazos',
+		        'description' => 'En esta zona puedes cambiar el texto de Pago a plazos que aparece en cada producto',
+		        'type' => 'textarea'		 						
+		    )
+	    )
+	);
 
 
 

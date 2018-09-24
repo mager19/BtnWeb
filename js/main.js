@@ -1,5 +1,5 @@
 	jQuery(document).ready(function($){
-
+ 		
 		$('.destacados__carrousel').slick({
   				autoplay: false,
   				speed: 500,
@@ -37,7 +37,7 @@
 			jQuery('header').css('background-color', "#fff");
 			jQuery('.sub-menu').show();
 						
-			jQuery("header").height(jQuery("header").height()+jQuery("ul#primary-menu li ul.sub-menu li ul.sub-menu").height()+40);
+			jQuery("header").height(jQuery("header").height()+jQuery("ul#primary-menu li ul.sub-menu li ul.sub-menu").height()+44);
 		});
 
 		jQuery('.menu-hover').mouseleave(function(){
@@ -112,6 +112,42 @@
 	}, 5);
 	
 	});
-		
-	});
 
+/*setTimeout(function(){*/
+	if ( jQuery( "p.stock.out-of-stock" )  ) {
+	    jQuery( ".available" ).show(); console.log("show");
+		}
+/*}, 5);*/
+
+
+
+
+
+		
+});
+
+/**** smooth scroll*/
+jQuery(document).ready(function(){
+  // Add smooth scrolling to all links
+  jQuery("div.totop a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      jQuery('html, body').animate({
+        scrollTop: jQuery(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});

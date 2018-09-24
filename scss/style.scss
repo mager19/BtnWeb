@@ -49,7 +49,19 @@ a{
     padding: 8em 0;
 }
 
-.totop a,.carttotop a {display: none;}
+.totop a{
+    display: block;
+        position: fixed;
+        bottom: 33px;
+        right: 33px;
+        font-size: 1.2em;
+        /*border: 2px solid;*/
+        border-radius: 50%;
+        padding: 0px 11px 3px;
+        background-color: #fff;
+        color: #000;
+}
+.carttotop a {display: none;}
 .content-area {
     margin-top: 10%;
 }
@@ -64,7 +76,8 @@ header {
 
         li {
             display: inline-block;
-            margin-right: 4em;
+            /*margin-right: 4em;*/
+            margin-right: 5%;
         }
     }
 
@@ -380,7 +393,7 @@ footer {
     border-bottom: 2px solid #F5F5F5;
     color: $coral;
     font-family: old;
-    font-size: 2.1em;
+    font-size: 1.5em;
     letter-spacing: 7px;
     text-align: center;
     text-transform: uppercase;
@@ -698,8 +711,19 @@ footer {
 }
 
 
-
+.lookmovil{
+    display: none !important;
+}
+.lookdesktop{
+        display: block;
+    }
 /****************************woo******************************/
+.available {
+    padding: 0.4em 0.5em 0 0.5em;
+    border: 1px solid;
+    text-align: center;
+    margin-bottom: 10px;
+}
 ul.products.columns-3 {
     width: 100%;
 }
@@ -721,7 +745,8 @@ header.woocommerce-products-header {
 
 .woocommerce-page {
     .content-area {
-        width: 75%;
+        /*width: 75%;*/
+        width: 80%;
     }
 }
 
@@ -1732,6 +1757,12 @@ form.checkout_coupon.woocommerce-form-coupon{
 
 
 @media screen and (max-width: 768px) {
+    .lookmovil{
+        display: block;
+    }
+    .lookdesktop{
+        display: none;
+    }
 
     #auxiliar-menu{
         display: none;
@@ -1974,7 +2005,8 @@ form.checkout_coupon.woocommerce-form-coupon{
 			}
 		}
 		ul.sub-menu {
-			padding-top: 1em !important;
+            display: none;
+			/*padding-top: 1em !important;
 		    width: 100vw !important;
 		    background-color: #fff;
 		    padding-bottom: 16px;
@@ -1983,8 +2015,8 @@ form.checkout_coupon.woocommerce-form-coupon{
     		li{
     			text-align: left !important;
     			/*padding-left: 12%;*/
-    			    padding-bottom: 10px;
-    		}
+    		/*	    padding-bottom: 10px;
+    		}*/
     		ul.sub-menu{ display: none;
     			    position: initial;
     			    li{
