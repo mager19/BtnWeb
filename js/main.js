@@ -37,7 +37,7 @@
 			jQuery('header').css('background-color', "#fff");
 			jQuery('.sub-menu').show();
 						
-			jQuery("header").height(jQuery("header").height()+jQuery("ul#primary-menu li ul.sub-menu li ul.sub-menu").height()+40);
+			jQuery("header").height(jQuery("header").height()+jQuery("ul#primary-menu li ul.sub-menu li ul.sub-menu").height()+44);
 		});
 
 		jQuery('.menu-hover').mouseleave(function(){

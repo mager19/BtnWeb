@@ -700,7 +700,7 @@ footer {
 
 
 .lookmovil{
-    display: none;
+    display: none !important;
 }
 .lookdesktop{
         display: block;
@@ -1746,8 +1746,8 @@ form.checkout_coupon.woocommerce-form-coupon{
 
 @media screen and (max-width: 768px) {
     .lookmovil{
-    display: block;
-}
+        display: block;
+    }
     .lookdesktop{
         display: none;
     }
@@ -1993,7 +1993,8 @@ form.checkout_coupon.woocommerce-form-coupon{
 			}
 		}
 		ul.sub-menu {
-			padding-top: 1em !important;
+            display: none;
+			/*padding-top: 1em !important;
 		    width: 100vw !important;
 		    background-color: #fff;
 		    padding-bottom: 16px;
@@ -2002,8 +2003,8 @@ form.checkout_coupon.woocommerce-form-coupon{
     		li{
     			text-align: left !important;
     			/*padding-left: 12%;*/
-    			    padding-bottom: 10px;
-    		}
+    		/*	    padding-bottom: 10px;
+    		}*/
     		ul.sub-menu{ display: none;
     			    position: initial;
     			    li{

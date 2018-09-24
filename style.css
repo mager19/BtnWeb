@@ -640,7 +640,7 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 
 .woocommerce-info, .woocommerce-noreviews, p.no-comments { background-color: #fff !important; border: 2px solid #000000; margin-top: 2em; padding: 1em; }
 
-.lookmovil { display: none; }
+.lookmovil { display: none !important; }
 
 .lookdesktop { display: block; }
 
@@ -1033,8 +1033,7 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .menu-principal-container { padding-left: 0% !important; }
   .menu-principal-container ul#primary-menu { text-align: center; }
   .menu-principal-container ul#primary-menu li { text-align: center; float: initial; margin: 0 2% !important; }
-  .menu-principal-container ul.sub-menu { padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 16px; position: absolute; left: -87% !important; }
-  .menu-principal-container ul.sub-menu li { text-align: left !important; /*padding-left: 12%;*/ padding-bottom: 10px; }
+  .menu-principal-container ul.sub-menu { display: none; /*padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 16px; position: absolute; left: -87% !important; li{ text-align: left !important; /*padding-left: 12%;*/ /*	    padding-bottom: 10px; }*/ }
   .menu-principal-container ul.sub-menu ul.sub-menu { display: none; position: initial; }
   .menu-principal-container ul.sub-menu ul.sub-menu li { padding-left: 0px; padding-bottom: 5px; }
   nav.woocommerce-breadcrumb { margin-top: 4em; display: block; } }
