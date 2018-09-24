@@ -206,7 +206,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="totop"><a href="#page"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></div>
+		<div class="totop"><a href="#headers"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></div>
 		<div class="carttotop"><a href="<?php echo wc_get_cart_url() ?>"><i class="fas fa-shopping-bag"></i></a></div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

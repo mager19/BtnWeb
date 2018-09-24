@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
-	<header class="header--home">
+	<header id="headers" class="header--home">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-2">
