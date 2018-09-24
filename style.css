@@ -640,6 +640,10 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 
 .woocommerce-info, .woocommerce-noreviews, p.no-comments { background-color: #fff !important; border: 2px solid #000000; margin-top: 2em; padding: 1em; }
 
+.lookmovil { display: none; }
+
+.lookdesktop { display: block; }
+
 /****************************woo******************************/
 .available { padding: 0.4em 0.5em 0 0.5em; border: 1px solid; text-align: center; margin-bottom: 10px; }
 
@@ -981,7 +985,9 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .contacto .item__contacto form input { padding-right: 0%; }
   .add-to-cart-container a.add_to_cart_button { font-size: 0.7em; white-space: normal; } }
 
-@media screen and (max-width: 768px) { #auxiliar-menu { display: none; }
+@media screen and (max-width: 768px) { .lookmovil { display: block; }
+  .lookdesktop { display: none; }
+  #auxiliar-menu { display: none; }
   .title__page { padding-bottom: 1.5em; padding-top: 2em; margin-top: 2em; }
   .footer__item { margin-top: 1em; }
   .footer__item ul { margin-left: -2.5em; }

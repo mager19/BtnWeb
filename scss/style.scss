@@ -699,7 +699,12 @@ footer {
 }
 
 
-
+.lookmovil{
+    display: none;
+}
+.lookdesktop{
+        display: block;
+    }
 /****************************woo******************************/
 .available {
     padding: 0.4em 0.5em 0 0.5em;
@@ -1740,6 +1745,12 @@ form.checkout_coupon.woocommerce-form-coupon{
 
 
 @media screen and (max-width: 768px) {
+    .lookmovil{
+    display: block;
+}
+    .lookdesktop{
+        display: none;
+    }
 
     #auxiliar-menu{
         display: none;
