@@ -146,6 +146,16 @@
 								) );
 							?>
 						</nav>
+						<div class="pagoafooter">
+							<?php 
+
+							$texto_plazos = get_theme_mod( 'textoPagoPlazos' );
+
+							echo '<ul style="margin-top:-16px;"><li>
+								  <a href="#" class="color-white" data-toggle="modal" data-target="#plazosModal">'.__( 'Pago a plazos', 'woocommerce' ).'</a></li></ul>';
+								
+						?>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-2 col-md-4">
