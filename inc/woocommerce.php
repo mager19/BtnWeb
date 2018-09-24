@@ -327,7 +327,7 @@ if(get_field('disponible', $post_id)){
 echo '
 <div class="available">
 <h5>
-  <a href="#" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'Avisar cuando vuelva a estar disponible', 'woocommerce' ).'</a> </h5>
+  <a href="#" class="color-white" data-toggle="modal" data-target="#largeModal">'.__( 'SOLICITA AVISO DE DISPONIBILIDAD', 'woocommerce' ).'</a> </h5>
 
 <div style="display: none;" class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">

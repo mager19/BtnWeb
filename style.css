@@ -446,7 +446,7 @@ header { background-color: #fff; padding: 1em; /*height: 17em;*/ }
 
 header ul { padding-top: 0.6em; }
 
-header ul li { display: inline-block; margin-right: 4em; }
+header ul li { display: inline-block; /*margin-right: 4em;*/ margin-right: 5%; }
 
 header .site-branding { padding: 2em 0.5em; }
 
@@ -641,6 +641,8 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 .woocommerce-info, .woocommerce-noreviews, p.no-comments { background-color: #fff !important; border: 2px solid #000000; margin-top: 2em; padding: 1em; }
 
 /****************************woo******************************/
+.available { padding: 0.4em 0.5em 0 0.5em; border: 1px solid; text-align: center; margin-bottom: 10px; }
+
 ul.products.columns-3 { width: 100%; }
 
 nav.woocommerce-breadcrumb { /*display: none;*/ padding-bottom: 20px; color: #bbb; font-family: 'old'; font-size: 0.7em; text-transform: lowercase; }
@@ -649,7 +651,7 @@ nav.woocommerce-breadcrumb a { color: #bbb; }
 
 header.woocommerce-products-header { display: none; }
 
-.woocommerce-page .content-area { width: 75%; }
+.woocommerce-page .content-area { /*width: 75%;*/ width: 80%; }
 
 .woocommerce .woocommerce-ordering { margin: 0 0 1em; }
 
