@@ -270,7 +270,7 @@ function batanaweb_customize_register( $wp_customize ) {
 		        'label'    => __( 'Texto Envios' ),
 		        'section'  => 'Textos_BatanaWeb',
 		        'settings' => 'textoEnvios',
-		        'description' => 'En esta zona puedes cambiar el texto de Envios que aparece en cada producto',
+		        'description' => 'Por favor, utilizar para cada parrafo las etiquetas HTML de apertura y cierre de parrafo. <code>&#65308;p&#65310;ejemplo&#65308;/p&#65310;</code>. En esta zona puedes cambiar el texto de Envios que aparece en cada producto.',
 		        'type' => 'textarea'		 						
 		    )
 	    )

@@ -49,7 +49,19 @@ a{
     padding: 8em 0;
 }
 
-.totop a,.carttotop a {display: none;}
+.totop a{
+    display: block;
+        position: fixed;
+        bottom: 33px;
+        right: 33px;
+        font-size: 1.2em;
+        /*border: 2px solid;*/
+        border-radius: 50%;
+        padding: 0px 11px 3px;
+        background-color: #fff;
+        color: #000;
+}
+.carttotop a {display: none;}
 .content-area {
     margin-top: 10%;
 }
@@ -381,7 +393,7 @@ footer {
     border-bottom: 2px solid #F5F5F5;
     color: $coral;
     font-family: old;
-    font-size: 2.1em;
+    font-size: 1.5em;
     letter-spacing: 7px;
     text-align: center;
     text-transform: uppercase;
