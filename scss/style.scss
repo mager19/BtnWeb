@@ -1712,6 +1712,12 @@ form.checkout_coupon.woocommerce-form-coupon{
 
 }
 
+@media screen and (max-width: 1280px) {
+    header #primary-menu li a, header #primary-menu li a:visited{
+        font-size: 14px;
+    }
+}
+
 
 @media screen and (max-width: 1024px) {
     

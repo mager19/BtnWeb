@@ -35,28 +35,7 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -978,6 +957,8 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
 .popBuscar input { padding: 0.5em; width: 70%; border-radius: 0px; }
 
 .popBuscar input#searchsubmit { border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.17em; width: 25%; border-radius: 0; text-transform: uppercase; background-color: #000; }
+
+@media screen and (max-width: 1280px) { header #primary-menu li a, header #primary-menu li a:visited { font-size: 14px; } }
 
 @media screen and (max-width: 1024px) { .contenedor { padding: 2em 0 !important; }
   header .site-branding { padding: 0em !important; }
