@@ -152,9 +152,16 @@
 							$texto_plazos = get_theme_mod( 'textoPagoPlazos' );
 
 							echo '<ul style="margin-top:-16px;"><li>
-								  <a href="#" class="color-white" data-toggle="modal" data-target="#plazosModal">'.__( 'Pago a plazos', 'woocommerce' ).'</a></li></ul>';
+								  <a href="#" class="color-white" data-toggle="modal" data-target="#plazosModal">'.__( 'Pago a plazos', 'woocommerce' ).'</a></li>
+									<li>
+										<a href="#" class="color-white" data-toggle="modal" data-target="#enviosModal">'.__( 'Envios', 'woocommerce' ).'</a>
+									</li>
+									<li>
+										<a href="#" class="color-white" data-toggle="modal" data-target="#devolucionesModal">'.__( 'Cambios y Devoluciones', 'woocommerce' ).'</a>
+									</li>
+								  </ul>';
 								
-						?>
+							?>
 						</div>
 					</div>
 				</div>
