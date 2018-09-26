@@ -83,8 +83,8 @@ get_template_part('template-parts/header', 'home'); ?>
 				 	echo $imagen_abajoderecha; 
 
 				?>);">
-					<div class="header__left">
-						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
+					<div class="header__right">
+						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoderecha); ?>"><?php echo $texto_abajoderecha; ?></a></h1>
 					</div>	
 				</div>
 				
