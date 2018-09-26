@@ -673,6 +673,8 @@ ul.products { text-align: center; }
 
 ul.products li { transition: transform .2s; /* Animation */ }
 
+ul.products li img { margin: 0 auto; }
+
 ul.products li a { color: #333333; margin-bottom: 1.6em; display: block; text-decoration: none; }
 
 ul.products li:hover { box-shadow: 0px 9px 30px -5px #e9ecef; transform: scale(1.1); }
@@ -978,6 +980,11 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
 .popBuscar input { padding: 0.5em; width: 70%; border-radius: 0px; }
 
 .popBuscar input#searchsubmit { border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.17em; width: 25%; border-radius: 0; text-transform: uppercase; background-color: #000; }
+
+@media screen and (min-width: 1025px) and (max-width: 1350px) { header .menu-principal-container { padding-left: 0%; }
+  header ul li { margin-right: 3.5%; }
+  header ul li a { font-size: 0.79em; }
+  header #primary-menu { /*padding-top: 1.9em;*/ } }
 
 @media screen and (max-width: 1280px) { header #primary-menu li a, header #primary-menu li a:visited { font-size: 14px; } }
 

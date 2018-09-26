@@ -783,6 +783,7 @@ ul.products {
     li {
         transition: transform .2s;
         /* Animation */
+        img{margin: 0 auto;}
         a {
             color: $oscurodos;
             margin-bottom: 1.6em;
@@ -1711,7 +1712,20 @@ form.checkout_coupon.woocommerce-form-coupon{
 	}
 
 }
-
+@media screen and (min-width: 1025px) and (max-width: 1350px) {
+    header .menu-principal-container {
+        padding-left: 0%;
+    }
+    header ul li {
+        margin-right: 3.5%;
+        a{
+                font-size: 0.79em;
+        }
+    }
+    header #primary-menu {
+        /*padding-top: 1.9em;*/
+    }
+}
 @media screen and (max-width: 1280px) {
     header #primary-menu li a, header #primary-menu li a:visited{
         font-size: 14px;
