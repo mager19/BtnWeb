@@ -673,6 +673,8 @@ ul.products { text-align: center; }
 
 ul.products li { transition: transform .2s; /* Animation */ }
 
+ul.products li img { margin: 0 auto; }
+
 ul.products li a { color: #333333; margin-bottom: 1.6em; display: block; text-decoration: none; }
 
 ul.products li:hover { box-shadow: 0px 9px 30px -5px #e9ecef; transform: scale(1.1); }
@@ -979,6 +981,13 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
 
 .popBuscar input#searchsubmit { border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.17em; width: 25%; border-radius: 0; text-transform: uppercase; background-color: #000; }
 
+@media screen and (min-width: 1025px) and (max-width: 1350px) { header .menu-principal-container { padding-left: 0%; }
+  header ul li { margin-right: 3.5%; }
+  header ul li a { font-size: 0.79em; }
+  header #primary-menu { /*padding-top: 1.9em;*/ } }
+
+@media screen and (max-width: 1280px) { header #primary-menu li a, header #primary-menu li a:visited { font-size: 14px; } }
+
 @media screen and (max-width: 1024px) { .contenedor { padding: 2em 0 !important; }
   header .site-branding { padding: 0em !important; }
   header .site-branding img { padding-top: 2.5em; width: 70%; margin-left: 15%; }
@@ -1033,9 +1042,11 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .carttotop a { display: block; position: fixed; bottom: 33px; right: 74px; font-size: 1.2em; /* border: 2px solid; */ border-radius: 50%; padding: 1px 9px 3px; background-color: #fff; color: #000000; }
   .superior__moviles { height: 50vh; background-size: contain; margin-top: 45%; }
   .menu-principal-container { padding-left: 0% !important; }
-  .menu-principal-container ul#primary-menu { text-align: center; }
-  .menu-principal-container ul#primary-menu li { text-align: center; float: initial; margin: 0 2% !important; }
-  .menu-principal-container ul.sub-menu { display: none; /*padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 16px; position: absolute; left: -87% !important; li{ text-align: left !important; /*padding-left: 12%;*/ /*	    padding-bottom: 10px; }*/ }
-  .menu-principal-container ul.sub-menu ul.sub-menu { display: none; position: initial; }
+  .menu-principal-container ul#primary-menu { text-align: center; padding-top: 1em; }
+  .menu-principal-container ul#primary-menu li { text-align: center; float: initial; width: 100%; margin: 0 1% !important; }
+  .menu-principal-container ul.sub-menu { /*display: none;*/ padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 8px; position: initial; margin-left: 20%; /*left: -87% !important;*/ }
+  .menu-principal-container ul.sub-menu li { text-align: left !important; /*padding-left: 12%;*/ padding-bottom: 10px; }
+  .menu-principal-container ul.sub-menu li a { font-size: 0.76em !important; }
+  .menu-principal-container ul.sub-menu ul.sub-menu { /*display: none;*/ font-size: 1em; position: initial; margin-left: 3%; }
   .menu-principal-container ul.sub-menu ul.sub-menu li { padding-left: 0px; padding-bottom: 5px; }
   nav.woocommerce-breadcrumb { margin-top: 4em; display: block; } }
