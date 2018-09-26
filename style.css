@@ -35,7 +35,28 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -626,7 +647,7 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 .lookdesktop { display: block; }
 
 /****************************woo******************************/
-.archive .content-area { padding-left: 0% !important; }
+.archive { /*  .content-area{ padding-left: 0%!important; }*/ }
 
 .available { padding: 0.4em 0.5em 0 0.5em; border: 1px solid; text-align: center; margin-bottom: 10px; }
 
@@ -646,7 +667,7 @@ header.woocommerce-products-header { display: none; }
 
 .woocommerce .products ul, .woocommerce ul.products { margin: 0 0em 1em; padding: 0; list-style: none outside; clear: both; padding-top: 4em; }
 
-.woocommerce .woocommerce-result-count { margin: 0 0 1em; margin-left: 1em; }
+.woocommerce .woocommerce-result-count { margin: 0 0 1em; /* margin-left: 1em;*/ }
 
 .woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count { float: left; }
 
@@ -977,7 +998,11 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .contacto .item__contacto form input { padding-right: 0%; }
   .add-to-cart-container a.add_to_cart_button { font-size: 0.7em; white-space: normal; } }
 
-@media screen and (max-width: 768px) { .related { margin-left: -2.5em; }
+@media screen and (max-width: 768px) { /*
+    .related{
+        margin-left: -2.5em;
+    }
+*/
   .lookmovil { display: block; }
   .lookdesktop { display: none; }
   #auxiliar-menu { display: none; }
@@ -1032,4 +1057,8 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .menu-principal-container ul.sub-menu li a { font-size: 0.76em !important; background-color: #fff !important; padding: 0px 0px 0px 12% !important; }
   .menu-principal-container ul.sub-menu ul.sub-menu { /*display: none;*/ font-size: 1em; position: initial; margin-left: 3%; }
   .menu-principal-container ul.sub-menu ul.sub-menu li { padding-left: 0px; padding-bottom: 5px; }
-  nav.woocommerce-breadcrumb { margin-top: 4em; display: block; } }
+  nav.woocommerce-breadcrumb { margin-top: 4em; display: block; }
+  ul.products { padding-right: 10% !important; }
+  section.related.products { margin-right: 10%; }
+  section.related.products img { margin-top: 0 auto; }
+  section.related.products ul.products { padding-right: 2% !important; } }

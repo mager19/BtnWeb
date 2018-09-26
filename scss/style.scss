@@ -721,9 +721,9 @@ footer {
 /****************************woo******************************/
 
 .archive {
-     .content-area{
+   /*  .content-area{
         padding-left: 0%!important;
-    }
+    }*/
 }
 
 .available {
@@ -779,7 +779,7 @@ header.woocommerce-products-header {
 
 .woocommerce .woocommerce-result-count {
     margin: 0 0 1em;
-    margin-left: 1em;
+   /* margin-left: 1em;*/
 }
 
 .woocommerce .woocommerce-result-count,
@@ -1786,11 +1786,11 @@ form.checkout_coupon.woocommerce-form-coupon{
 
 
 @media screen and (max-width: 768px) {
-    
+    /*
     .related{
         margin-left: -2.5em;
     }
-
+*/
     .lookmovil{
         display: block;
     }
@@ -2080,7 +2080,16 @@ form.checkout_coupon.woocommerce-form-coupon{
 	    margin-top: 4em;
 	    display: block;
 	}
-
+    ul.products {
+        padding-right: 10% !important;
+    }
+    section.related.products {
+        margin-right: 10%;
+        img{margin-top: 0 auto;}
+        ul.products {
+        padding-right: 2% !important;
+    }
+    }
 
 }
 
