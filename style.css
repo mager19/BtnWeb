@@ -1039,6 +1039,7 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .menu-principal-container ul#primary-menu li { text-align: center; float: initial; width: 100%; margin: 0 1% !important; }
   .menu-principal-container ul.sub-menu { /*display: none;*/ padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 8px; position: initial; margin-left: 20%; /*left: -87% !important;*/ }
   .menu-principal-container ul.sub-menu li { text-align: left !important; /*padding-left: 12%;*/ padding-bottom: 10px; }
-  .menu-principal-container ul.sub-menu ul.sub-menu { /*display: none;*/ font-size: 1.3em; position: initial; margin-left: 3%; }
+  .menu-principal-container ul.sub-menu li a { font-size: 0.76em !important; }
+  .menu-principal-container ul.sub-menu ul.sub-menu { /*display: none;*/ font-size: 1em; position: initial; margin-left: 3%; }
   .menu-principal-container ul.sub-menu ul.sub-menu li { padding-left: 0px; padding-bottom: 5px; }
   nav.woocommerce-breadcrumb { margin-top: 4em; display: block; } }
