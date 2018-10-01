@@ -114,9 +114,9 @@
 	});
 
 /*setTimeout(function(){*/
-	if ( jQuery( "p.stock.out-of-stock" )  ) {
-	    jQuery( ".available" ).show(); console.log("show");
-		}
+	// if ( jQuery( "p.stock.out-of-stock" )  ) {
+	//     jQuery( ".available" ).show(); console.log("show");
+	// 	}
 /*}, 5);*/
 
 

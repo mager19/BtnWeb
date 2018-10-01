@@ -35,28 +35,7 @@ The dependencies can be found in /src/ after running "gulp copy-assets" terminal
 
 ...and now go out and play!
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
+/*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -585,15 +564,15 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 .article__single p { padding-right: 0 !important; padding-top: 2em !important; }
 
 /*conctacto*/
-.contacto h3 { color: #000000; font-family: old; font-size: 1.2em; letter-spacing: 5px; line-height: 1.5em; padding-bottom: 0.5em; }
+.contacto h3 { color: #000000; font-family: old; font-size: 0.9em; letter-spacing: 5px; line-height: 1.2em; }
 
 .contacto h3 span { font-family: 'questrial'; }
 
-.contacto .item__contacto { padding-bottom: 2em; }
+.contacto .item__contacto { padding-bottom: 1.5em; }
 
-.contacto .item__contacto a { color: #000000; font-family: 'questrial'; font-weight: 600; letter-spacing: 1px; }
+.contacto .item__contacto a { color: #000000; font-family: 'questrial'; font-weight: 600; letter-spacing: 1px; font-size: 0.8em; }
 
-.contacto .item__contacto p { padding: 0; font-weight: 600; letter-spacing: 1px; }
+.contacto .item__contacto p { padding: 0; font-weight: 600; letter-spacing: 1px; font-size: 0.8em; }
 
 .contacto .item__contacto i { font-size: 1.5em; font-weight: 200; margin-right: 1em; }
 
@@ -611,7 +590,7 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 
 .contacto .item__contacto form input[type=submit] { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.9em; letter-spacing: 3px; text-transform: uppercase; padding: 1.5em; width: 60%; margin-top: 1em; }
 
-.contacto .item__contacto__newsletter { margin-top: 4em; }
+.contacto .item__contacto__newsletter { margin-top: 2em; }
 
 /*Account*/
 .account { margin-top: 5em; }
@@ -646,7 +625,13 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 
 .lookdesktop { display: block; }
 
+li#menu-item-735 { width: 90px; }
+
 /****************************woo******************************/
+.select-tallas { border-radius: 2px; padding: 10px; }
+
+.archive { /*  .content-area{ padding-left: 0%!important; }*/ }
+
 .available { padding: 0.4em 0.5em 0 0.5em; border: 1px solid; text-align: center; margin-bottom: 10px; }
 
 ul.products.columns-3 { width: 100%; }
@@ -665,13 +650,15 @@ header.woocommerce-products-header { display: none; }
 
 .woocommerce .products ul, .woocommerce ul.products { margin: 0 0em 1em; padding: 0; list-style: none outside; clear: both; padding-top: 4em; }
 
-.woocommerce .woocommerce-result-count { margin: 0 0 1em; }
+.woocommerce .woocommerce-result-count { margin: 0 0 1em; /* margin-left: 1em;*/ }
 
 .woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count { float: left; }
 
 ul.products { text-align: center; }
 
 ul.products li { transition: transform .2s; /* Animation */ }
+
+ul.products li img { margin: 0 auto; }
 
 ul.products li a { color: #333333; margin-bottom: 1.6em; display: block; text-decoration: none; }
 
@@ -979,6 +966,13 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
 
 .popBuscar input#searchsubmit { border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.17em; width: 25%; border-radius: 0; text-transform: uppercase; background-color: #000; }
 
+@media screen and (min-width: 1025px) and (max-width: 1350px) { header .menu-principal-container { padding-left: 0%; }
+  header ul li { margin-right: 3.5%; }
+  header ul li a { font-size: 0.79em; }
+  header #primary-menu { /*padding-top: 1.9em;*/ } }
+
+@media screen and (max-width: 1280px) { header #primary-menu li a, header #primary-menu li a:visited { font-size: 14px; } }
+
 @media screen and (max-width: 1024px) { .contenedor { padding: 2em 0 !important; }
   header .site-branding { padding: 0em !important; }
   header .site-branding img { padding-top: 2.5em; width: 70%; margin-left: 15%; }
@@ -987,7 +981,12 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .contacto .item__contacto form input { padding-right: 0%; }
   .add-to-cart-container a.add_to_cart_button { font-size: 0.7em; white-space: normal; } }
 
-@media screen and (max-width: 768px) { .lookmovil { display: block; }
+@media screen and (max-width: 768px) { /*
+    .related{
+        margin-left: -2.5em;
+    }
+*/
+  .lookmovil { display: block; }
   .lookdesktop { display: none; }
   #auxiliar-menu { display: none; }
   .title__page { padding-bottom: 1.5em; padding-top: 2em; margin-top: 2em; }
@@ -1033,9 +1032,16 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .carttotop a { display: block; position: fixed; bottom: 33px; right: 74px; font-size: 1.2em; /* border: 2px solid; */ border-radius: 50%; padding: 1px 9px 3px; background-color: #fff; color: #000000; }
   .superior__moviles { height: 50vh; background-size: contain; margin-top: 45%; }
   .menu-principal-container { padding-left: 0% !important; }
-  .menu-principal-container ul#primary-menu { text-align: center; }
-  .menu-principal-container ul#primary-menu li { text-align: center; float: initial; margin: 0 2% !important; }
-  .menu-principal-container ul.sub-menu { display: none; /*padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 16px; position: absolute; left: -87% !important; li{ text-align: left !important; /*padding-left: 12%;*/ /*	    padding-bottom: 10px; }*/ }
-  .menu-principal-container ul.sub-menu ul.sub-menu { display: none; position: initial; }
+  .menu-principal-container ul#primary-menu { text-align: center; padding-top: 1em; }
+  .menu-principal-container ul#primary-menu li { /*text-align: center;*/ text-align: left; padding-left: 0%; float: initial; width: 100%; margin: 0 1% !important; }
+  .menu-principal-container ul#primary-menu li a { background-color: #f5f5f5; padding: 5px 0% 5px 5%; }
+  .menu-principal-container ul.sub-menu { /*display: none;*/ padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 8px; position: initial; background-color: #fff; /*margin-left:20%;*/ /*left: -87% !important;*/ }
+  .menu-principal-container ul.sub-menu li { text-align: left !important; padding-left: 0px !important; background-color: #fff; /*padding-left: 12%;*/ padding-bottom: 10px; }
+  .menu-principal-container ul.sub-menu li a { font-size: 0.76em !important; background-color: #fff !important; padding: 0px 0px 0px 12% !important; }
+  .menu-principal-container ul.sub-menu ul.sub-menu { /*display: none;*/ font-size: 1em; position: initial; margin-left: 3%; }
   .menu-principal-container ul.sub-menu ul.sub-menu li { padding-left: 0px; padding-bottom: 5px; }
-  nav.woocommerce-breadcrumb { margin-top: 4em; display: block; } }
+  nav.woocommerce-breadcrumb { margin-top: 4em; display: block; }
+  ul.products { padding-right: 10% !important; }
+  section.related.products { margin-right: 10%; }
+  section.related.products img { margin-top: 0 auto; }
+  section.related.products ul.products { padding-right: 2% !important; } }
