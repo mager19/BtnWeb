@@ -221,7 +221,7 @@ function filter_loop_add_to_cart_link( $button, $product, $args = array() ) {
     if( $product->is_in_stock() ) return $button;
 
     // HERE set your button text (when product is not on stock)
-    $button_text = __('Ver Producto', 'woocommerce');
+    $button_text = __('Ver Producto', 'batanaweb');
 
    	$url = get_permalink($product_id);
 

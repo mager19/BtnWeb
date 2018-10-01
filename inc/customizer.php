@@ -275,6 +275,23 @@ function batanaweb_customize_register( $wp_customize ) {
 		    )
 	    )
 	);
+	$wp_customize->add_setting( 'textoEnviosIng', array(
+		 'default'        => '',
+	) );
+
+		// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'textoEnviosIng',
+		    array(
+		        'label'    => __( '*Texto INGLES Envios' ),
+		        'section'  => 'Textos_BatanaWeb',
+		        'settings' => 'textoEnviosIng',
+		        'description' => 'En esta zona puedes cambiar el texto de Envios que aparece en cada producto',
+		        'type' => 'textarea'		 						
+		    )
+	    )
+	);
 
 		// Add setting
 	$wp_customize->add_setting( 'textoCambioDevoluciones', array(
@@ -294,6 +311,23 @@ function batanaweb_customize_register( $wp_customize ) {
 		    )
 	    )
 	);
+	$wp_customize->add_setting( 'textoCambioDevolucionesIng', array(
+		 'default'        => '',
+	) );
+	
+		// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'textoCambioDevolucionesIng',
+		    array(
+		        'label'    => __( '*Texto INGLES Cambios y Devoluciones' ),
+		        'section'  => 'Textos_BatanaWeb',
+		        'settings' => 'textoCambioDevolucionesIng',
+		        'description' => 'En esta zona puedes cambiar el texto en Ingles de Cambios y Devoluciones que aparece en cada producto',
+		        'type' => 'textarea'		 						
+		    )
+	    )
+	);
 
 			// Add setting
 	$wp_customize->add_setting( 'textoPagoPlazos', array(
@@ -309,6 +343,23 @@ function batanaweb_customize_register( $wp_customize ) {
 		        'section'  => 'Textos_BatanaWeb',
 		        'settings' => 'textoPagoPlazos',
 		        'description' => 'En esta zona puedes cambiar el texto de Pago a plazos que aparece en cada producto',
+		        'type' => 'textarea'		 						
+		    )
+	    )
+	);
+	$wp_customize->add_setting( 'textoPagoPlazosIng', array(
+		 'default'        => '',
+	) );
+
+		// Add control
+	$wp_customize->add_control( new WP_Customize_Control(
+	    $wp_customize,
+		'textoPagoPlazosING',
+		    array(
+		        'label'    => __( '*Texto INGLES Pago a Plazos' ),
+		        'section'  => 'Textos_BatanaWeb',
+		        'settings' => 'textoPagoPlazosIng',
+		        'description' => 'En esta zona puedes cambiar el texto en Ingles de Pago a plazos que aparece en cada producto',
 		        'type' => 'textarea'		 						
 		    )
 	    )

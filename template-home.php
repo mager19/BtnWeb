@@ -108,11 +108,11 @@ get_template_part('template-parts/header', 'home'); ?>
 							}
 							else{
 								
-								 _e( 'ARTÍCULOS', 'woocommerce' );
+								 _e( 'ARTÍCULOS', 'batanaweb' );
 							}
 						?>
 						<br> 
-						DESTACADOS
+						<?php _e('DESTACADOS', 'batanaweb') ?>
 					</h2>
 					<div class="destacados__carrousel">
 						<?php $args = array( 'post_type' => 'product', 'tax_query' => array( array( 'taxonomy' => 'product_visibility', 'field' => 'name', 'terms' => 'featured', ), ), ); 

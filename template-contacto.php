@@ -25,18 +25,18 @@ get_header();
 					<div class="row">
 						<div class="col-md-6">
 							<div class="item__contacto">
-								<h3>LLÁMANOS</h3>
+								<h3><?php _e('LLÁMANOS', 'batanaweb') ?></h3>
 								<a href="tel:<?php the_field( 'telefono' ); ?>" class="telefono"><?php the_field('telefono'); ?></a>
 							</div>
 
 							<div class="item__contacto">
-								<h3>ENVÍA UN EMAIL A:</h3>
+								<h3><?php _e('ENVÍA UN EMAIL A:', 'batanaweb') ?></h3>
 								<a href="mailto:<?php the_field( 'email' ); ?>">e-mail: <?php the_field( 'email' ); ?></a>
 							</div>
 
 							<div class="item__contacto">
-								<h3>HORARIO DE ATENCIÓN AL <br>
-								<span>CLIENTE POR TELÉFONO:</span> </h3>
+								<h3><?php _e('HORARIO DE ATENCIÓN AL', 'batanaweb') ?> <br>
+								<span><?php _e('CLIENTE POR TELÉFONO:', 'batanaweb') ?> </span> </h3>
 								<p><?php the_field( 'horario' ); ?></p>
 							</div>
 
@@ -53,21 +53,23 @@ get_header();
 
 							<div class="item__contacto  item__contacto__newsletter">
 								<div class="footer__item">
-									<h3>NEWSLETTER</h3>
-									<p>SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES</p>
+									<h3><?php _e('NEWSLETTER', 'batanaweb') ?></h3>
+									<p><?php _e('SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES', 'batanaweb') ?></p>
 										
 									<form action="#" class="newsletter">
 										<input type="text" placeholder="Introduce tu email">
-										<button>SUSCRIBETE</button>
+										<button><?php _e('SUSCRIBETE', 'batanaweb') ?></button>
 									</form>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="item__contacto">
-								<h3>CONTACTA CON NOSOTROS</h3>
+								<h3><?php _e('CONTACTA CON NOSOTROS', 'batanaweb') ?></h3>
 
-								<?php echo do_shortcode( '[contact-form-7 id="298" title="Formulario de contacto 1"]' ); ?>
+								<?php if (get_locale() == 'es_ES') { echo do_shortcode( '[contact-form-7 id="298" title="Formulario de contacto 1"]' ); }?>
+
+								<?php if (get_locale() == 'en_US') {  echo do_shortcode( '[contact-form-7 id="1113" title="contact form"]' );} ?>
 							</div>
 						</div>
 					</div>

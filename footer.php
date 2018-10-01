@@ -29,8 +29,8 @@
       <div class="modal-body">
       	<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
 			<div class="popBuscar">
-				<label class="screen-reader-text" for="s">Search for:</label>
-				<input type="text" value="<?php __('Buscar', 'woocommerce')?>" name="s" id="s" placeholder="Search for products">
+				<label class="screen-reader-text" for="s"><?php _e('Buscar', 'batanaweb') ?></label>
+				<input type="text" value="<?php __('Buscar', 'batanaweb')?>" name="s" id="s" placeholder="Search for products">
 				<input type="submit" id="searchsubmit" value="Search">
 				<input type="hidden" name="post_type" value="product">
 			</div>
@@ -50,9 +50,11 @@
         </button>
       </div>
       <div class="modal-body">
-      	<h4 style="text-align: center;">Envíos</h4>
+      	<h4 style="text-align: center;"><?php _e('Envíos', 'batanaweb') ?></h4>
       	<p>
-      	<?php echo get_theme_mod( 'textoEnvios' ); ?>
+      	<?php if (get_locale() == 'es_ES') { echo get_theme_mod( 'textoEnvios' );}
+      		if (get_locale() == 'en_US') { 	echo get_theme_mod( 'textoEnviosIng' );}
+      	 ?>
       	</p>
       	</div>
 
@@ -72,8 +74,10 @@
         </button>
       </div>
       <div class="modal-body">
-      	<h4 style="text-align: center;">Devoluciones</h4>
-      	<?php echo get_theme_mod( 'textoCambioDevoluciones' ); ?>
+      	<h4 style="text-align: center;"><?php _e('Devoluciones', 'batanaweb') ?></h4>
+      	<?php if (get_locale() == 'es_ES') { echo get_theme_mod( 'textoCambioDevoluciones' );}
+      		if (get_locale() == 'en_US') { echo get_theme_mod( 'textoCambioDevolucionesIng' );}
+      	 ?>
       	</div>
       
     </div>
@@ -91,8 +95,10 @@
         </button>
       </div>
       <div class="modal-body">
-      	<h4 style="text-align: center;">Pago a plazos</h4>
-      	<?php echo get_theme_mod( 'textoPagoPlazos' ); ?>
+      	<h4 style="text-align: center;"><?php _e('Pago a plazos', 'batanaweb') ?></h4>
+      	<?php if (get_locale() == 'es_ES') {  echo get_theme_mod( 'textoPagoPlazos' ); }
+      		if (get_locale() == 'en_US') {  echo get_theme_mod( 'textoPagoPlazosIng' ); }
+      	?>
       	</div>
       
     </div>
@@ -124,7 +130,7 @@
 			<div class="row">
 				<div class="col-lg-2 col-md-4 col-sm-6">
 					<div class="footer__item">
-						<h3>NOSOTROS</h3>
+						<h3><?php _e('NOSOTROS', 'batanaweb') ?></h3>
 						<nav>
 							<?php
 								wp_nav_menu( array(
@@ -137,7 +143,7 @@
 				</div>	
 				<div class="col-lg-2 col-md-4 col-sm-6 ">
 					<div class="footer__item">
-						<h3>AYUDA</h3>
+						<h3><?php _e('AYUDA', 'batanaweb') ?></h3>
 						<nav>
 							<?php
 								wp_nav_menu( array(
@@ -152,12 +158,12 @@
 							$texto_plazos = get_theme_mod( 'textoPagoPlazos' );
 
 							echo '<ul style="margin-top:-16px;"><li>
-								  <a href="#" class="color-white" data-toggle="modal" data-target="#plazosModal">'.__( 'Pago a plazos', 'woocommerce' ).'</a></li>
+								  <a href="#" class="color-white" data-toggle="modal" data-target="#plazosModal">'.__( 'Pago a plazos', 'batanaweb' ).'</a></li>
 									<li>
-										<a href="#" class="color-white" data-toggle="modal" data-target="#enviosModal">'.__( 'Envios', 'woocommerce' ).'</a>
+										<a href="#" class="color-white" data-toggle="modal" data-target="#enviosModal">'.__( 'Envios', 'batanaweb' ).'</a>
 									</li>
 									<li>
-										<a href="#" class="color-white" data-toggle="modal" data-target="#devolucionesModal">'.__( 'Cambios y Devoluciones', 'woocommerce' ).'</a>
+										<a href="#" class="color-white" data-toggle="modal" data-target="#devolucionesModal">'.__( 'Cambios y Devoluciones', 'batanaweb' ).'</a>
 									</li>
 								  </ul>';
 								
@@ -167,7 +173,7 @@
 				</div>
 				<div class="col-lg-2 col-md-4">
 					<div class="footer__item">
-						<h3>TIENDA ONLINE</h3>
+						<h3><?php _e('TIENDA ONLINE', 'batanaweb') ?></h3>
 						<nav>
 							<?php
 								wp_nav_menu( array(
@@ -180,7 +186,7 @@
 				</div>	
 				<div class="col-lg-3 col-md-4">
 					<div class="footer__item">
-						<h3>ENCUENTRANOS EN:</h3>
+						<h3><?php _e('ENCUENTRANOS EN:', 'batanaweb') ?></h3>
 						<nav>
 							<?php
 								wp_nav_menu( array(
@@ -193,10 +199,10 @@
 				</div>
 				<div class="col-lg-3 col-md-8">
 					<div class="footer__item">
-						<h3>NEWSLETTER</h3>
+						<h3><?php _e('NEWSLETTER', 'batanaweb') ?></h3>
 						<nav >
 							<ul>
-								<li><a href="#">SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES</a></li>
+								<li><a href="#"><?php _e('SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES', 'batanaweb') ?></a></li>
 							</ul>
 						</nav>
 						<?php echo do_shortcode('[contact-form-7 id="912" title="newsletter" html_class="newsletter"]'); ?>
