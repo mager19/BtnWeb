@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Batana\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-01 09:46-0500\n"
+"POT-Creation-Date: 2018-10-01 19:58-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -42,43 +42,43 @@ msgstr ""
 msgid "Envíos"
 msgstr ""
 
-#: footer.php:75
+#: footer.php:77
 msgid "Devoluciones"
 msgstr ""
 
-#: footer.php:94 footer.php:155 inc/woocommerce.php:384
+#: footer.php:98 footer.php:161 inc/woocommerce.php:384
 msgid "Pago a plazos"
 msgstr ""
 
-#: footer.php:127
+#: footer.php:133
 msgid "NOSOTROS"
 msgstr ""
 
-#: footer.php:140
+#: footer.php:146
 msgid "AYUDA"
 msgstr ""
 
-#: footer.php:157 inc/woocommerce.php:376
+#: footer.php:163 inc/woocommerce.php:376
 msgid "Envios"
 msgstr ""
 
-#: footer.php:160
+#: footer.php:166
 msgid "Cambios y Devoluciones"
 msgstr ""
 
-#: footer.php:170
+#: footer.php:176
 msgid "TIENDA ONLINE"
 msgstr ""
 
-#: footer.php:183
+#: footer.php:189
 msgid "ENCUENTRANOS EN:"
 msgstr ""
 
-#: footer.php:196 template-contacto.php:56
+#: footer.php:202 template-contacto.php:56
 msgid "NEWSLETTER"
 msgstr ""
 
-#: footer.php:199 template-contacto.php:57
+#: footer.php:205 template-contacto.php:57
 msgid "SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES"
 msgstr ""
 
@@ -150,12 +150,24 @@ msgstr ""
 msgid "Texto Envios"
 msgstr ""
 
-#: inc/customizer.php:289
+#: inc/customizer.php:287
+msgid "*Texto INGLES Envios"
+msgstr ""
+
+#: inc/customizer.php:306
 msgid "Texto Cambios y Devoluciones"
 msgstr ""
 
-#: inc/customizer.php:308
+#: inc/customizer.php:323
+msgid "*Texto INGLES Cambios y Devoluciones"
+msgstr ""
+
+#: inc/customizer.php:342
 msgid "Texto Pago a Plazos"
+msgstr ""
+
+#: inc/customizer.php:359
+msgid "*Texto INGLES Pago a Plazos"
 msgstr ""
 
 #: inc/template-tags.php:82
@@ -191,6 +203,14 @@ msgstr ""
 
 #: inc/woocommerce.php:388
 msgid "Descripción y cuidados"
+msgstr ""
+
+#: index.php:32
+msgid "VER MÁS"
+msgstr ""
+
+#: single.php:37
+msgid "Regresar a News"
 msgstr ""
 
 #: template-contacto.php:28

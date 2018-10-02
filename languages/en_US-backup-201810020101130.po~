@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Batana\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-30 21:54-0500\n"
-"PO-Revision-Date: 2018-10-01 11:30+0000\n"
+"POT-Creation-Date: 2018-10-01 18:36-0500\n"
+"PO-Revision-Date: 2018-10-01 23:40+0000\n"
 "Last-Translator: batana <mario@snsdesigns.es>\n"
 "Language-Team: English (United States)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -42,44 +42,44 @@ msgstr "Search"
 msgid "Envíos"
 msgstr "Shipping"
 
-#: footer.php:75
+#: footer.php:77
 msgid "Devoluciones"
 msgstr "Refunds"
 
-#: footer.php:94 footer.php:155 inc/woocommerce.php:384
+#: footer.php:98 footer.php:161 inc/woocommerce.php:384
 msgid "Pago a plazos"
 msgstr "Instalments"
 
-#: footer.php:127
+#: footer.php:133
 msgid "NOSOTROS"
 msgstr "ABOUT US"
 
-#: footer.php:140
+#: footer.php:146
 msgid "AYUDA"
 msgstr "HELP"
 
-#: footer.php:157 inc/woocommerce.php:376
+#: footer.php:163 inc/woocommerce.php:376
 msgid "Envios"
 msgstr "Shipping"
 
-#: footer.php:160
+#: footer.php:166
 msgid "Cambios y Devoluciones"
 msgstr "Refunds"
 
-#: footer.php:170
+#: footer.php:176
 msgid "TIENDA ONLINE"
 msgstr "SHOP ONLINE"
 
-#: footer.php:183
+#: footer.php:189
 msgid "ENCUENTRANOS EN:"
 msgstr ""
 "FIND US IN:\n"
 
-#: footer.php:196 template-contacto.php:56
+#: footer.php:202 template-contacto.php:56
 msgid "NEWSLETTER"
 msgstr ""
 
-#: footer.php:199 template-contacto.php:57
+#: footer.php:205 template-contacto.php:57
 msgid "SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES"
 msgstr "SUBSCRIBE TO ENSURE <br>YOU OF ALL OUR NEWS"
 
@@ -151,12 +151,24 @@ msgstr ""
 msgid "Texto Envios"
 msgstr ""
 
-#: inc/customizer.php:289
+#: inc/customizer.php:287
+msgid "*Texto INGLES Envios"
+msgstr ""
+
+#: inc/customizer.php:306
 msgid "Texto Cambios y Devoluciones"
 msgstr ""
 
-#: inc/customizer.php:308
+#: inc/customizer.php:323
+msgid "*Texto INGLES Cambios y Devoluciones"
+msgstr ""
+
+#: inc/customizer.php:342
 msgid "Texto Pago a Plazos"
+msgstr ""
+
+#: inc/customizer.php:359
+msgid "*Texto INGLES Pago a Plazos"
 msgstr ""
 
 #: inc/template-tags.php:82
@@ -195,6 +207,10 @@ msgstr "Refunds"
 msgid "Descripción y cuidados"
 msgstr "Description and care"
 
+#: single.php:37
+msgid "Regresar a News"
+msgstr "Back to News"
+
 #: template-contacto.php:28
 msgid "LLÁMANOS"
 msgstr "CALL US"
@@ -204,8 +220,8 @@ msgid "ENVÍA UN EMAIL A:"
 msgstr "SEND EMAIL TO:"
 
 #: template-contacto.php:38
-msgid "HORARIO DE ATENCIÓN AL <span> CLIENTE POR TELÉFONO:</span>"
-msgstr "CUSTOMER SERVICE "
+msgid "HORARIO DE ATENCIÓN AL"
+msgstr ""
 
 #: template-contacto.php:39
 msgid "CLIENTE POR TELÉFONO:"
