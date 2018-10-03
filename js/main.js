@@ -114,10 +114,14 @@
 	});
 
 setTimeout(function(){
-	 if (  jQuery( ".product-type-simple > .stock.out-of-stock" )  ) {
+	 /*if (  jQuery( ".product-type-simple  .stock.out-of-stock" )  ) {
           //alert();
 	     jQuery( ".available" ).show(); console.log("show");
-	 	}
+	 	}*/
+	if (  jQuery( ".stock.out-of-stock" ).length ) {
+          //alert();
+	     jQuery( ".available" ).show(); console.log("show");
+	}
 }, 200);
 
 
