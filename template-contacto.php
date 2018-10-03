@@ -69,7 +69,7 @@ get_header();
 
 								<?php if (get_locale() == 'es_ES') { echo do_shortcode( '[contact-form-7 id="298" title="Formulario de contacto 1"]' ); }?>
 
-								<?php if (get_locale() == 'en_US') {  echo do_shortcode( '[contact-form-7 id="1113" title="contact form"]' );} ?>
+								<?php if (get_locale() == 'en_US') {  echo do_shortcode( '[contact-form-7 id="1142" title="Form de contacto 1"]' );} ?>
 							</div>
 						</div>
 					</div>

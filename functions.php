@@ -268,3 +268,11 @@ function sold_out_button() {
     </div>
     <?php
 }
+
+//add_filter('wp_nav_menu_items','add_lang', 10, 2);
+function add_lang($items, $args) {
+    if( $args->theme_location == 'menu-1' )
+        return $items . pll_the_languages();;
+  
+    return $items;
+}

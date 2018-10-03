@@ -51,7 +51,14 @@ get_template_part('template-parts/header', 'home'); ?>
 
 				<div class="col-md-8 with-background d-none d-sm-block" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
-						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
+						<h1 class="titulos__home">
+							<a href="<?php  
+								if (get_locale() == 'es_ES') { 
+									echo esc_url($enlace_abajoizquierda);
+								}
+								if (get_locale() == 'en_US') { 
+									echo esc_url($enlace_en_abajoizquierda);
+								} ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
 					</div>	
 				</div>
 				<!-- Izquierda -->
@@ -63,7 +70,14 @@ get_template_part('template-parts/header', 'home'); ?>
 
 				?>);">
 					<div class="header__left">
-						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
+						<h1 class="titulos__home">
+							<a href="<?php  
+								if (get_locale() == 'es_ES') { 
+									echo esc_url($enlace_abajoizquierda);
+								}
+								if (get_locale() == 'en_US') { 
+									echo esc_url($enlace_en_abajoizquierda);
+								} ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
 					</div>	
 				</div>
 
@@ -71,7 +85,14 @@ get_template_part('template-parts/header', 'home'); ?>
 
 				<div class="col-md-4 with-background d-none d-sm-block" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
 					<div class="header__right">
-						<h2 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoderecha); ?>"><?php echo $texto_abajoderecha; ?></a></h2>
+						<h2 class="titulos__home">
+							<a href="<?php 
+								if (get_locale() == 'es_ES') { 
+									echo esc_url($enlace_en_abajoderecha);
+								}
+								if (get_locale() == 'en_US') { 
+									echo esc_url($enlace_en_abajoderecha);
+								} ?>"><?php echo $texto_abajoderecha; ?></a></h2>
 					</div>
 				</div>
 
@@ -84,7 +105,13 @@ get_template_part('template-parts/header', 'home'); ?>
 
 				?>);">
 					<div class="header__right">
-						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoderecha); ?>"><?php echo $texto_abajoderecha; ?></a></h1>
+						<h1 class="titulos__home"><a href="<?php 
+								if (get_locale() == 'es_ES') { 
+									echo esc_url($enlace_en_abajoderecha);
+								}
+								if (get_locale() == 'en_US') { 
+									echo esc_url($enlace_en_abajoderecha);
+								} ?>"><?php echo $texto_abajoderecha; ?></a></h1>
 					</div>	
 				</div>
 				

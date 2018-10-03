@@ -205,7 +205,7 @@
 								<li><a href="#"><?php _e('SUSCRÍBETE PARA ENTERARTE DE TODAS<br> NUESTRAS NOVEDADES', 'batanaweb') ?></a></li>
 							</ul>
 						</nav>
-						<?php echo do_shortcode('[contact-form-7 id="912" title="newsletter" html_class="newsletter"]'); ?>
+						<?php if (get_locale() == 'es_ES') { echo do_shortcode('[contact-form-7 id="912" title="newsletter" html_class="newsletter"]');} if (get_locale() == 'en_US') { echo do_shortcode('[contact-form-7 id="1143" title="newsletter in english"]');}?>
 						<!-- <form action="#" class="newsletter">
 							<input type="text" placeholder="Introduce tu email">
 							<button>SUSCRIBETE</button>

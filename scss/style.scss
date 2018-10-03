@@ -41,6 +41,9 @@ font-family: 'opensans', sans-serif;*/
 a{
 	color:#000;
 }
+.main-navigation .movil-language {
+       display: none;
+}
 .contenedor {
     padding: 4em 0;
 }
@@ -722,6 +725,8 @@ footer {
     li#menu-item-735 {
     width: 90px;
 }
+
+
 /****************************woo******************************/
 
 .select-tallas{
@@ -1800,6 +1805,7 @@ form.checkout_coupon.woocommerce-form-coupon{
         margin-left: -2.5em;
     }
 */
+    
     .lookmovil{
         display: block;
     }
@@ -2098,6 +2104,11 @@ form.checkout_coupon.woocommerce-form-coupon{
         ul.products {
         padding-right: 2% !important;
     }
+    }
+    .main-navigation .movil-language {
+        display: block;
+        font-family: 'old';
+        font-weight: 600;
     }
 
 }
