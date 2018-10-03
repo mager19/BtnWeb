@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Batana\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-01 19:58-0500\n"
-"PO-Revision-Date: 2018-10-02 01:01+0000\n"
+"PO-Revision-Date: 2018-10-03 17:08+0000\n"
 "Last-Translator: batana <mario@snsdesigns.es>\n"
 "Language-Team: English (United States)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -192,7 +192,7 @@ msgstr "Care"
 
 #: inc/woocommerce.php:330
 msgid "SOLICITA AVISO DE DISPONIBILIDAD"
-msgstr "REQUEST NOTICE OF AVAILABILITY"
+msgstr "NOTICE AVAILABILITY"
 
 #: inc/woocommerce.php:354
 msgid "Guia de tallas"

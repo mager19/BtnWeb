@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Batana\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-01 18:36-0500\n"
-"PO-Revision-Date: 2018-10-01 23:40+0000\n"
+"POT-Creation-Date: 2018-10-01 19:58-0500\n"
+"PO-Revision-Date: 2018-10-02 01:01+0000\n"
 "Last-Translator: batana <mario@snsdesigns.es>\n"
 "Language-Team: English (United States)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -206,6 +206,10 @@ msgstr "Refunds"
 #: inc/woocommerce.php:388
 msgid "Descripción y cuidados"
 msgstr "Description and care"
+
+#: index.php:32
+msgid "VER MÁS"
+msgstr "SEE MORE"
 
 #: single.php:37
 msgid "Regresar a News"
