@@ -113,11 +113,12 @@
 	
 	});
 
-/*setTimeout(function(){*/
-	if ( jQuery( "p.stock.out-of-stock" )  ) {
-	    jQuery( ".available" ).show(); console.log("show");
-		}
-/*}, 5);*/
+setTimeout(function(){
+	 if (  jQuery( ".product-type-simple > .stock.out-of-stock" )  ) {
+          //alert();
+	     jQuery( ".available" ).show(); console.log("show");
+	 	}
+}, 200);
 
 
 

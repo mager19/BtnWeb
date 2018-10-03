@@ -221,7 +221,7 @@ function filter_loop_add_to_cart_link( $button, $product, $args = array() ) {
     if( $product->is_in_stock() ) return $button;
 
     // HERE set your button text (when product is not on stock)
-    $button_text = __('Ver Producto', 'woocommerce');
+    $button_text = __('Ver Producto', 'batanaweb');
 
    	$url = get_permalink($product_id);
 
@@ -267,4 +267,12 @@ function sold_out_button() {
         <a class="single_sold_out_button button alt disabled wc-variation-is-unavailable"><?php _e( "Sold Out", "woocommerce" ); ?></a>
     </div>
     <?php
+}
+
+//add_filter('wp_nav_menu_items','add_lang', 10, 2);
+function add_lang($items, $args) {
+    if( $args->theme_location == 'menu-1' )
+        return $items . pll_the_languages();;
+  
+    return $items;
 }

@@ -413,6 +413,8 @@ font-family: 'opensans', sans-serif;*/
 
 a { color: #000; }
 
+.main-navigation .movil-language { display: none; }
+
 .contenedor { padding: 4em 0; }
 
 .contenedor-fluid { padding: 8em 0; }
@@ -481,14 +483,7 @@ header .main-navigation ul ul { box-shadow: none; }
 
 .header__left .titulos__home a, .header__left .titulos__home a:visited, .header__right .titulos__home a, .header__right .titulos__home a:visited { color: #fff; text-decoration: none; }
 
-/*.content-area {
-    max-width: 1140px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}*/
+/*.content-area { max-width: 1140px; width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }*/
 /*Home*/
 .titulo_seccion { color: #000000; font-family: old; font-size: 1em; font-weight: 600; line-height: 1.5em; letter-spacing: 4px; text-align: center; }
 
@@ -530,7 +525,7 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 .container { margin-top: 60px; margin-bottom: 60px; }
 
 /*Content page*/
-.title__page { border-bottom: 2px solid #F5F5F5; color: #ce9a90; font-family: old; font-size: 1.5em; letter-spacing: 7px; text-align: center; text-transform: uppercase; padding-bottom: 2.5em; margin-top: 1em; }
+.title__page { border-bottom: 2px solid #F5F5F5; color: #ce9a90; font-family: old; font-size: 1.5em; letter-spacing: 7px; text-align: center; text-transform: uppercase; padding-bottom: 2.5em; margin-top: 1.2em; }
 
 .contenido__page { padding-top: 4em; }
 
@@ -625,8 +620,12 @@ footer .whatsapp a i { color: #BBBBBB !important; margin-right: 5px; font-size: 
 
 .lookdesktop { display: block; }
 
+li#menu-item-735 { width: 90px; }
+
 /****************************woo******************************/
-.archive .content-area { padding-left: 0% !important; }
+.select-tallas { border-radius: 2px; padding: 10px; }
+
+.archive { /*  .content-area{ padding-left: 0%!important; }*/ }
 
 .available { padding: 0.4em 0.5em 0 0.5em; border: 1px solid; text-align: center; margin-bottom: 10px; }
 
@@ -646,7 +645,7 @@ header.woocommerce-products-header { display: none; }
 
 .woocommerce .products ul, .woocommerce ul.products { margin: 0 0em 1em; padding: 0; list-style: none outside; clear: both; padding-top: 4em; }
 
-.woocommerce .woocommerce-result-count { margin: 0 0 1em; margin-left: 1em; }
+.woocommerce .woocommerce-result-count { margin: 0 0 1em; /* margin-left: 1em;*/ }
 
 .woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count { float: left; }
 
@@ -714,12 +713,7 @@ span.woocommerce-Price-amount.amount { font-family: 'questrial', sans-serif; col
 
 .widget-area a { color: #BBBBBB; font-size: 0.72em; }
 
-/*.product-categories{
-	color: $gris;
-	a{
-		color: $gris;
-	}
-}*/
+/*.product-categories{ color: $gris; a{ color: $gris; } }*/
 .widget_price_filter .ui-slider .ui-slider-range, .widget_price_filter .ui-slider .ui-slider-handle { background: #000 !important; border-radius: 50%; }
 
 li.outofstock .add-to-cart-container a { background-color: #000000; border: none; color: #fff; font-family: old; font-size: 0.8em; letter-spacing: 3px; padding: 1.2em; width: 100%; border-radius: 0; text-transform: uppercase; }
@@ -977,7 +971,7 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .contacto .item__contacto form input { padding-right: 0%; }
   .add-to-cart-container a.add_to_cart_button { font-size: 0.7em; white-space: normal; } }
 
-@media screen and (max-width: 768px) { .related { margin-left: -2.5em; }
+@media screen and (max-width: 768px) { /* .related{ margin-left: -2.5em; } */
   .lookmovil { display: block; }
   .lookdesktop { display: none; }
   #auxiliar-menu { display: none; }
@@ -1025,10 +1019,16 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   .superior__moviles { height: 50vh; background-size: contain; margin-top: 45%; }
   .menu-principal-container { padding-left: 0% !important; }
   .menu-principal-container ul#primary-menu { text-align: center; padding-top: 1em; }
-  .menu-principal-container ul#primary-menu li { text-align: center; float: initial; width: 100%; margin: 0 1% !important; }
-  .menu-principal-container ul.sub-menu { /*display: none;*/ padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 8px; position: initial; margin-left: 20%; /*left: -87% !important;*/ }
-  .menu-principal-container ul.sub-menu li { text-align: left !important; /*padding-left: 12%;*/ padding-bottom: 10px; }
-  .menu-principal-container ul.sub-menu li a { font-size: 0.76em !important; }
+  .menu-principal-container ul#primary-menu li { /*text-align: center;*/ text-align: left; padding-left: 0%; float: initial; width: 100%; margin: 0 1% !important; }
+  .menu-principal-container ul#primary-menu li a { background-color: #f5f5f5; padding: 5px 0% 5px 5%; }
+  .menu-principal-container ul.sub-menu { /*display: none;*/ padding-top: 1em !important; width: 100vw !important; background-color: #fff; padding-bottom: 8px; position: initial; background-color: #fff; /*margin-left:20%;*/ /*left: -87% !important;*/ }
+  .menu-principal-container ul.sub-menu li { text-align: left !important; padding-left: 0px !important; background-color: #fff; /*padding-left: 12%;*/ padding-bottom: 10px; }
+  .menu-principal-container ul.sub-menu li a { font-size: 0.76em !important; background-color: #fff !important; padding: 0px 0px 0px 12% !important; }
   .menu-principal-container ul.sub-menu ul.sub-menu { /*display: none;*/ font-size: 1em; position: initial; margin-left: 3%; }
   .menu-principal-container ul.sub-menu ul.sub-menu li { padding-left: 0px; padding-bottom: 5px; }
-  nav.woocommerce-breadcrumb { margin-top: 4em; display: block; } }
+  nav.woocommerce-breadcrumb { margin-top: 4em; display: block; }
+  ul.products { padding-right: 10% !important; }
+  section.related.products { margin-right: 10%; }
+  section.related.products img { margin-top: 0 auto; }
+  section.related.products ul.products { padding-right: 2% !important; }
+  .main-navigation .movil-language { display: block; font-family: 'old'; font-weight: 600; } }

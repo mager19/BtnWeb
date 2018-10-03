@@ -26,6 +26,8 @@ get_template_part('template-parts/header', 'home'); ?>
 				$texto_abajoderecha = get_theme_mod( 'texto_abajoderecha' );
 				$enlace_abajoizquierda = get_theme_mod( 'enlace_abajoizquierda' );
 				$enlace_abajoderecha = get_theme_mod( 'enlace_abajoderecha' );
+				$enlace_en_abajoizquierda = get_theme_mod( 'enlace_en_abajoizquierda' );
+				$enlace_en_abajoderecha = get_theme_mod( 'enlace_en_abajoderecha' );
 
 				//rESPONSIVE
 				$responsive_imagen_izquierda = get_theme_mod( 'responsive_imagen_izquierda' );
@@ -51,7 +53,14 @@ get_template_part('template-parts/header', 'home'); ?>
 
 				<div class="col-md-8 with-background d-none d-sm-block" style="background-image:url(<?php echo $imagen_abajoizquierda; ?>);">
 					<div class="header__left">
-						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
+						<h1 class="titulos__home">
+							<a href="<?php  
+								if (get_locale() == 'es_ES') { 
+									echo esc_url($enlace_abajoizquierda);
+								}
+								if (get_locale() == 'en_US') { 
+									echo esc_url($enlace_en_abajoizquierda);
+								} ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
 					</div>	
 				</div>
 				<!-- Izquierda -->
@@ -63,7 +72,14 @@ get_template_part('template-parts/header', 'home'); ?>
 
 				?>);">
 					<div class="header__left">
-						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoizquierda); ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
+						<h1 class="titulos__home">
+
+							<a href="<?php if (get_locale() == 'es_ES') { 
+									echo esc_url($enlace_abajoizquierda);
+								}
+								if (get_locale() == 'en_US') { 
+									echo esc_url($enlace_en_abajoizquierda);
+								} ?>"><?php echo $texto_abajoizquierda; ?></a></h1>
 					</div>	
 				</div>
 
@@ -71,7 +87,14 @@ get_template_part('template-parts/header', 'home'); ?>
 
 				<div class="col-md-4 with-background d-none d-sm-block" style="background-image:url(<?php echo $imagen_abajoderecha; ?>);">
 					<div class="header__right">
-						<h2 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoderecha); ?>"><?php echo $texto_abajoderecha; ?></a></h2>
+						<h2 class="titulos__home">
+							<a href="<?php 
+								if (get_locale() == 'es_ES') { 
+									echo esc_url($enlace_abajoderecha);
+								}
+								if (get_locale() == 'en_US') { 
+									echo esc_url($enlace_en_abajoderecha);
+								} ?>"><?php echo $texto_abajoderecha; ?></a></h2>
 					</div>
 				</div>
 
@@ -84,7 +107,13 @@ get_template_part('template-parts/header', 'home'); ?>
 
 				?>);">
 					<div class="header__right">
-						<h1 class="titulos__home"><a href="<?php echo esc_url($enlace_abajoderecha); ?>"><?php echo $texto_abajoderecha; ?></a></h1>
+						<h1 class="titulos__home"><a href="<?php 
+								if (get_locale() == 'es_ES') { 
+									echo esc_url($enlace_abajoderecha);
+								}
+								if (get_locale() == 'en_US') { 
+									echo esc_url($enlace_en_abajoderecha);
+								} ?>"><?php echo $texto_abajoderecha; ?></a></h1>
 					</div>	
 				</div>
 				
@@ -108,11 +137,11 @@ get_template_part('template-parts/header', 'home'); ?>
 							}
 							else{
 								
-								 _e( 'ARTÍCULOS', 'woocommerce' );
+								 _e( 'ARTÍCULOS', 'batanaweb' );
 							}
 						?>
 						<br> 
-						DESTACADOS
+						<?php _e('DESTACADOS', 'batanaweb') ?>
 					</h2>
 					<div class="destacados__carrousel">
 						<?php $args = array( 'post_type' => 'product', 'tax_query' => array( array( 'taxonomy' => 'product_visibility', 'field' => 'name', 'terms' => 'featured', ), ), ); 

@@ -281,7 +281,7 @@ function woo_new_product_tab( $tabs ) {
 	// Adds the new tab
 	
 	$tabs['detalles'] = array(
-		'title' 	=> __( 'Detalles', 'woocommerce' ),
+		'title' 	=> __( 'Detalles', 'batanaweb' ),
 		'priority' 	=> 50,
 		'callback' 	=> 'woo_new_product_tab_content'
 	);
@@ -291,7 +291,7 @@ function woo_new_product_tab( $tabs ) {
 }
 function woo_new_product_tab_content() {
 	// The new tab content
-	echo '<h2>'.__( 'Detalles', 'woocommerce' ).'</h2>';
+	echo '<h2>'.__( 'Detalles', 'batanaweb' ).'</h2>';
     echo get_field('detalles', $post_id);
 	
 }
@@ -302,7 +302,7 @@ function woo_new_product_tab2( $tabs ) {
 	// Adds the new tab
 	
 	$tabs['cuidados'] = array(
-		'title' 	=> __( 'Cuidados', 'woocommerce' ),
+		'title' 	=> __( 'Cuidados', 'batanaweb' ),
 		'priority' 	=> 50,
 		'callback' 	=> 'woo_new_product_tab_content2'
 	);
@@ -312,7 +312,7 @@ function woo_new_product_tab2( $tabs ) {
 }
 function woo_new_product_tab_content2() {
 	// The new tab content
-	echo '<h2>'.__( 'Cuidados', 'woocommerce' ).'</h2>';
+	echo '<h2>'.__( 'Cuidados', 'batanaweb' ).'</h2>';
     echo get_field('cuidados', $post_id);
 	
 }
@@ -351,7 +351,7 @@ echo '
 if(get_field('guia_de_tallas', $post_id)){
 echo '
 <h5>
-  <a href="#" class="color-white" data-toggle="modal" data-target="#tallasModal">'. __( 'Guia de tallas', 'woocommerce' ). '</a> </h5>
+  <a href="#" class="color-white" data-toggle="modal" data-target="#tallasModal">'. __( 'Guia de tallas', 'batanaweb' ). '</a> </h5>
 
 <div style="display: none;" class="modal fade" id="tallasModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -373,19 +373,19 @@ echo '
 }
 if(get_field('envios', $post_id)){
 echo '<h5>
-  <a href="'.get_field('envios', $post_id).'" class="color-white" data-toggle="modal" data-target="#enviosModal" >'.__( 'Envios', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_field('envios', $post_id).'" class="color-white" data-toggle="modal" data-target="#enviosModal" >'.__( 'Envios', 'batanaweb' ).'</a> </h5>';
 }
 if(get_field('cambios_y_devoluciones', $post_id)){
 echo '<h5>
-  <a href="'.get_field('cambios_y_devoluciones', $post_id).'" class="color-white" data-toggle="modal" data-target="#devolucionesModal">'.__( 'Cambios y devoluciones', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_field('cambios_y_devoluciones', $post_id).'" class="color-white" data-toggle="modal" data-target="#devolucionesModal">'.__( 'Cambios y devoluciones', 'batanaweb' ).'</a> </h5>';
 }
 if(get_theme_mod( 'textoPagoPlazos' )){
 echo '<h5>
-  <a href="'.get_theme_mod( 'textoPagoPlazos' ).'" class="color-white" data-toggle="modal" data-target="#plazosModal">'.__( 'Pago a plazos', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_theme_mod( 'textoPagoPlazos' ).'" class="color-white" data-toggle="modal" data-target="#plazosModal">'.__( 'Pago a plazos', 'batanaweb' ).'</a> </h5>';
 }
 if(get_field('descripcion_y_cuidados', $post_id)){
 echo '<h5>
-  <a href="'.get_field('descripcion_y_cuidados', $post_id).'" class="color-white" target="_blank">'.__( 'Descripción y cuidados', 'woocommerce' ).'</a> </h5>';
+  <a href="'.get_field('descripcion_y_cuidados', $post_id).'" class="color-white" target="_blank">'.__( 'Descripción y cuidados', 'batanaweb' ).'</a> </h5>';
 }
 echo '</div>';
  //echo get_field('guia_de_tallas', $post_id);
