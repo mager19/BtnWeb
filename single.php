@@ -34,8 +34,8 @@ get_header();
 										</div>
 									</article>
 									<div class="boton__back mt-2">
-										<a href="<?php if (get_locale() == 'en_US') { echo"/en/news";}
-										if (get_locale() == 'es_ES') { echo"/news";}"><?php _e('Regresar a News', 'batanaweb') ?></a>
+										<a href="<?php if (get_locale() == 'en_US') { echo '/en/news-2';}
+										if (get_locale() == 'es_ES') { echo '/news';}?>"><?php _e('Regresar a News', 'batanaweb') ?></a>
 									</div>
 								<?php
 								}	
