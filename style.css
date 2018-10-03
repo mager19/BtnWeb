@@ -415,6 +415,8 @@ a { color: #000; }
 
 .main-navigation .movil-language { display: none; }
 
+.menu-principal-container li.lang-item { display: none !important; }
+
 .contenedor { padding: 4em 0; }
 
 .contenedor-fluid { padding: 8em 0; }
@@ -1031,4 +1033,5 @@ form.checkout_coupon.woocommerce-form-coupon a { color: #000; }
   section.related.products { margin-right: 10%; }
   section.related.products img { margin-top: 0 auto; }
   section.related.products ul.products { padding-right: 2% !important; }
-  .main-navigation .movil-language { display: block; font-family: 'old'; font-weight: 600; } }
+  .main-navigation .movil-language { display: block; font-family: 'old'; font-weight: 600; }
+  .menu-principal-container li.lang-item { display: block !important; } }

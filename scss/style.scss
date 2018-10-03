@@ -44,6 +44,9 @@ a{
 .main-navigation .movil-language {
        display: none;
 }
+.menu-principal-container li.lang-item {
+    display: none !important;
+}
 .contenedor {
     padding: 4em 0;
 }
@@ -2109,6 +2112,9 @@ form.checkout_coupon.woocommerce-form-coupon{
         display: block;
         font-family: 'old';
         font-weight: 600;
+    }
+    .menu-principal-container li.lang-item {
+        display: block !important;
     }
 
 }
