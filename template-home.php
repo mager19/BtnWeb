@@ -26,6 +26,8 @@ get_template_part('template-parts/header', 'home'); ?>
 				$texto_abajoderecha = get_theme_mod( 'texto_abajoderecha' );
 				$enlace_abajoizquierda = get_theme_mod( 'enlace_abajoizquierda' );
 				$enlace_abajoderecha = get_theme_mod( 'enlace_abajoderecha' );
+				$enlace_en_abajoizquierda = get_theme_mod( 'enlace_en_abajoizquierda' );
+				$enlace_en_abajoderecha = get_theme_mod( 'enlace_en_abajoderecha' );
 
 				//rESPONSIVE
 				$responsive_imagen_izquierda = get_theme_mod( 'responsive_imagen_izquierda' );
@@ -71,8 +73,8 @@ get_template_part('template-parts/header', 'home'); ?>
 				?>);">
 					<div class="header__left">
 						<h1 class="titulos__home">
-							<a href="<?php  
-								if (get_locale() == 'es_ES') { 
+
+							<a href="<?php if (get_locale() == 'es_ES') { 
 									echo esc_url($enlace_abajoizquierda);
 								}
 								if (get_locale() == 'en_US') { 
@@ -88,7 +90,7 @@ get_template_part('template-parts/header', 'home'); ?>
 						<h2 class="titulos__home">
 							<a href="<?php 
 								if (get_locale() == 'es_ES') { 
-									echo esc_url($enlace_en_abajoderecha);
+									echo esc_url($enlace_abajoderecha);
 								}
 								if (get_locale() == 'en_US') { 
 									echo esc_url($enlace_en_abajoderecha);
@@ -107,7 +109,7 @@ get_template_part('template-parts/header', 'home'); ?>
 					<div class="header__right">
 						<h1 class="titulos__home"><a href="<?php 
 								if (get_locale() == 'es_ES') { 
-									echo esc_url($enlace_en_abajoderecha);
+									echo esc_url($enlace_abajoderecha);
 								}
 								if (get_locale() == 'en_US') { 
 									echo esc_url($enlace_en_abajoderecha);
